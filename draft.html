@@ -112,10 +112,11 @@ function render() {
   } else {
     poolEl.innerHTML = undrafted.map(p => `
       <button class="pool-card" data-id="${p.id}">
-        <img class="thumb" src="${p.photo}" alt="">
+        <span class="photo-wrap"><img src="${p.photo}" alt=""></span>
         <span class="pinfo">
           <span class="pname">${p.name}</span>
-          <span class="pmeta">${p.age} &middot; ${p.profession} &middot; ${p.hometown}</span>
+          <span class="pmeta">${p.age} &middot; ${p.profession}</span>
+          <span class="pmeta">${p.hometown}</span>
         </span>
       </button>
     `).join('');
