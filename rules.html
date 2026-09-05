@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traitors: New Blood - Fantasy League</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">The Traitors: New Blood</h1>
+    <p class="site-subtitle">Family Fantasy League</p>
+    <nav class="main-nav">
+      <a href="index.html">Leaderboard</a>
+      <a href="draft.html">Draft</a>
+      <a href="rules.html" class="active">Rules</a>
+      <a href="log.html">Episode Log</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap prose">
+  <h2>The Draft</h2>
+  <p>All 22 castmates get drafted before the season starts. Picks go in a fixed repeating order: Damon, then Em, then Ronjan, then back to Damon, and so on until all 22 are taken. Since 22 doesn't divide evenly by three, Damon picks first each cycle and ends up with 8 players; Em and Ronjan each get 7.</p>
+  <p>Once a player is drafted, every point they earn for the rest of the season goes to their owner. There's no trading and no free agency; whoever you draft is who you're stuck with.</p>
+
+  <h2>Scoring</h2>
+  <p>Points are logged episode by episode as events happen to your players. A player can rack up multiple events in one episode (surviving <em>and</em> committing a murder, for example). Once a player is murdered or banished, their game is over and they stop earning points, whether or not their owner is still in it.</p>
+  <table class="rules-table" id="rules-table">
+    <thead><tr><th>Event</th><th>Points</th></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>What the events mean</h2>
+  <ul>
+    <li><strong>Survived the episode</strong> - your player is still in the game when the credits roll. The steady weekly points.</li>
+    <li><strong>Team's daily mission succeeded</strong> - the group hits the mission target and grows the prize pot. Every one of your still-active players gets this.</li>
+    <li><strong>Won an individual mission advantage</strong> - your player personally wins a shield, extra vote, information, or similar edge.</li>
+    <li><strong>Committed a murder undetected</strong> - your player is a Traitor and kills someone at the Turret without getting caught for it.</li>
+    <li><strong>Recruited as a new Traitor</strong> - your player starts the season a Faithful but gets turned mid-season. Big value swing since it unlocks the murder and traitor-win points below.</li>
+    <li><strong>Banished at Roundtable</strong> - the house votes your player out. Game over for them.</li>
+    <li><strong>Murdered by the Traitors</strong> - your player is killed in the night with no vote. Game over for them, and it costs more than a banishment since they never saw it coming.</li>
+    <li><strong>Reached the Final Roundtable</strong> - your player makes it to the last vote of the season, whatever happens next.</li>
+    <li><strong>Traitor who survived undetected and won</strong> - your player was a Traitor at the end, was never caught, and the Traitors won the pot. Stacks on top of the win bonus below.</li>
+    <li><strong>Ended up on the winning side at the end</strong> - your player is one of the Faithfuls who splits the pot, or one of the Traitors who won it.</li>
+  </ul>
+
+  <h2>Ties and edge cases</h2>
+  <p>If the season throws a twist the list above doesn't cover, we'll log the closest matching event and note it in the episode log so it's clear why the points landed the way they did.</p>
+</div>
+
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock.</footer>
+
+<script type="module">
+import { EVENT_TYPES } from './js/scoring.js';
+
+const tbody = document.querySelector('#rules-table tbody');
+tbody.innerHTML = Object.values(EVENT_TYPES).map(def => {
+  const cls = def.points < 0 ? 'negative' : '';
+  const sign = def.points > 0 ? '+' : '';
+  return `<tr><td>${def.label}</td><td class="points ${cls}">${sign}${def.points}</td></tr>`;
+}).join('');
+</script>
+</body>
+</html>

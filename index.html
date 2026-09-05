@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traitors: New Blood - Fantasy League</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">The Traitors: New Blood</h1>
+    <p class="site-subtitle">Family Fantasy League</p>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Leaderboard</a>
+      <a href="draft.html">Draft</a>
+      <a href="rules.html">Rules</a>
+      <a href="log.html">Episode Log</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <h2>Standings</h2>
+  <div id="leaderboard" class="owner-grid"></div>
+</div>
+
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock.</footer>
+
+<script type="module">
+import { OWNERS, loadData, computeOwnerTotals, playerStatus } from './js/scoring.js';
+
+const { players, events } = await loadData();
+const { playerTotals, ownerTotals } = computeOwnerTotals(players, events);
+
+const drafted = players.some(p => p.owner);
+const board = document.getElementById('leaderboard');
+
+if (!drafted) {
+  board.innerHTML = '<div class="empty-state">The draft hasn\'t happened yet. Head to the Draft page to get started.</div>';
+} else {
+  const ranked = [...OWNERS].sort((a, b) => ownerTotals[b.id] - ownerTotals[a.id]);
+  const topScore = ranked.length ? ownerTotals[ranked[0].id] : 0;
+
+  board.innerHTML = ranked.map(owner => {
+    const roster = players
+      .filter(p => p.owner === owner.id)
+      .sort((a, b) => (playerTotals[b.id] ?? 0) - (playerTotals[a.id] ?? 0));
+
+    const rows = roster.map(p => {
+      const pts = playerTotals[p.id] ?? 0;
+      const status = playerStatus(p.id, events);
+      const cls = status.eliminated ? 'eliminated' : '';
+      const ptsCls = pts < 0 ? 'negative' : '';
+      return `<li><span class="pname ${cls}">${p.name}</span><span class="ppoints ${ptsCls}">${pts}</span></li>`;
+    }).join('');
+
+    const isLeader = ownerTotals[owner.id] === topScore && topScore !== 0;
+
+    return `
+      <div class="owner-card ${isLeader ? 'leader' : ''}">
+        <h3>${owner.name}</h3>
+        <div class="owner-score">${ownerTotals[owner.id]}<span class="unit">pts</span></div>
+        <ul class="roster-list">${rows || '<li><span class="pname">No players</span></li>'}</ul>
+      </div>`;
+  }).join('');
+}
+</script>
+</body>
+</html>

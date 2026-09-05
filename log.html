@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traitors: New Blood - Fantasy League</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">The Traitors: New Blood</h1>
+    <p class="site-subtitle">Family Fantasy League</p>
+    <nav class="main-nav">
+      <a href="index.html">Leaderboard</a>
+      <a href="draft.html">Draft</a>
+      <a href="rules.html">Rules</a>
+      <a href="log.html" class="active">Episode Log</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <h2>Episode Log</h2>
+  <div id="log" class="log-list"></div>
+</div>
+
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock.</footer>
+
+<script type="module">
+import { loadData, EVENT_TYPES, ownerName } from './js/scoring.js';
+
+const { players, events } = await loadData();
+const playersById = Object.fromEntries(players.map(p => [p.id, p]));
+const log = document.getElementById('log');
+
+if (!events.length) {
+  log.innerHTML = '<div class="empty-state">No episodes logged yet. Check back after the premiere airs.</div>';
+} else {
+  const byEpisode = {};
+  events.forEach(e => {
+    (byEpisode[e.episode] ??= []).push(e);
+  });
+
+  const episodes = Object.keys(byEpisode).map(Number).sort((a, b) => b - a);
+
+  log.innerHTML = episodes.map(ep => {
+    const rows = byEpisode[ep].map(e => {
+      const def = EVENT_TYPES[e.type];
+      const player = playersById[e.player];
+      const pts = def?.points ?? 0;
+      const sign = pts > 0 ? '+' : '';
+      const ptsCls = pts < 0 ? 'negative' : '';
+      const note = e.note ? ` - ${e.note}` : '';
+      return `<div class="log-row">
+        <span class="lp">${player?.name ?? e.player}<span class="le"> (${ownerName(player?.owner)}) - ${def?.label ?? e.type}${note}</span></span>
+        <span class="lpts ${ptsCls}">${sign}${pts}</span>
+      </div>`;
+    }).join('');
+    return `<h3 class="log-episode">Episode ${ep}</h3>${rows}`;
+  }).join('');
+}
+</script>
+</body>
+</html>
