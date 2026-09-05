@@ -15,6 +15,7 @@
     <nav class="main-nav">
       <a href="index.html">Leaderboard</a>
       <a href="draft.html" class="active">Draft</a>
+      <a href="cast.html">Cast</a>
       <a href="rules.html">Rules</a>
       <a href="log.html">Episode Log</a>
     </nav>
@@ -40,7 +41,7 @@
   <div class="pool-grid" id="pool"></div>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock.</footer>
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
 
 <script type="module">
 import { OWNERS, DRAFT_ORDER, ownerName } from './js/scoring.js';
@@ -94,7 +95,7 @@ function render() {
       .filter(a => a.owner === owner.id);
     const rows = picks.map(a => {
       const p = players.find(pl => pl.id === a.playerId);
-      return `<li><span class="pname">${p.name}</span><span class="ppoints">#${a.pick}</span></li>`;
+      return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname">${p.name}</span></span><span class="ppoints">#${a.pick}</span></li>`;
     }).join('');
     return `<div class="owner-card">
       <h3>${owner.name}</h3>
@@ -111,8 +112,11 @@ function render() {
   } else {
     poolEl.innerHTML = undrafted.map(p => `
       <button class="pool-card" data-id="${p.id}">
-        <span class="pname">${p.name}</span>
-        <span class="pmeta">${p.age} &middot; ${p.profession}</span>
+        <img class="thumb" src="${p.photo}" alt="">
+        <span class="pinfo">
+          <span class="pname">${p.name}</span>
+          <span class="pmeta">${p.age} &middot; ${p.profession} &middot; ${p.hometown}</span>
+        </span>
       </button>
     `).join('');
     poolEl.querySelectorAll('.pool-card').forEach(btn => {

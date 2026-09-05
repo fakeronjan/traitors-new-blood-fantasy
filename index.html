@@ -15,6 +15,7 @@
     <nav class="main-nav">
       <a href="index.html" class="active">Leaderboard</a>
       <a href="draft.html">Draft</a>
+      <a href="cast.html">Cast</a>
       <a href="rules.html">Rules</a>
       <a href="log.html">Episode Log</a>
     </nav>
@@ -26,7 +27,7 @@
   <div id="leaderboard" class="owner-grid"></div>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock.</footer>
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
 
 <script type="module">
 import { OWNERS, loadData, computeOwnerTotals, playerStatus } from './js/scoring.js';
@@ -53,7 +54,7 @@ if (!drafted) {
       const status = playerStatus(p.id, events);
       const cls = status.eliminated ? 'eliminated' : '';
       const ptsCls = pts < 0 ? 'negative' : '';
-      return `<li><span class="pname ${cls}">${p.name}</span><span class="ppoints ${ptsCls}">${pts}</span></li>`;
+      return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname ${cls}">${p.name}</span></span><span class="ppoints ${ptsCls}">${pts}</span></li>`;
     }).join('');
 
     const isLeader = ownerTotals[owner.id] === topScore && topScore !== 0;
