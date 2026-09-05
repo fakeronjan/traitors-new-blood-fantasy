@@ -18,6 +18,7 @@
       <a href="cast.html">Cast</a>
       <a href="rules.html">Rules</a>
       <a href="log.html">Episode Log</a>
+      <a href="history.html">Past Seasons</a>
     </nav>
   </div>
 </header>
@@ -31,6 +32,8 @@
 
 <script type="module">
 import { OWNERS, loadData, computeOwnerTotals, playerStatus } from './js/scoring.js';
+
+const round1 = n => Math.round(n * 10) / 10;
 
 const { players, events } = await loadData();
 const { playerTotals, ownerTotals } = computeOwnerTotals(players, events);
@@ -50,7 +53,7 @@ if (!drafted) {
       .sort((a, b) => (playerTotals[b.id] ?? 0) - (playerTotals[a.id] ?? 0));
 
     const rows = roster.map(p => {
-      const pts = playerTotals[p.id] ?? 0;
+      const pts = round1(playerTotals[p.id] ?? 0);
       const status = playerStatus(p.id, events);
       const cls = status.eliminated ? 'eliminated' : '';
       const ptsCls = pts < 0 ? 'negative' : '';
@@ -62,7 +65,7 @@ if (!drafted) {
     return `
       <div class="owner-card ${isLeader ? 'leader' : ''}">
         <h3>${owner.name}</h3>
-        <div class="owner-score">${ownerTotals[owner.id]}<span class="unit">pts</span></div>
+        <div class="owner-score">${round1(ownerTotals[owner.id])}<span class="unit">pts</span></div>
         <ul class="roster-list">${rows || '<li><span class="pname">No players</span></li>'}</ul>
       </div>`;
   }).join('');

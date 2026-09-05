@@ -1,0 +1,122 @@
+[
+  {
+    "id": "reza-farahan",
+    "name": "Reza Farahan",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 2"
+  },
+  {
+    "id": "geraldine-moreno",
+    "name": "Geraldine Moreno",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 2"
+  },
+  {
+    "id": "bam-nieves",
+    "name": "Robert \"Bam\" Nieves",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 3"
+  },
+  {
+    "id": "brandi-glanville",
+    "name": "Brandi Glanville",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 3"
+  },
+  {
+    "id": "azra-valani",
+    "name": "Azra Valani",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 4"
+  },
+  {
+    "id": "michael-davidson",
+    "name": "Michael Davidson",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 4"
+  },
+  {
+    "id": "ryan-lochte",
+    "name": "Ryan Lochte",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 5"
+  },
+  {
+    "id": "kyle-cooke",
+    "name": "Kyle Cooke",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 5"
+  },
+  {
+    "id": "amanda-clark-stoner",
+    "name": "Amanda Clark-Stoner",
+    "role_summary": "Faithful",
+    "fate_summary": "Left the competition for personal reasons (Episode 5)"
+  },
+  {
+    "id": "cody-calafiore",
+    "name": "Cody Calafiore",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 6"
+  },
+  {
+    "id": "anjelica-conti",
+    "name": "Anjelica Conti",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 7"
+  },
+  {
+    "id": "shelbe-rodriguez",
+    "name": "Shelbe Rodriguez",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 7"
+  },
+  {
+    "id": "rachel-reilly",
+    "name": "Rachel Reilly",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 8"
+  },
+  {
+    "id": "stephenie-lagrossa-kendrick",
+    "name": "Stephenie LaGrossa Kendrick",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 9"
+  },
+  {
+    "id": "christian-de-la-torre",
+    "name": "Christian de la Torre",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 9"
+  },
+  {
+    "id": "kate-chastain",
+    "name": "Kate Chastain",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 10"
+  },
+  {
+    "id": "arie-luyendyk-jr",
+    "name": "Arie Luyendyk Jr.",
+    "role_summary": "Faithful, recruited as Traitor (Episode 7)",
+    "fate_summary": "Removed himself from the game before the final vote (Episode 10)"
+  },
+  {
+    "id": "quentin-jiles",
+    "name": "Quentin Jiles",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the finale (runner-up)"
+  },
+  {
+    "id": "andie-vanacore",
+    "name": "Andie Vanacore",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the finale (runner-up)"
+  },
+  {
+    "id": "cirie-fields",
+    "name": "Cirie Fields",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Made the finale (winner)"
+  }
+]

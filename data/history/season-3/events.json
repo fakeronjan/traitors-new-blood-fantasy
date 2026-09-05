@@ -1,0 +1,882 @@
+[
+  {
+    "episode": 1,
+    "player": "bob-harper",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "bob-the-drag-queen",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "chanel-ayan",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "jeremy-collins",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "nikki-garcia",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "robyn-dixon",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "tony-vlachos",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "wells-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "bob-harper",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "bob-the-drag-queen",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "chanel-ayan",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "derrick-levasseur",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "jeremy-collins",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "nikki-garcia",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "rob-mariano",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "robyn-dixon",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tony-vlachos",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "wes-bergmann",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "dorinda-medley",
+    "type": "murdered"
+  },
+  {
+    "episode": 2,
+    "player": "wells-adams",
+    "type": "banished"
+  },
+  {
+    "episode": 3,
+    "player": "bob-harper",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "bob-the-drag-queen",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "derrick-levasseur",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "jeremy-collins",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "nikki-garcia",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "rob-mariano",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "robyn-dixon",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "wes-bergmann",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "chanel-ayan",
+    "type": "murdered"
+  },
+  {
+    "episode": 3,
+    "player": "tony-vlachos",
+    "type": "banished"
+  },
+  {
+    "episode": 4,
+    "player": "bob-harper",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "derrick-levasseur",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "nikki-garcia",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "rob-mariano",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "robyn-dixon",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "wes-bergmann",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "bob-the-drag-queen",
+    "type": "banished"
+  },
+  {
+    "episode": 4,
+    "player": "jeremy-collins",
+    "type": "murdered"
+  },
+  {
+    "episode": 5,
+    "player": "bob-harper",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "derrick-levasseur",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "rob-mariano",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "wes-bergmann",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "nikki-garcia",
+    "type": "banished"
+  },
+  {
+    "episode": 5,
+    "player": "robyn-dixon",
+    "type": "murdered"
+  },
+  {
+    "episode": 6,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "derrick-levasseur",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "rob-mariano",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "bob-harper",
+    "type": "murdered"
+  },
+  {
+    "episode": 6,
+    "player": "wes-bergmann",
+    "type": "banished"
+  },
+  {
+    "episode": 7,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "chrishell-stause",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "ciara-miller",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "derrick-levasseur",
+    "type": "murdered"
+  },
+  {
+    "episode": 7,
+    "player": "rob-mariano",
+    "type": "banished"
+  },
+  {
+    "episode": 8,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "carolyn-wiger",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "sam-asghari",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "chrishell-stause",
+    "type": "murdered"
+  },
+  {
+    "episode": 8,
+    "player": "ciara-miller",
+    "type": "banished"
+  },
+  {
+    "episode": 9,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "tom-sandoval",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "carolyn-wiger",
+    "type": "banished"
+  },
+  {
+    "episode": 9,
+    "player": "sam-asghari",
+    "type": "murdered"
+  },
+  {
+    "episode": 10,
+    "player": "britney-haynes",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "danielle-reyes",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "britney-haynes",
+    "type": "recruited",
+    "note": "Given an ultimatum by Danielle Reyes after Carolyn Wiger's banishment; accepted and became a Traitor"
+  },
+  {
+    "episode": 10,
+    "player": "tom-sandoval",
+    "type": "murdered"
+  },
+  {
+    "episode": 11,
+    "player": "dolores-catania",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "dylan-efron",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "gabby-windey",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "ivar-mountbatten",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "britney-haynes",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "britney-haynes",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "danielle-reyes",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "dolores-catania",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "dolores-catania",
+    "type": "winner",
+    "note": "Faithfuls swept the pot; the last Traitor (Britney Haynes) was identified 4-0"
+  },
+  {
+    "episode": 11,
+    "player": "dylan-efron",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "dylan-efron",
+    "type": "winner",
+    "note": "Faithfuls swept the pot; the last Traitor (Britney Haynes) was identified 4-0"
+  },
+  {
+    "episode": 11,
+    "player": "gabby-windey",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "gabby-windey",
+    "type": "winner",
+    "note": "Faithfuls swept the pot; the last Traitor (Britney Haynes) was identified 4-0"
+  },
+  {
+    "episode": 11,
+    "player": "ivar-mountbatten",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "ivar-mountbatten",
+    "type": "winner",
+    "note": "Faithfuls swept the pot; the last Traitor (Britney Haynes) was identified 4-0"
+  },
+  {
+    "episode": 1,
+    "player": "bob-the-drag-queen",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "rob-mariano",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "carolyn-wiger",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "danielle-reyes",
+    "type": "traitor_from_start"
+  }
+]

@@ -1,0 +1,850 @@
+[
+  {
+    "episode": 1,
+    "player": "johnny-devenanzio",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "johnny-devenanzio",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "peppermint",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "peppermint",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "marcus-jordan",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "marcus-jordan",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "marcus-jordan",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "maksim-chmerkovskiy",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "maksim-chmerkovskiy",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "maksim-chmerkovskiy",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "deontay-wilder",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "deontay-wilder",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "deontay-wilder",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "deontay-wilder",
+    "type": "banished",
+    "note": "Voluntarily withdrew from the game; no elimination vote occurred, logged as banished for scoring purposes"
+  },
+  {
+    "episode": 1,
+    "player": "ekin-su-culculoglu",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ekin-su-culculoglu",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ekin-su-culculoglu",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ekin-su-culculoglu",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "larsa-pippen",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "larsa-pippen",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "larsa-pippen",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "larsa-pippen",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "tamra-judge",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tamra-judge",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "tamra-judge",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "tamra-judge",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "tamra-judge",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "janelle-pierzina",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "janelle-pierzina",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "janelle-pierzina",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "janelle-pierzina",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "janelle-pierzina",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "dan-gheesling",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "dan-gheesling",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "dan-gheesling",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "dan-gheesling",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "dan-gheesling",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "dan-gheesling",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "carsten-bergersen",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "carsten-bergersen",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "parvati-shallow",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "parvati-shallow",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "kevin-kreider",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kevin-kreider",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "peter-weber",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "peter-weber",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "john-bercow",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "john-bercow",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "phaedra-parks",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "phaedra-parks",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "sheree-whitfield",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "sheree-whitfield",
+    "type": "murdered"
+  },
+  {
+    "episode": 1,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "sandra-diaz-twine",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "sandra-diaz-twine",
+    "type": "banished"
+  },
+  {
+    "episode": 1,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kate-chastain",
+    "type": "recruited",
+    "note": "Accepted an ultimatum from Phaedra Parks rather than face murder"
+  },
+  {
+    "episode": 11,
+    "player": "kate-chastain",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "kate-chastain",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 1,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "ct-tamburello",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "ct-tamburello",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "ct-tamburello",
+    "type": "winner"
+  },
+  {
+    "episode": 1,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "trishelle-cannatella",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "trishelle-cannatella",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "trishelle-cannatella",
+    "type": "winner"
+  },
+  {
+    "episode": 1,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "mercedes-javid",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "mercedes-javid",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "mercedes-javid",
+    "type": "banished",
+    "note": "Banished by CT and Trishelle at the Fire of Truth after a 1-1-1 tie revote, so they could split the prize two ways instead of three"
+  },
+  {
+    "episode": 1,
+    "player": "dan-gheesling",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "parvati-shallow",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "phaedra-parks",
+    "type": "traitor_from_start"
+  }
+]

@@ -15,39 +15,31 @@
     <nav class="main-nav">
       <a href="index.html">Leaderboard</a>
       <a href="draft.html">Draft</a>
-      <a href="cast.html" class="active">Cast</a>
+      <a href="cast.html">Cast</a>
       <a href="rules.html">Rules</a>
       <a href="log.html">Episode Log</a>
-      <a href="history.html">Past Seasons</a>
+      <a href="history.html" class="active">Past Seasons</a>
     </nav>
   </div>
 </header>
 
 <div class="wrap">
-  <h2>The 22</h2>
-  <p class="photo-credit">Photos and hometowns via NBC's official cast reveal.</p>
-  <div id="cast-grid" class="cast-grid"></div>
+  <h2>Past Seasons</h2>
+  <p class="site-subtitle" style="margin-bottom: 20px;">The first 4 US seasons, scored with this exact ruleset - not a real draft, just every contestant ranked by how they'd have scored for whoever drafted them.</p>
+  <div id="season-grid" class="season-grid"></div>
 </div>
 
 <footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
 
 <script type="module">
-import { ownerName } from './js/scoring.js';
+const seasons = await fetch('data/history/seasons.json').then(r => r.json());
 
-const players = await fetch('data/players.json').then(r => r.json()).then(list =>
-  [...list].sort((a, b) => a.name.localeCompare(b.name))
-);
-
-document.getElementById('cast-grid').innerHTML = players.map(p => `
-  <div class="cast-card">
-    <div class="photo-wrap"><img src="${p.photo}" alt="${p.name}" loading="lazy"></div>
-    <div class="cast-info">
-      <p class="cast-name">${p.name}</p>
-      <p class="cast-meta">${p.age} &middot; ${p.profession}</p>
-      <p class="cast-meta">${p.hometown}</p>
-      ${p.owner ? `<p class="cast-meta">Drafted by ${ownerName(p.owner)}</p>` : ''}
-    </div>
-  </div>
+document.getElementById('season-grid').innerHTML = seasons.map(s => `
+  <a class="season-card" href="season.html?s=${s.season}">
+    <h3>Season ${s.season}</h3>
+    <p class="winners">${s.winners.join(' &amp; ')}</p>
+    <p class="note">${s.note}</p>
+  </a>
 `).join('');
 </script>
 </body>

@@ -18,6 +18,7 @@
       <a href="cast.html">Cast</a>
       <a href="rules.html">Rules</a>
       <a href="log.html" class="active">Episode Log</a>
+      <a href="history.html">Past Seasons</a>
     </nav>
   </div>
 </header>
@@ -30,17 +31,18 @@
 <footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
 
 <script type="module">
-import { loadData, EVENT_TYPES, ownerName } from './js/scoring.js';
+import { loadData, EVENT_TYPES, ownerName, deriveTeamCredits, pointsFor } from './js/scoring.js';
 
 const { players, events } = await loadData();
+const allEvents = events.concat(deriveTeamCredits(players, events));
 const playersById = Object.fromEntries(players.map(p => [p.id, p]));
 const log = document.getElementById('log');
 
-if (!events.length) {
+if (!allEvents.length) {
   log.innerHTML = '<div class="empty-state">No episodes logged yet. Check back after the premiere airs.</div>';
 } else {
   const byEpisode = {};
-  events.forEach(e => {
+  allEvents.forEach(e => {
     (byEpisode[e.episode] ??= []).push(e);
   });
 
@@ -50,7 +52,7 @@ if (!events.length) {
     const rows = byEpisode[ep].map(e => {
       const def = EVENT_TYPES[e.type];
       const player = playersById[e.player];
-      const pts = def?.points ?? 0;
+      const pts = Math.round(pointsFor(e, allEvents) * 10) / 10;
       const sign = pts > 0 ? '+' : '';
       const ptsCls = pts < 0 ? 'negative' : '';
       const note = e.note ? ` - ${e.note}` : '';

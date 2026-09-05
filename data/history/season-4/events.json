@@ -1,0 +1,894 @@
+[
+  {
+    "episode": 1,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "caroline-stanbury",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "donna-kelce",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ian-terry",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "michael-rapaport",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "monet-x-change",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "porsha-williams",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "rob-cesternino",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ron-funches",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "tiffany-mitchell",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "caroline-stanbury",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "donna-kelce",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ian-terry",
+    "type": "murdered"
+  },
+  {
+    "episode": 2,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "michael-rapaport",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "monet-x-change",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "porsha-williams",
+    "type": "banished"
+  },
+  {
+    "episode": 2,
+    "player": "rob-cesternino",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ron-funches",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tiffany-mitchell",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "caroline-stanbury",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "donna-kelce",
+    "type": "banished"
+  },
+  {
+    "episode": 3,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "michael-rapaport",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "monet-x-change",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "rob-cesternino",
+    "type": "murdered"
+  },
+  {
+    "episode": 3,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ron-funches",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "tiffany-mitchell",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "caroline-stanbury",
+    "type": "murdered"
+  },
+  {
+    "episode": 4,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "michael-rapaport",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "monet-x-change",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ron-funches",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "tiffany-mitchell",
+    "type": "banished"
+  },
+  {
+    "episode": 4,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "michael-rapaport",
+    "type": "banished"
+  },
+  {
+    "episode": 5,
+    "player": "monet-x-change",
+    "type": "murdered"
+  },
+  {
+    "episode": 5,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ron-funches",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "lisa-rinna",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "ron-funches",
+    "type": "banished"
+  },
+  {
+    "episode": 6,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "yam-yam-arocho",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "candiace-dillard-bassett",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "colton-underwood",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "lisa-rinna",
+    "type": "banished"
+  },
+  {
+    "episode": 7,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "yam-yam-arocho",
+    "type": "murdered"
+  },
+  {
+    "episode": 8,
+    "player": "candiace-dillard-bassett",
+    "type": "banished"
+  },
+  {
+    "episode": 8,
+    "player": "colton-underwood",
+    "type": "murdered"
+  },
+  {
+    "episode": 8,
+    "player": "dorinda-medley",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "stephen-colletti",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "dorinda-medley",
+    "type": "murdered"
+  },
+  {
+    "episode": 9,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "eric-nam",
+    "type": "recruited",
+    "note": "Offered an ultimatum by Rob Rausch after Candiace Dillard Bassett's banishment; accepted and became a Traitor"
+  },
+  {
+    "episode": 9,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kristen-kish",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "natalie-anderson",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "stephen-colletti",
+    "type": "banished"
+  },
+  {
+    "episode": 9,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "eric-nam",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "johnny-weir",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "kristen-kish",
+    "type": "murdered"
+  },
+  {
+    "episode": 10,
+    "player": "mark-ballas",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "natalie-anderson",
+    "type": "banished"
+  },
+  {
+    "episode": 10,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "tara-lipinski",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "eric-nam",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "eric-nam",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "johnny-weir",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "mark-ballas",
+    "type": "murdered"
+  },
+  {
+    "episode": 11,
+    "player": "maura-higgins",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "maura-higgins",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "rob-rausch",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "rob-rausch",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 11,
+    "player": "rob-rausch",
+    "type": "winner",
+    "note": "Won as the sole surviving Traitor; Faithfuls got nothing"
+  },
+  {
+    "episode": 11,
+    "player": "tara-lipinski",
+    "type": "banished"
+  },
+  {
+    "episode": 11,
+    "player": "tara-lipinski",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 1,
+    "player": "donna-kelce",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "lisa-rinna",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "candiace-dillard-bassett",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "rob-rausch",
+    "type": "traitor_from_start"
+  }
+]

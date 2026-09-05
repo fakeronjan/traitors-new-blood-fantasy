@@ -1,0 +1,678 @@
+[
+  {
+    "episode": 1,
+    "player": "amanda-clark-stoner",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "azra-valani",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "bam-nieves",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "brandi-glanville",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "cody-calafiore",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "geraldine-moreno",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "kyle-cooke",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "michael-davidson",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "reza-farahan",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ryan-lochte",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "amanda-clark-stoner",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "azra-valani",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "bam-nieves",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "brandi-glanville",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "cody-calafiore",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "geraldine-moreno",
+    "type": "banished"
+  },
+  {
+    "episode": 2,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kyle-cooke",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "michael-davidson",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "reza-farahan",
+    "type": "murdered"
+  },
+  {
+    "episode": 2,
+    "player": "ryan-lochte",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "amanda-clark-stoner",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "azra-valani",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "bam-nieves",
+    "type": "murdered"
+  },
+  {
+    "episode": 3,
+    "player": "brandi-glanville",
+    "type": "banished"
+  },
+  {
+    "episode": 3,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "cody-calafiore",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kyle-cooke",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "michael-davidson",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ryan-lochte",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "amanda-clark-stoner",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "azra-valani",
+    "type": "murdered"
+  },
+  {
+    "episode": 4,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "cody-calafiore",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kyle-cooke",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "michael-davidson",
+    "type": "banished"
+  },
+  {
+    "episode": 4,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ryan-lochte",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "cody-calafiore",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kyle-cooke",
+    "type": "banished"
+  },
+  {
+    "episode": 5,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ryan-lochte",
+    "type": "murdered"
+  },
+  {
+    "episode": 5,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "anjelica-conti",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "cody-calafiore",
+    "type": "banished"
+  },
+  {
+    "episode": 6,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "shelbe-rodriguez",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "anjelica-conti",
+    "type": "murdered"
+  },
+  {
+    "episode": 7,
+    "player": "arie-luyendyk-jr",
+    "type": "recruited",
+    "note": "Recruited by the Traitors after Cody Calafiore's banishment left them short"
+  },
+  {
+    "episode": 7,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "rachel-reilly",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "shelbe-rodriguez",
+    "type": "banished"
+  },
+  {
+    "episode": 7,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "christian-de-la-torre",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "rachel-reilly",
+    "type": "banished"
+  },
+  {
+    "episode": 8,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "arie-luyendyk-jr",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "christian-de-la-torre",
+    "type": "banished"
+  },
+  {
+    "episode": 9,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kate-chastain",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "murdered"
+  },
+  {
+    "episode": 10,
+    "player": "andie-vanacore",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 10,
+    "player": "andie-vanacore",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "cirie-fields",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 10,
+    "player": "cirie-fields",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "cirie-fields",
+    "type": "winner"
+  },
+  {
+    "episode": 10,
+    "player": "kate-chastain",
+    "type": "banished"
+  },
+  {
+    "episode": 10,
+    "player": "quentin-jiles",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 10,
+    "player": "quentin-jiles",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "cody-calafiore",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "christian-de-la-torre",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "cirie-fields",
+    "type": "traitor_from_start"
+  }
+]

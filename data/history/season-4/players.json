@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ian-terry",
+    "name": "Ian Terry",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 2"
+  },
+  {
+    "id": "porsha-williams",
+    "name": "Porsha Williams",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 2"
+  },
+  {
+    "id": "rob-cesternino",
+    "name": "Rob Cesternino",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 3"
+  },
+  {
+    "id": "donna-kelce",
+    "name": "Donna Kelce",
+    "role_summary": "Traitor from start (Secret Traitor twist)",
+    "fate_summary": "Banished Episode 3"
+  },
+  {
+    "id": "caroline-stanbury",
+    "name": "Caroline Stanbury",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 4"
+  },
+  {
+    "id": "tiffany-mitchell",
+    "name": "Tiffany Mitchell",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 4"
+  },
+  {
+    "id": "monet-x-change",
+    "name": "Mon\u00e9t X Change",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 5"
+  },
+  {
+    "id": "michael-rapaport",
+    "name": "Michael Rapaport",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 5"
+  },
+  {
+    "id": "ron-funches",
+    "name": "Ron Funches",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 6"
+  },
+  {
+    "id": "yam-yam-arocho",
+    "name": "Yam Yam Arocho",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 7"
+  },
+  {
+    "id": "lisa-rinna",
+    "name": "Lisa Rinna",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 7"
+  },
+  {
+    "id": "colton-underwood",
+    "name": "Colton Underwood",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 8"
+  },
+  {
+    "id": "candiace-dillard-bassett",
+    "name": "Candiace Dillard Bassett",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 8"
+  },
+  {
+    "id": "dorinda-medley",
+    "name": "Dorinda Medley",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 9"
+  },
+  {
+    "id": "stephen-colletti",
+    "name": "Stephen Colletti",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 9"
+  },
+  {
+    "id": "kristen-kish",
+    "name": "Kristen Kish",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 10"
+  },
+  {
+    "id": "natalie-anderson",
+    "name": "Natalie Anderson",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 10"
+  },
+  {
+    "id": "mark-ballas",
+    "name": "Mark Ballas",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 11"
+  },
+  {
+    "id": "johnny-weir",
+    "name": "Johnny Weir",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 11"
+  },
+  {
+    "id": "tara-lipinski",
+    "name": "Tara Lipinski",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 11"
+  },
+  {
+    "id": "eric-nam",
+    "name": "Eric Nam",
+    "role_summary": "Faithful, recruited as Traitor (Episode 9)",
+    "fate_summary": "Banished Episode 11"
+  },
+  {
+    "id": "maura-higgins",
+    "name": "Maura Higgins",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the finale (runner-up)"
+  },
+  {
+    "id": "rob-rausch",
+    "name": "Rob Rausch",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Made the finale (winner)"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "johnny-devenanzio",
+    "name": "Johnny Devenanzio",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 2"
+  },
+  {
+    "id": "peppermint",
+    "name": "Peppermint",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 2"
+  },
+  {
+    "id": "marcus-jordan",
+    "name": "Marcus Jordan",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 3"
+  },
+  {
+    "id": "maksim-chmerkovskiy",
+    "name": "Maksim Chmerkovskiy",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 3"
+  },
+  {
+    "id": "deontay-wilder",
+    "name": "Deontay Wilder",
+    "role_summary": "Faithful",
+    "fate_summary": "Withdrew from the game Episode 4 (logged as banished for scoring)"
+  },
+  {
+    "id": "ekin-su-culculoglu",
+    "name": "Ekin-Su C\u00fclc\u00fclo\u011flu",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 4"
+  },
+  {
+    "id": "larsa-pippen",
+    "name": "Larsa Pippen",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 4"
+  },
+  {
+    "id": "tamra-judge",
+    "name": "Tamra Judge",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 5"
+  },
+  {
+    "id": "janelle-pierzina",
+    "name": "Janelle Pierzina",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 5"
+  },
+  {
+    "id": "dan-gheesling",
+    "name": "Dan Gheesling",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 6"
+  },
+  {
+    "id": "carsten-bergersen",
+    "name": "Carsten Bergersen",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 8"
+  },
+  {
+    "id": "parvati-shallow",
+    "name": "Parvati Shallow",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 8"
+  },
+  {
+    "id": "kevin-kreider",
+    "name": "Kevin Kreider",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 9"
+  },
+  {
+    "id": "peter-weber",
+    "name": "Peter Weber",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 9"
+  },
+  {
+    "id": "john-bercow",
+    "name": "John Bercow",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 10"
+  },
+  {
+    "id": "phaedra-parks",
+    "name": "Phaedra Parks",
+    "role_summary": "Traitor from start",
+    "fate_summary": "Banished Episode 10"
+  },
+  {
+    "id": "sheree-whitfield",
+    "name": "Sher\u00e9e Whitfield",
+    "role_summary": "Faithful",
+    "fate_summary": "Murdered Episode 11"
+  },
+  {
+    "id": "sandra-diaz-twine",
+    "name": "Sandra Diaz-Twine",
+    "role_summary": "Faithful",
+    "fate_summary": "Banished Episode 11"
+  },
+  {
+    "id": "kate-chastain",
+    "name": "Kate Chastain",
+    "role_summary": "Faithful, recruited as Traitor (Episode 9)",
+    "fate_summary": "Banished Episode 11"
+  },
+  {
+    "id": "ct-tamburello",
+    "name": "Chris \"CT\" Tamburello",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the finale (winner)"
+  },
+  {
+    "id": "trishelle-cannatella",
+    "name": "Trishelle Cannatella",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the finale (winner)"
+  },
+  {
+    "id": "mercedes-javid",
+    "name": "Mercedes \"MJ\" Javid",
+    "role_summary": "Faithful",
+    "fate_summary": "Made the final 3, banished at the Fire of Truth (Episode 11) - not on the winning side"
+  }
+]

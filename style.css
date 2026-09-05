@@ -414,3 +414,93 @@ footer.site-footer {
   font-size: 0.92rem;
   margin-top: 48px;
 }
+
+/* Past Seasons */
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.season-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.season-card:hover { border-color: var(--gold); }
+
+.season-card h3 {
+  font-family: var(--font-display);
+  color: var(--gold-bright);
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.season-card .winners { color: var(--text); font-weight: 600; margin: 0 0 6px; }
+.season-card .note { color: var(--text-dim); margin: 0; font-size: 0.95rem; }
+
+.season-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.season-tabs a {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.season-tabs a.active {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+}
+
+table.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 32px;
+}
+
+table.history-table th, table.history-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+table.history-table th {
+  color: var(--text-dim);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+table.history-table td.rank { color: var(--text-dim); font-variant-numeric: tabular-nums; }
+table.history-table td.score { font-variant-numeric: tabular-nums; color: var(--gold-bright); text-align: right; font-weight: 600; }
+table.history-table tr.winner-row { background: rgba(201, 162, 75, 0.08); }
+
+.role-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.role-badge.traitor { color: var(--red); border-color: var(--red); }
+.role-badge.recruited { color: var(--gold-bright); border-color: var(--gold); }

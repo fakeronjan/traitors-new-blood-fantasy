@@ -18,6 +18,7 @@
       <a href="cast.html">Cast</a>
       <a href="rules.html" class="active">Rules</a>
       <a href="log.html">Episode Log</a>
+      <a href="history.html">Past Seasons</a>
     </nav>
   </div>
 </header>
@@ -43,7 +44,7 @@
     <li><strong>Was a Faithful when a Traitor got banished</strong> - every currently-active Faithful gets credit when the house catches one. Worth more than a murder credit since Traitors are rare.</li>
     <li><strong>Recruited as a new Traitor</strong> - your player starts the season a Faithful but gets turned mid-season. Big value swing since it switches them onto the murder-credit track instead of the banish-credit track.</li>
     <li><strong>Reached the Final Roundtable</strong> - your player makes it to the last vote of the season, whatever happens next.</li>
-    <li><strong>Ended up on the winning side at the end</strong> - your player is one of the Faithfuls who splits the pot, or one of the Traitors who won it. Worth the same either way.</li>
+    <li><strong>Ended up on the winning side at the end</strong> - your player is one of the Faithfuls who splits the pot, or one of the Traitors who won it. This one's a 20-point pool split evenly among everyone on the winning side, not a flat bonus - a solo winner takes the full 20, a 4-way split is worth 5 each. A rare solo win should outscore a crowded group split, same as the real prize money.</li>
   </ul>
 
   <h2>Ties and edge cases</h2>
@@ -53,10 +54,13 @@
 <footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
 
 <script type="module">
-import { EVENT_TYPES } from './js/scoring.js';
+import { EVENT_TYPES, WINNER_POOL } from './js/scoring.js';
 
 const tbody = document.querySelector('#rules-table tbody');
 tbody.innerHTML = Object.values(EVENT_TYPES).filter(def => def.points !== 0).map(def => {
+  if (def.points === null) {
+    return `<tr><td>${def.label}</td><td class="points">${WINNER_POOL}-pt pool, split evenly</td></tr>`;
+  }
   const cls = def.points < 0 ? 'negative' : '';
   const sign = def.points > 0 ? '+' : '';
   return `<tr><td>${def.label}</td><td class="points ${cls}">${sign}${def.points}</td></tr>`;

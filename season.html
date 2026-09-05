@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traitors: New Blood - Fantasy League</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">The Traitors: New Blood</h1>
+    <p class="site-subtitle">Family Fantasy League</p>
+    <nav class="main-nav">
+      <a href="index.html">Leaderboard</a>
+      <a href="draft.html">Draft</a>
+      <a href="cast.html">Cast</a>
+      <a href="rules.html">Rules</a>
+      <a href="log.html">Episode Log</a>
+      <a href="history.html" class="active">Past Seasons</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="season-tabs" id="season-tabs"></div>
+  <h2 id="season-title">Season</h2>
+  <p class="site-subtitle" id="season-summary"></p>
+  <table class="history-table" id="season-table">
+    <thead><tr><th>#</th><th>Name</th><th>Role</th><th>Fate</th><th>Score</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+
+<script type="module">
+import { computePlayerTotals, roleLabel } from './js/scoring.js';
+
+const params = new URLSearchParams(location.search);
+const season = Number(params.get('s')) || 1;
+
+const seasons = await fetch('data/history/seasons.json').then(r => r.json());
+document.getElementById('season-tabs').innerHTML = seasons.map(s =>
+  `<a href="season.html?s=${s.season}" class="${s.season === season ? 'active' : ''}">Season ${s.season}</a>`
+).join('');
+
+const meta = seasons.find(s => s.season === season);
+const players = await fetch(`data/history/season-${season}/players.json`).then(r => r.json());
+const events = await fetch(`data/history/season-${season}/events.json`).then(r => r.json());
+
+document.getElementById('season-title').textContent = `Season ${season}`;
+document.getElementById('season-summary').textContent = meta ? `Winner: ${meta.winners.join(' & ')} - ${meta.note}` : '';
+
+const totals = computePlayerTotals(players, events);
+const round1 = n => Math.round(n * 10) / 10;
+const ranked = [...players].sort((a, b) => (totals[b.id] ?? 0) - (totals[a.id] ?? 0));
+
+document.querySelector('#season-table tbody').innerHTML = ranked.map((p, i) => {
+  const role = roleLabel(p.id, events);
+  const roleCls = role === 'Traitor' ? 'traitor' : (role === 'Recruited Traitor' ? 'recruited' : '');
+  const isWinner = events.some(e => e.player === p.id && e.type === 'winner');
+  return `<tr class="${isWinner ? 'winner-row' : ''}">
+    <td class="rank">${i + 1}</td>
+    <td>${p.name}</td>
+    <td><span class="role-badge ${roleCls}">${role}</span></td>
+    <td>${p.fate_summary}</td>
+    <td class="score">${round1(totals[p.id] ?? 0)}</td>
+  </tr>`;
+}).join('');
+</script>
+</body>
+</html>
