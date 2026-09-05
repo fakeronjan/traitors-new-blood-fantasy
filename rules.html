@@ -28,7 +28,7 @@
   <p>Once a player is drafted, every point they earn for the rest of the season goes to their owner. There's no trading and no free agency; whoever you draft is who you're stuck with.</p>
 
   <h2>Scoring</h2>
-  <p>Points are logged episode by episode as events happen to your players. A player can rack up multiple events in one episode (surviving <em>and</em> committing a murder, for example). Once a player is murdered or banished, their game is over and they stop earning points, whether or not their owner is still in it.</p>
+  <p>Points are logged episode by episode as events happen to your players. A player can rack up multiple events in one episode (surviving <em>and</em> picking up a murder credit, for example). Once a player is murdered or banished, their game is over and they stop earning points - no penalty for it, they just stop accumulating.</p>
   <table class="rules-table" id="rules-table">
     <thead><tr><th>Event</th><th>Points</th></tr></thead>
     <tbody></tbody>
@@ -39,10 +39,9 @@
     <li><strong>Survived the episode</strong> - your player is still in the game when the credits roll. The steady weekly points.</li>
     <li><strong>Team's daily mission succeeded</strong> - the group hits the mission target and grows the prize pot. Every one of your still-active players gets this.</li>
     <li><strong>Won an individual mission advantage</strong> - your player personally wins a shield, extra vote, information, or similar edge.</li>
-    <li><strong>Committed a murder undetected</strong> - your player is a Traitor and kills someone at the Turret without getting caught for it.</li>
-    <li><strong>Recruited as a new Traitor</strong> - your player starts the season a Faithful but gets turned mid-season. Big value swing since it unlocks the murder and traitor-win points below.</li>
-    <li><strong>Banished at Roundtable</strong> - the house votes your player out. No points either way, but their game is over.</li>
-    <li><strong>Murdered by the Traitors</strong> - your player is killed in the night with no vote. Same as a banishment, scoring-wise: their game is over.</li>
+    <li><strong>Was a Traitor when the Traitors murdered someone</strong> - every currently-active Traitor gets credit, not just whoever physically did it. It's a group decision either way.</li>
+    <li><strong>Was a Faithful when a Traitor got banished</strong> - every currently-active Faithful gets credit when the house catches one. Worth more than a murder credit since Traitors are rare.</li>
+    <li><strong>Recruited as a new Traitor</strong> - your player starts the season a Faithful but gets turned mid-season. Big value swing since it switches them onto the murder-credit track instead of the banish-credit track.</li>
     <li><strong>Reached the Final Roundtable</strong> - your player makes it to the last vote of the season, whatever happens next.</li>
     <li><strong>Ended up on the winning side at the end</strong> - your player is one of the Faithfuls who splits the pot, or one of the Traitors who won it. Worth the same either way.</li>
   </ul>
@@ -57,7 +56,7 @@
 import { EVENT_TYPES } from './js/scoring.js';
 
 const tbody = document.querySelector('#rules-table tbody');
-tbody.innerHTML = Object.values(EVENT_TYPES).map(def => {
+tbody.innerHTML = Object.values(EVENT_TYPES).filter(def => def.points !== 0).map(def => {
   const cls = def.points < 0 ? 'negative' : '';
   const sign = def.points > 0 ? '+' : '';
   return `<tr><td>${def.label}</td><td class="points ${cls}">${sign}${def.points}</td></tr>`;
