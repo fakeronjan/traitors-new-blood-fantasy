@@ -16,11 +16,10 @@ export const EVENT_TYPES = {
   advantage_won:     { label: 'Won an individual mission advantage',     points:  2 },
   murder_committed:  { label: 'Committed a murder undetected',          points:  3 },
   recruited:         { label: 'Recruited as a new Traitor',              points:  5 },
-  banished:          { label: 'Banished at Roundtable',                  points: -3 },
-  murdered:          { label: 'Murdered by the Traitors',                points: -5 },
-  final_roundtable:  { label: 'Reached the Final Roundtable',            points: 10 },
-  traitor_win_bonus: { label: 'Traitor who survived undetected and won', points: 10 },
-  winner:            { label: 'Ended up on the winning side at the end', points: 20 },
+  banished:          { label: 'Banished at Roundtable',                  points:  0 },
+  murdered:          { label: 'Murdered by the Traitors',                points:  0 },
+  final_roundtable:  { label: 'Reached the Final Roundtable',            points:  5 },
+  winner:            { label: 'Ended up on the winning side at the end', points: 10 },
 };
 
 // Event types that end a player's run in the game.
