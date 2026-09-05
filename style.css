@@ -28,8 +28,8 @@ body {
   background-repeat: repeat, no-repeat, no-repeat;
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 a { color: var(--gold-bright); }
@@ -53,7 +53,7 @@ header.site-header .wrap {
 
 h1.site-title {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.4rem;
   letter-spacing: 0.03em;
   color: var(--gold-bright);
   margin: 0 0 4px;
@@ -62,7 +62,7 @@ h1.site-title {
 .site-subtitle {
   color: var(--text-dim);
   margin: 0 0 20px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 nav.main-nav {
@@ -79,7 +79,7 @@ nav.main-nav a {
   color: var(--text-dim);
   text-decoration: none;
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -96,7 +96,7 @@ nav.main-nav a.active {
 h2 {
   font-family: var(--font-display);
   color: var(--gold-bright);
-  font-size: 1.3rem;
+  font-size: 1.55rem;
   letter-spacing: 0.02em;
   margin: 40px 0 16px;
 }
@@ -132,17 +132,17 @@ h2:first-of-type { margin-top: 0; }
   font-family: var(--font-display);
   color: var(--gold-bright);
   margin: 0 0 2px;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .owner-score {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: var(--text);
   margin: 4px 0 14px;
 }
 
-.owner-score .unit { font-size: 1rem; color: var(--text-dim); margin-left: 4px; }
+.owner-score .unit { font-size: 1.1rem; color: var(--text-dim); margin-left: 4px; }
 
 .roster-list {
   list-style: none;
@@ -158,9 +158,9 @@ h2:first-of-type { margin-top: 0; }
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 6px 0;
+  padding: 7px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 }
 
 .roster-list li:last-child { border-bottom: none; }
@@ -211,7 +211,7 @@ table.rules-table th, table.rules-table td {
 table.rules-table th {
   color: var(--text-dim);
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -241,14 +241,14 @@ table.rules-table td.points.negative { color: var(--red); }
 
 .on-the-clock {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .on-the-clock .owner-name { color: var(--gold-bright); }
 
 .btn {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 9px 16px;
   border-radius: 6px;
@@ -315,12 +315,12 @@ table.rules-table td.points.negative { color: var(--red); }
   display: block;
   font-weight: 600;
   color: var(--text);
-  font-size: 1.02rem;
+  font-size: 1.2rem;
 }
 
 .pool-card .pmeta {
   display: block;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-dim);
   margin-top: 3px;
 }
@@ -359,19 +359,19 @@ table.rules-table td.points.negative { color: var(--red); }
 .cast-card .cast-name {
   font-family: var(--font-display);
   color: var(--gold-bright);
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin: 0 0 2px;
 }
 
 .cast-card .cast-meta {
   color: var(--text-dim);
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   margin: 0;
 }
 
 .photo-credit {
   color: var(--text-dim);
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   margin: -8px 0 20px;
 }
 
@@ -388,7 +388,7 @@ table.rules-table td.points.negative { color: var(--red); }
 .log-episode {
   font-family: var(--font-display);
   color: var(--gold-bright);
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   margin: 28px 0 10px;
 }
 
@@ -400,7 +400,7 @@ table.rules-table td.points.negative { color: var(--red); }
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 }
 
 .log-row .lp { font-weight: 600; }
@@ -411,6 +411,6 @@ table.rules-table td.points.negative { color: var(--red); }
 footer.site-footer {
   text-align: center;
   color: var(--text-dim);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   margin-top: 48px;
 }
