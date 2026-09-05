@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;600;700&display=swap');
 
 :root {
-  --bg: #0d0b0e;
-  --bg-raised: #17141a;
-  --bg-card: #1e1a22;
-  --border: #34303a;
+  --bg: #102220;
+  --bg-raised: #163330;
+  --bg-card: #1c3d39;
+  --border: #2a4442;
   --gold: #c9a24b;
   --gold-bright: #e6c67a;
   --red: #a6293a;
   --green: #4f8f6b;
   --text: #ece6d8;
-  --text-dim: #a49e9a;
+  --text-dim: #8faaa8;
   --font-display: 'Cinzel', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --bg-pattern: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIj4KICA8ZyBmb250LWZhbWlseT0iQXBwbGUgQ29sb3IgRW1vamksIFNlZ29lIFVJIEVtb2ppLCBOb3RvIENvbG9yIEVtb2ppLCBzYW5zLXNlcmlmIiBvcGFjaXR5PSIwLjEzIj4KICAgIDx0ZXh0IHg9IjYwIiB5PSI4MCIgZm9udC1zaXplPSI0NCIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1IDYwIDgwKSI+JiN4MUY1RTE7JiN4RkUwRjs8L3RleHQ+CiAgICA8dGV4dCB4PSIyMzUiIHk9IjU1IiBmb250LXNpemU9IjQ2IiB0cmFuc2Zvcm09InJvdGF0ZSgxMCAyMzUgNTUpIj4mI3gxRjNGMDs8L3RleHQ+CiAgICA8dGV4dCB4PSI0MDUiIHk9Ijk1IiBmb250LXNpemU9IjQyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOCA0MDUgOTUpIj4mI3gxRjNBRDs8L3RleHQ+CiAgICA8dGV4dCB4PSI4NSIgeT0iMjI1IiBmb250LXNpemU9IjQwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMiA4NSAyMjUpIj4mI3gxRjQ0MTsmI3hGRTBGOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1NSIgeT0iMjE1IiBmb250LXNpemU9IjQ0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIgMjU1IDIxNSkiPiYjeDFGNDUxOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjQxNSIgeT0iMjUwIiBmb250LXNpemU9IjQwIiB0cmFuc2Zvcm09InJvdGF0ZSg4IDQxNSAyNTApIj4mI3gxRjU2RjsmI3hGRTBGOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjE0NSIgeT0iMzY1IiBmb250LXNpemU9IjQ2IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTggMTQ1IDM2NSkiPiYjeDFGMzE5OzwvdGV4dD4KICAgIDx0ZXh0IHg9IjMyNSIgeT0iMzg1IiBmb250LXNpemU9IjQyIiB0cmFuc2Zvcm09InJvdGF0ZSgxNSAzMjUgMzg1KSI+JiN4MUY1RTE7JiN4RkUwRjs8L3RleHQ+CiAgICA8dGV4dCB4PSI0MzUiIHk9IjQzMCIgZm9udC1zaXplPSI0MCIgdHJhbnNmb3JtPSJyb3RhdGUoLTEwIDQzNSA0MzApIj4mI3gxRjNBRDs8L3RleHQ+CiAgPC9nPgo8L3N2Zz4K");
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
   background-image:
-    radial-gradient(circle at 15% 0%, rgba(201, 162, 75, 0.06), transparent 40%),
-    radial-gradient(circle at 85% 20%, rgba(166, 41, 58, 0.06), transparent 45%);
+    var(--bg-pattern),
+    radial-gradient(circle at 15% 0%, rgba(201, 162, 75, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(166, 41, 58, 0.08), transparent 45%);
+  background-repeat: repeat, no-repeat, no-repeat;
   color: var(--text);
   font-family: var(--font-body);
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.55;
 }
 
 a { color: var(--gold-bright); }
