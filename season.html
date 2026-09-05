@@ -27,10 +27,12 @@
   <div class="season-tabs" id="season-tabs"></div>
   <h2 id="season-title">Season</h2>
   <p class="site-subtitle" id="season-summary"></p>
+  <div class="table-scroll">
   <table class="history-table" id="season-table">
     <thead><tr id="season-table-head"></tr></thead>
     <tbody></tbody>
   </table>
+  </div>
 </div>
 
 <footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
@@ -88,7 +90,7 @@ if (view === 'all') {
     const roleCls = r.role === 'Traitor' ? 'traitor' : (r.role === 'Recruited Traitor' ? 'recruited' : '');
     return `<tr class="${r.isWinner ? 'winner-row' : ''}">
       <td class="rank">${i + 1}</td>
-      <td>${r.name}</td>
+      <td class="pname">${r.name}</td>
       <td>${r.season}</td>
       <td><span class="role-badge ${roleCls}">${r.role}</span></td>
       <td>${r.fate}</td>
@@ -113,7 +115,7 @@ if (view === 'all') {
     const isWinner = events.some(e => e.player === p.id && e.type === 'winner');
     return `<tr class="${isWinner ? 'winner-row' : ''}">
       <td class="rank">${i + 1}</td>
-      <td>${p.name}</td>
+      <td class="pname">${p.name}</td>
       <td><span class="role-badge ${roleCls}">${role}</span></td>
       <td>${p.fate_summary}</td>
       <td class="score">${round1(totals[p.id] ?? 0)}</td>

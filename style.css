@@ -492,6 +492,9 @@ table.history-table th {
 table.history-table td.rank { color: var(--text-dim); font-variant-numeric: tabular-nums; }
 table.history-table td.score { font-variant-numeric: tabular-nums; color: var(--gold-bright); text-align: right; font-weight: 600; }
 table.history-table tr.winner-row { background: rgba(201, 162, 75, 0.08); }
+table.history-table td.pname { white-space: nowrap; }
+
+.table-scroll { overflow-x: auto; }
 
 .role-badge {
   display: inline-block;
