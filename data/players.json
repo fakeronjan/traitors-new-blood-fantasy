@@ -1,24 +1,222 @@
 [
-  { "id": "abbey-benjamin", "name": "Abbey Benjamin", "age": 37, "profession": "Nurse", "hometown": "Mangham, LA", "photo": "img/players/abbey-benjamin.jpg", "owner": null, "pick": null },
-  { "id": "abby-lee", "name": "Abby Lee", "age": 29, "profession": "Astrophysicist", "hometown": "Saint Paul, MN", "photo": "img/players/abby-lee.jpg", "owner": null, "pick": null },
-  { "id": "arisa-thomas", "name": "Arisa Thomas", "age": 36, "profession": "Dog Groomer", "hometown": "Los Angeles, CA", "photo": "img/players/arisa-thomas.jpg", "owner": null, "pick": null },
-  { "id": "ben-mcdonnell", "name": "Ben McDonnell", "age": 34, "profession": "Barrel Racer", "hometown": "Granbury, TX", "photo": "img/players/ben-mcdonnell.jpg", "owner": null, "pick": null },
-  { "id": "clyde-moser", "name": "Clyde Moser", "age": 32, "profession": "Teacher", "hometown": "Charleston, SC", "photo": "img/players/clyde-moser.jpg", "owner": null, "pick": null },
-  { "id": "jay-vinnedge", "name": "Jay Vinnedge", "age": 36, "profession": "Physician", "hometown": "Oklahoma City, OK", "photo": "img/players/jay-vinnedge.jpg", "owner": null, "pick": null },
-  { "id": "joe-vanella", "name": "Joe Vanella", "age": 44, "profession": "Funeral Director", "hometown": "Wantagh, NY", "photo": "img/players/joe-vanella.jpg", "owner": null, "pick": null },
-  { "id": "katie-fites", "name": "Katie Fites", "age": 23, "profession": "Marketing Manager", "hometown": "Jacksonville, FL", "photo": "img/players/katie-fites.jpg", "owner": null, "pick": null },
-  { "id": "kim-daily", "name": "Kim Daily", "age": 37, "profession": "Lawyer", "hometown": "Houston, TX", "photo": "img/players/kim-daily.jpg", "owner": null, "pick": null },
-  { "id": "kriste-lewis", "name": "Kriste Lewis", "age": 52, "profession": "Realtor", "hometown": "Hattiesburg, MS", "photo": "img/players/kriste-lewis.jpg", "owner": null, "pick": null },
-  { "id": "logan-smith", "name": "Logan Smith", "age": 26, "profession": "Realtor", "hometown": "Gatlinburg, TN", "photo": "img/players/logan-smith.jpg", "owner": null, "pick": null },
-  { "id": "madeline-kostopulos", "name": "Madeline Kostopulos", "age": 26, "profession": "Construction Manager", "hometown": "San Diego, CA", "photo": "img/players/madeline-kostopulos.jpg", "owner": null, "pick": null },
-  { "id": "mark-zgoda", "name": "Mark Zgoda", "age": 26, "profession": "Personal Trainer", "hometown": "Phillipsburg, NJ", "photo": "img/players/mark-zgoda.jpg", "owner": null, "pick": null },
-  { "id": "michael-foote", "name": "Michael Foote", "age": 38, "profession": "Lawyer", "hometown": "New York, NY", "photo": "img/players/michael-foote.jpg", "owner": null, "pick": null },
-  { "id": "morgan-cook", "name": "Morgan Cook", "age": 30, "profession": "Content Creator", "hometown": "Midland, MI", "photo": "img/players/morgan-cook.jpg", "owner": null, "pick": null },
-  { "id": "niyyah-hayes", "name": "Niyyah Hayes", "age": 29, "profession": "Therapist", "hometown": "Indianapolis, IN", "photo": "img/players/niyyah-hayes.jpg", "owner": null, "pick": null },
-  { "id": "shane-beatty", "name": "Shane Beatty", "age": 32, "profession": "Ironworker", "hometown": "Staten Island, NY", "photo": "img/players/shane-beatty.jpg", "owner": null, "pick": null },
-  { "id": "sherry-kuehl", "name": "Sherry Kuehl", "age": 65, "profession": "Writer", "hometown": "Leawood, KS", "photo": "img/players/sherry-kuehl.jpg", "owner": null, "pick": null },
-  { "id": "tomica-adams", "name": "Tomica Adams", "age": 54, "profession": "Pilot", "hometown": "Boston, MA", "photo": "img/players/tomica-adams.jpg", "owner": null, "pick": null },
-  { "id": "victor-vollbrechthausen", "name": "Victor Vollbrechthausen", "age": 26, "profession": "Business Executive", "hometown": "New York, NY", "photo": "img/players/victor-vollbrechthausen.jpg", "owner": null, "pick": null },
-  { "id": "wyatt-gillespie", "name": "Wyatt Gillespie", "age": 26, "profession": "Designer", "hometown": "Ligonier, PA", "photo": "img/players/wyatt-gillespie.jpg", "owner": null, "pick": null },
-  { "id": "xavier-scruggs", "name": "Xavier Scruggs", "age": 38, "profession": "MLB Analyst", "hometown": "Wesley Chapel, FL", "photo": "img/players/xavier-scruggs.jpg", "owner": null, "pick": null }
+  {
+    "id": "abbey-benjamin",
+    "name": "Abbey Benjamin",
+    "age": 37,
+    "profession": "Nurse",
+    "hometown": "Mangham, LA",
+    "photo": "img/players/abbey-benjamin.jpg",
+    "owner": "damon",
+    "pick": 22
+  },
+  {
+    "id": "abby-lee",
+    "name": "Abby Lee",
+    "age": 29,
+    "profession": "Astrophysicist",
+    "hometown": "Saint Paul, MN",
+    "photo": "img/players/abby-lee.jpg",
+    "owner": "ronjan",
+    "pick": 18
+  },
+  {
+    "id": "arisa-thomas",
+    "name": "Arisa Thomas",
+    "age": 36,
+    "profession": "Dog Groomer",
+    "hometown": "Los Angeles, CA",
+    "photo": "img/players/arisa-thomas.jpg",
+    "owner": "damon",
+    "pick": 4
+  },
+  {
+    "id": "ben-mcdonnell",
+    "name": "Ben McDonnell",
+    "age": 34,
+    "profession": "Barrel Racer",
+    "hometown": "Granbury, TX",
+    "photo": "img/players/ben-mcdonnell.jpg",
+    "owner": "em",
+    "pick": 17
+  },
+  {
+    "id": "clyde-moser",
+    "name": "Clyde Moser",
+    "age": 32,
+    "profession": "Teacher",
+    "hometown": "Charleston, SC",
+    "photo": "img/players/clyde-moser.jpg",
+    "owner": "damon",
+    "pick": 7
+  },
+  {
+    "id": "jay-vinnedge",
+    "name": "Jay Vinnedge",
+    "age": 36,
+    "profession": "Physician",
+    "hometown": "Oklahoma City, OK",
+    "photo": "img/players/jay-vinnedge.jpg",
+    "owner": "em",
+    "pick": 8
+  },
+  {
+    "id": "joe-vanella",
+    "name": "Joe Vanella",
+    "age": 44,
+    "profession": "Funeral Director",
+    "hometown": "Wantagh, NY",
+    "photo": "img/players/joe-vanella.jpg",
+    "owner": "damon",
+    "pick": 10
+  },
+  {
+    "id": "katie-fites",
+    "name": "Katie Fites",
+    "age": 23,
+    "profession": "Marketing Manager",
+    "hometown": "Jacksonville, FL",
+    "photo": "img/players/katie-fites.jpg",
+    "owner": "ronjan",
+    "pick": 15
+  },
+  {
+    "id": "kim-daily",
+    "name": "Kim Daily",
+    "age": 37,
+    "profession": "Lawyer",
+    "hometown": "Houston, TX",
+    "photo": "img/players/kim-daily.jpg",
+    "owner": "em",
+    "pick": 5
+  },
+  {
+    "id": "kriste-lewis",
+    "name": "Kriste Lewis",
+    "age": 52,
+    "profession": "Realtor",
+    "hometown": "Hattiesburg, MS",
+    "photo": "img/players/kriste-lewis.jpg",
+    "owner": "ronjan",
+    "pick": 21
+  },
+  {
+    "id": "logan-smith",
+    "name": "Logan Smith",
+    "age": 26,
+    "profession": "Realtor",
+    "hometown": "Gatlinburg, TN",
+    "photo": "img/players/logan-smith.jpg",
+    "owner": "em",
+    "pick": 20
+  },
+  {
+    "id": "madeline-kostopulos",
+    "name": "Madeline Kostopulos",
+    "age": 26,
+    "profession": "Construction Manager",
+    "hometown": "San Diego, CA",
+    "photo": "img/players/madeline-kostopulos.jpg",
+    "owner": "damon",
+    "pick": 16
+  },
+  {
+    "id": "mark-zgoda",
+    "name": "Mark Zgoda",
+    "age": 26,
+    "profession": "Personal Trainer",
+    "hometown": "Phillipsburg, NJ",
+    "photo": "img/players/mark-zgoda.jpg",
+    "owner": "damon",
+    "pick": 13
+  },
+  {
+    "id": "michael-foote",
+    "name": "Michael Foote",
+    "age": 38,
+    "profession": "Lawyer",
+    "hometown": "New York, NY",
+    "photo": "img/players/michael-foote.jpg",
+    "owner": "ronjan",
+    "pick": 3
+  },
+  {
+    "id": "morgan-cook",
+    "name": "Morgan Cook",
+    "age": 30,
+    "profession": "Content Creator",
+    "hometown": "Midland, MI",
+    "photo": "img/players/morgan-cook.jpg",
+    "owner": "ronjan",
+    "pick": 12
+  },
+  {
+    "id": "niyyah-hayes",
+    "name": "Niyyah Hayes",
+    "age": 29,
+    "profession": "Therapist",
+    "hometown": "Indianapolis, IN",
+    "photo": "img/players/niyyah-hayes.jpg",
+    "owner": "em",
+    "pick": 2
+  },
+  {
+    "id": "shane-beatty",
+    "name": "Shane Beatty",
+    "age": 32,
+    "profession": "Ironworker",
+    "hometown": "Staten Island, NY",
+    "photo": "img/players/shane-beatty.jpg",
+    "owner": "em",
+    "pick": 14
+  },
+  {
+    "id": "sherry-kuehl",
+    "name": "Sherry Kuehl",
+    "age": 65,
+    "profession": "Writer",
+    "hometown": "Leawood, KS",
+    "photo": "img/players/sherry-kuehl.jpg",
+    "owner": "ronjan",
+    "pick": 9
+  },
+  {
+    "id": "tomica-adams",
+    "name": "Tomica Adams",
+    "age": 54,
+    "profession": "Pilot",
+    "hometown": "Boston, MA",
+    "photo": "img/players/tomica-adams.jpg",
+    "owner": "damon",
+    "pick": 1
+  },
+  {
+    "id": "victor-vollbrechthausen",
+    "name": "Victor Vollbrechthausen",
+    "age": 26,
+    "profession": "Business Executive",
+    "hometown": "New York, NY",
+    "photo": "img/players/victor-vollbrechthausen.jpg",
+    "owner": "em",
+    "pick": 11
+  },
+  {
+    "id": "wyatt-gillespie",
+    "name": "Wyatt Gillespie",
+    "age": 26,
+    "profession": "Designer",
+    "hometown": "Ligonier, PA",
+    "photo": "img/players/wyatt-gillespie.jpg",
+    "owner": "damon",
+    "pick": 19
+  },
+  {
+    "id": "xavier-scruggs",
+    "name": "Xavier Scruggs",
+    "age": 38,
+    "profession": "MLB Analyst",
+    "hometown": "Wesley Chapel, FL",
+    "photo": "img/players/xavier-scruggs.jpg",
+    "owner": "ronjan",
+    "pick": 6
+  }
 ]

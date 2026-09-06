@@ -23,7 +23,13 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap" id="draft-complete-view" hidden>
+  <h2>Draft Results</h2>
+  <p class="site-subtitle" style="margin-bottom: 20px;">All 22 castmates, drafted live. Order repeated Damon &rarr; Em &rarr; Ronjan for all 22 picks.</p>
+  <div class="draft-board" id="summary-board"></div>
+</div>
+
+<div class="wrap" id="draft-live-view" hidden>
   <h2>Live Draft</h2>
   <p class="site-subtitle" style="margin-bottom: 20px;">Order repeats Damon &rarr; Em &rarr; Ronjan until all 22 are picked. Click a name for whoever's on the clock. This only saves in this browser until you download the results.</p>
 
@@ -47,120 +53,147 @@
 <script type="module">
 import { OWNERS, DRAFT_ORDER, ownerName } from './js/scoring.js';
 
-const STORAGE_KEY = 'traitors-new-blood-draft-history-v1';
-
 const players = await fetch('data/players.json').then(r => r.json());
+const draftComplete = players.length > 0 && players.every(p => p.owner);
 
-function loadHistory() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
-}
+if (draftComplete) {
+  document.getElementById('draft-complete-view').hidden = false;
 
-function saveHistory(history) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
-}
-
-let history = loadHistory();
-
-function assignmentsFromHistory(h) {
-  const map = new Map();
-  h.forEach((playerId, i) => {
-    map.set(playerId, { owner: DRAFT_ORDER[i % DRAFT_ORDER.length], pick: i + 1 });
-  });
-  return map;
-}
-
-function render() {
-  const assignments = assignmentsFromHistory(history);
-  const clockEl = document.getElementById('on-the-clock');
-  const boardEl = document.getElementById('draft-board');
-  const poolEl = document.getElementById('pool');
-  const undoBtn = document.getElementById('undo-btn');
-
-  undoBtn.disabled = history.length === 0;
-
-  if (history.length >= players.length) {
-    clockEl.innerHTML = `<span class="owner-name">Draft complete.</span> Download the results below.`;
-  } else {
-    const turnOwner = ownerName(DRAFT_ORDER[history.length % DRAFT_ORDER.length]);
-    clockEl.innerHTML = `On the clock: <span class="owner-name">${turnOwner}</span> &middot; Pick ${history.length + 1} of ${players.length}`;
-  }
-
-  boardEl.innerHTML = OWNERS.map(owner => {
-    const picks = history
-      .map((playerId, i) => ({ playerId, owner: DRAFT_ORDER[i % DRAFT_ORDER.length], pick: i + 1 }))
-      .filter(a => a.owner === owner.id);
-    const rows = picks.map(a => {
-      const p = players.find(pl => pl.id === a.playerId);
-      return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname">${p.name}</span></span><span class="ppoints">#${a.pick}</span></li>`;
-    }).join('');
-    return `<div class="owner-card">
-      <h3>${owner.name}</h3>
-      <ul class="roster-list">${rows || '<li><span class="pname">No picks yet</span></li>'}</ul>
-    </div>`;
-  }).join('');
-
-  const undrafted = players
-    .filter(p => !assignments.has(p.id))
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  if (!undrafted.length) {
-    poolEl.innerHTML = '<div class="empty-state">All 22 players are drafted.</div>';
-  } else {
-    poolEl.innerHTML = undrafted.map(p => `
-      <button class="pool-card" data-id="${p.id}">
-        <span class="photo-wrap"><img src="${p.photo}" alt=""></span>
-        <span class="pinfo">
+  document.getElementById('summary-board').innerHTML = OWNERS.map(owner => {
+    const picks = players
+      .filter(p => p.owner === owner.id)
+      .sort((a, b) => a.pick - b.pick);
+    const rows = picks.map(p => `
+      <div class="summary-pick">
+        <img class="thumb" src="${p.photo}" alt="">
+        <span class="info">
           <span class="pname">${p.name}</span>
           <span class="pmeta">${p.age} &middot; ${p.profession}</span>
-          <span class="pmeta">${p.hometown}</span>
         </span>
-      </button>
+        <span class="pickno">#${p.pick}</span>
+      </div>
     `).join('');
-    poolEl.querySelectorAll('.pool-card').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (history.length >= players.length) return;
-        history.push(btn.dataset.id);
-        saveHistory(history);
-        render();
-      });
-    });
+    return `<div class="owner-card">
+      <h3>${owner.name}</h3>
+      ${rows}
+    </div>`;
+  }).join('');
+} else {
+  document.getElementById('draft-live-view').hidden = false;
+
+  const STORAGE_KEY = 'traitors-new-blood-draft-history-v1';
+
+  function loadHistory() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
   }
-}
 
-document.getElementById('undo-btn').addEventListener('click', () => {
-  history.pop();
-  saveHistory(history);
-  render();
-});
+  function saveHistory(history) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+  }
 
-document.getElementById('reset-btn').addEventListener('click', () => {
-  if (!confirm('Reset the whole draft? This clears every pick in this browser.')) return;
-  history = [];
-  saveHistory(history);
-  render();
-});
+  let history = loadHistory();
 
-document.getElementById('download-btn').addEventListener('click', () => {
-  const assignments = assignmentsFromHistory(history);
-  const output = players.map(p => {
-    const a = assignments.get(p.id);
-    return { ...p, owner: a ? a.owner : null, pick: a ? a.pick : null };
+  function assignmentsFromHistory(h) {
+    const map = new Map();
+    h.forEach((playerId, i) => {
+      map.set(playerId, { owner: DRAFT_ORDER[i % DRAFT_ORDER.length], pick: i + 1 });
+    });
+    return map;
+  }
+
+  function render() {
+    const assignments = assignmentsFromHistory(history);
+    const clockEl = document.getElementById('on-the-clock');
+    const boardEl = document.getElementById('draft-board');
+    const poolEl = document.getElementById('pool');
+    const undoBtn = document.getElementById('undo-btn');
+
+    undoBtn.disabled = history.length === 0;
+
+    if (history.length >= players.length) {
+      clockEl.innerHTML = `<span class="owner-name">Draft complete.</span> Download the results below.`;
+    } else {
+      const turnOwner = ownerName(DRAFT_ORDER[history.length % DRAFT_ORDER.length]);
+      clockEl.innerHTML = `On the clock: <span class="owner-name">${turnOwner}</span> &middot; Pick ${history.length + 1} of ${players.length}`;
+    }
+
+    boardEl.innerHTML = OWNERS.map(owner => {
+      const picks = history
+        .map((playerId, i) => ({ playerId, owner: DRAFT_ORDER[i % DRAFT_ORDER.length], pick: i + 1 }))
+        .filter(a => a.owner === owner.id);
+      const rows = picks.map(a => {
+        const p = players.find(pl => pl.id === a.playerId);
+        return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname">${p.name}</span></span><span class="ppoints">#${a.pick}</span></li>`;
+      }).join('');
+      return `<div class="owner-card">
+        <h3>${owner.name}</h3>
+        <ul class="roster-list">${rows || '<li><span class="pname">No picks yet</span></li>'}</ul>
+      </div>`;
+    }).join('');
+
+    const undrafted = players
+      .filter(p => !assignments.has(p.id))
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    if (!undrafted.length) {
+      poolEl.innerHTML = '<div class="empty-state">All 22 players are drafted.</div>';
+    } else {
+      poolEl.innerHTML = undrafted.map(p => `
+        <button class="pool-card" data-id="${p.id}">
+          <span class="photo-wrap"><img src="${p.photo}" alt=""></span>
+          <span class="pinfo">
+            <span class="pname">${p.name}</span>
+            <span class="pmeta">${p.age} &middot; ${p.profession}</span>
+            <span class="pmeta">${p.hometown}</span>
+          </span>
+        </button>
+      `).join('');
+      poolEl.querySelectorAll('.pool-card').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (history.length >= players.length) return;
+          history.push(btn.dataset.id);
+          saveHistory(history);
+          render();
+        });
+      });
+    }
+  }
+
+  document.getElementById('undo-btn').addEventListener('click', () => {
+    history.pop();
+    saveHistory(history);
+    render();
   });
-  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'players.json';
-  a.click();
-  URL.revokeObjectURL(url);
-});
 
-render();
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    if (!confirm('Reset the whole draft? This clears every pick in this browser.')) return;
+    history = [];
+    saveHistory(history);
+    render();
+  });
+
+  document.getElementById('download-btn').addEventListener('click', () => {
+    const assignments = assignmentsFromHistory(history);
+    const output = players.map(p => {
+      const a = assignments.get(p.id);
+      return { ...p, owner: a ? a.owner : null, pick: a ? a.pick : null };
+    });
+    const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'players.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  render();
+}
 </script>
 </body>
 </html>

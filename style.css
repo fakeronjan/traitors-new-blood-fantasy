@@ -507,3 +507,29 @@ table.history-table td.pname { white-space: nowrap; }
 
 .role-badge.traitor { color: var(--red); border-color: var(--red); }
 .role-badge.recruited { color: var(--gold-bright); border-color: var(--gold); }
+
+/* Draft summary (post-draft) */
+.summary-pick {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-pick:last-child { border-bottom: none; }
+
+.summary-pick .thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top center;
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+}
+
+.summary-pick .info { min-width: 0; flex: 1; }
+.summary-pick .pname { display: block; font-weight: 600; color: var(--text); }
+.summary-pick .pmeta { display: block; font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
+.summary-pick .pickno { flex: 0 0 auto; font-family: var(--font-display); color: var(--gold-bright); font-size: 0.95rem; }
