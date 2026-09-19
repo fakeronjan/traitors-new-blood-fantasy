@@ -45,7 +45,7 @@
 
 <script type="module">
 import {
-  OWNERS, loadData, computeOwnerTotals, playerStatus,
+  OWNERS, loadData, computeOwnerTotals, playerStatus, roleLabel,
   computeOwnerTotalsByEpisode, computeOwnerRosterCountsByEpisode,
 } from './js/scoring.js';
 
@@ -77,7 +77,8 @@ function renderStandings() {
     const rows = roster.map(p => {
       const pts = round1(playerTotals[p.id] ?? 0);
       const status = playerStatus(p.id, events);
-      const cls = status.eliminated ? 'eliminated' : '';
+      const isTraitor = roleLabel(p.id, events) !== 'Faithful';
+      const cls = [status.eliminated ? 'eliminated' : '', isTraitor ? 'traitor' : ''].filter(Boolean).join(' ');
       const ptsCls = pts < 0 ? 'negative' : '';
       return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname ${cls}">${p.name}</span></span><span class="ppoints ${ptsCls}">${pts}</span></li>`;
     }).join('');
@@ -310,12 +311,13 @@ function renderScoreboard() {
       const prev = rows[i - 1], cur = rows[i];
       const roster = rosterRows[i].counts;
       const cells = OWNERS.map(o => {
-        const gain = round1((cur.totals[o.id] ?? 0) - (prev.totals[o.id] ?? 0));
-        const cls = gain < 0 ? ' class="score negative"' : ' class="score"';
+        const cume = round1(cur.totals[o.id] ?? 0);
+        const gain = round1(cume - round1(prev.totals[o.id] ?? 0));
+        const deltaCls = gain < 0 ? ' negative' : '';
         const sign = gain > 0 ? '+' : '';
         const n = roster[o.id] ?? 0;
         const playerWord = n === 1 ? 'player' : 'players';
-        return `<td${cls}><span class="wk-pts">${sign}${gain}</span><span class="wk-roster">${n} ${playerWord}</span></td>`;
+        return `<td class="score"><span class="wk-pts">${cume} <span class="wk-delta${deltaCls}">(${sign}${gain})</span></span><span class="wk-roster">${n} ${playerWord}</span></td>`;
       }).join('');
       body.push(`<tr><td class="pname">Episode ${cur.episode}</td>${cells}</tr>`);
     }

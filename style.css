@@ -185,6 +185,7 @@ h2:first-of-type { margin-top: 0; }
 
 .roster-list .pname { color: var(--text); }
 .roster-list .pname.eliminated { color: var(--text-dim); text-decoration: line-through; }
+.roster-list .pname.traitor { color: var(--red); }
 .roster-list .ppoints { color: var(--gold-bright); font-variant-numeric: tabular-nums; }
 .roster-list .ppoints.negative { color: var(--red); }
 
@@ -618,7 +619,14 @@ table.history-table td.pname { white-space: nowrap; }
 
 table.history-table td.score.negative { color: var(--red); }
 
+#weekly-table th:not(:first-child),
+#weekly-table td.score {
+  text-align: center;
+}
+
 .wk-pts { display: block; }
+.wk-delta { color: var(--text-dim); font-weight: 400; }
+.wk-delta.negative { color: var(--red); }
 .wk-roster {
   display: block;
   font-weight: 400;
