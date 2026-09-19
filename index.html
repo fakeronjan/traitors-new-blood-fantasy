@@ -45,7 +45,7 @@
 
 <script type="module">
 import {
-  OWNERS, loadData, computeOwnerTotals, playerStatus, roleLabel,
+  OWNERS, loadData, computeOwnerTotals, playerStatus, roleLabel, ELIMINATION_VERB,
   computeOwnerTotalsByEpisode, computeOwnerRosterCountsByEpisode,
 } from './js/scoring.js';
 
@@ -80,10 +80,13 @@ function renderStandings() {
       const isTraitor = roleLabel(p.id, events) !== 'Faithful';
       const cls = [status.eliminated ? 'eliminated' : '', isTraitor ? 'traitor' : ''].filter(Boolean).join(' ');
       const ptsCls = pts < 0 ? 'negative' : '';
+      const elimNote = status.eliminated
+        ? ` <span class="pnote">(Ep${status.episode}, ${ELIMINATION_VERB[status.type] ?? status.type})</span>`
+        : '';
       return `<li>
         <img class="avatar" src="${p.photo}" alt="">
         <span class="pinfo">
-          <span class="pname ${cls}">${p.name}</span>
+          <span class="pname ${cls}">${p.name}</span>${elimNote}
           <span class="pmeta">${p.age} &middot; ${p.profession}</span>
           <span class="pmeta">${p.hometown}</span>
         </span>

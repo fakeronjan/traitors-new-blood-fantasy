@@ -33,13 +33,21 @@ export const EVENT_TYPES = {
   recruited:          { label: 'Recruited as a new Traitor',                        points:  5 },
   banished:           { label: 'Banished at Roundtable',                            points:  0 },
   murdered:           { label: 'Murdered by the Traitors',                          points:  0 },
+  left:               { label: 'Left the game',                                     points:  0 },
   traitor_from_start: { label: 'Started the season as a Traitor',                   points:  0 },
   final_roundtable:   { label: 'Reached the Final Roundtable',                      points:  5 },
   winner:             { label: 'Ended up on the winning side at the end',           points: null }, // dynamic: WINNER_POOL / number of winners
 };
 
 // Event types that end a player's run in the game.
-const ELIMINATING_TYPES = new Set(['murdered', 'banished']);
+const ELIMINATING_TYPES = new Set(['murdered', 'banished', 'left']);
+
+// Short verb for each elimination type, for compact "(Ep2, banished)"-style notes.
+export const ELIMINATION_VERB = {
+  murdered: 'murdered',
+  banished: 'banished',
+  left: 'left the game',
+};
 
 // Event types that mark someone as a Traitor from that episode onward.
 const TRAITOR_MARKER_TYPES = new Set(['traitor_from_start', 'recruited']);
