@@ -1,1 +1,383 @@
-[]
+[
+  {
+    "episode": 1,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "arisa-thomas",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "kim-daily",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "logan-smith",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "madeline-kostopulos",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "michael-foote",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "niyyah-hayes",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "sherry-kuehl",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "xavier-scruggs",
+    "type": "survive"
+  },
+  {
+    "episode": 1,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "abby-lee",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "arisa-thomas",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "ben-mcdonnell",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "clyde-moser",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "jay-vinnedge",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "joe-vanella",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "kim-daily",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "logan-smith",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "madeline-kostopulos",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "mark-zgoda",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "michael-foote",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "morgan-cook",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "niyyah-hayes",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "sherry-kuehl",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "tomica-adams",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "xavier-scruggs",
+    "type": "mission_won",
+    "note": "Full $50,000 mission success (loch treasure chests + captain's safe)"
+  },
+  {
+    "episode": 1,
+    "player": "joe-vanella",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "tomica-adams",
+    "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "victor-vollbrechthausen",
+    "type": "advantage_won",
+    "note": "Won a shield during the mission"
+  },
+  {
+    "episode": 1,
+    "player": "abby-lee",
+    "type": "advantage_won",
+    "note": "Won a shield during the mission"
+  },
+  {
+    "episode": 1,
+    "player": "madeline-kostopulos",
+    "type": "advantage_won",
+    "note": "Won a shield during the mission"
+  },
+  {
+    "episode": 2,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "arisa-thomas",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "logan-smith",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "michael-foote",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "niyyah-hayes",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "sherry-kuehl",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "xavier-scruggs",
+    "type": "survive"
+  },
+  {
+    "episode": 2,
+    "player": "kim-daily",
+    "type": "murdered"
+  },
+  {
+    "episode": 2,
+    "player": "madeline-kostopulos",
+    "type": "banished",
+    "note": "Banished on a mistaken accusation - she was actually Faithful"
+  }
+]
