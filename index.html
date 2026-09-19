@@ -81,7 +81,11 @@ function renderStandings() {
       const cls = [status.eliminated ? 'eliminated' : '', isTraitor ? 'traitor' : ''].filter(Boolean).join(' ');
       const ptsCls = pts < 0 ? 'negative' : '';
       const elimNote = status.eliminated
-        ? ` <span class="pnote">(Ep${status.episode}, ${ELIMINATION_VERB[status.type] ?? status.type})</span>`
+        ? (() => {
+            const verb = ELIMINATION_VERB[status.type] ?? status.type;
+            const capVerb = verb.charAt(0).toUpperCase() + verb.slice(1);
+            return ` <span class="pnote">(${capVerb}: Ep${status.episode})</span>`;
+          })()
         : '';
       return `<li>
         <img class="avatar" src="${p.photo}" alt="">
