@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Traitors: New Blood - Fantasy League</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="site-title">The Traitors: New Blood</h1>
+    <p class="site-subtitle">Family Fantasy League</p>
+    <nav class="main-nav">
+      <a href="index.html">Leaderboard</a>
+      <a href="scoreboard.html" class="active">Scoreboard</a>
+      <a href="draft.html">Draft</a>
+      <a href="cast.html">Cast</a>
+      <a href="rules.html">Rules</a>
+      <a href="log.html">Episode Log</a>
+      <a href="season.html">Past Seasons</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <h2>Scoreboard</h2>
+  <div id="chart-area"></div>
+
+  <div id="weekly-section">
+    <h2>Weekly Points</h2>
+    <div class="table-scroll">
+    <table class="history-table" id="weekly-table">
+      <thead><tr id="weekly-head"></tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+
+<script type="module">
+import { OWNERS, loadData, computeOwnerTotalsByEpisode } from './js/scoring.js';
+
+const round1 = n => Math.round(n * 10) / 10;
+
+const { players, events } = await loadData();
+const rows = computeOwnerTotalsByEpisode(players, events);
+const chartArea = document.getElementById('chart-area');
+
+if (rows.length < 2) {
+  chartArea.innerHTML = '<div class="empty-state">No episodes logged yet. Check back after the premiere airs.</div>';
+  document.getElementById('weekly-section').style.display = 'none';
+} else {
+  renderChart(rows);
+  renderWeeklyTable(rows);
+}
+
+function renderChart(rows) {
+  const W = 720, H = 340;
+  const padL = 42, padR = 110, padT = 20, padB = 34;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+
+  const maxEp = rows[rows.length - 1].episode;
+  const maxVal = Math.max(1, ...rows.flatMap(r => OWNERS.map(o => r.totals[o.id] ?? 0)));
+  const yMax = Math.ceil(maxVal / 5) * 5 || 5;
+
+  const x = ep => padL + (maxEp === 0 ? 0 : (ep / maxEp) * plotW);
+  const y = val => padT + plotH - (val / yMax) * plotH;
+
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.classList.add('scoreboard-svg');
+  svg.setAttribute('role', 'img');
+  svg.setAttribute('aria-label', 'Cumulative fantasy points by owner, by episode');
+
+  // Y gridlines (clean steps)
+  const ySteps = 5;
+  for (let i = 0; i <= ySteps; i++) {
+    const val = (yMax / ySteps) * i;
+    const gy = y(val);
+    const line = document.createElementNS(svgNS, 'line');
+    line.setAttribute('x1', padL); line.setAttribute('x2', W - padR);
+    line.setAttribute('y1', gy); line.setAttribute('y2', gy);
+    line.setAttribute('class', 'grid-line');
+    svg.appendChild(line);
+
+    const label = document.createElementNS(svgNS, 'text');
+    label.setAttribute('x', padL - 8); label.setAttribute('y', gy + 4);
+    label.setAttribute('class', 'axis-label'); label.setAttribute('text-anchor', 'end');
+    label.textContent = String(round1(val));
+    svg.appendChild(label);
+  }
+
+  // X ticks (episode numbers)
+  rows.forEach(r => {
+    const label = document.createElementNS(svgNS, 'text');
+    label.setAttribute('x', x(r.episode)); label.setAttribute('y', H - padB + 20);
+    label.setAttribute('class', 'axis-label'); label.setAttribute('text-anchor', 'middle');
+    label.textContent = r.episode === 0 ? 'Start' : `Ep ${r.episode}`;
+    svg.appendChild(label);
+  });
+
+  // Lines + end markers + end labels (with simple collision-nudge)
+  const endYs = OWNERS.map(o => y(rows[rows.length - 1].totals[o.id] ?? 0));
+  const minGap = 14;
+  const nudged = endYs.slice();
+  const order = OWNERS.map((_, i) => i).sort((a, b) => endYs[a] - endYs[b]);
+  for (let i = 1; i < order.length; i++) {
+    const prev = order[i - 1], cur = order[i];
+    if (nudged[cur] - nudged[prev] < minGap) nudged[cur] = nudged[prev] + minGap;
+  }
+
+  OWNERS.forEach((owner, i) => {
+    const pts = rows.map(r => `${x(r.episode)},${y(r.totals[owner.id] ?? 0)}`).join(' ');
+    const poly = document.createElementNS(svgNS, 'polyline');
+    poly.setAttribute('points', pts);
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', owner.color);
+    poly.setAttribute('stroke-width', '2');
+    poly.setAttribute('stroke-linejoin', 'round');
+    poly.setAttribute('stroke-linecap', 'round');
+    svg.appendChild(poly);
+
+    rows.forEach(r => {
+      const cx = x(r.episode), cy = y(r.totals[owner.id] ?? 0);
+      const ring = document.createElementNS(svgNS, 'circle');
+      ring.setAttribute('cx', cx); ring.setAttribute('cy', cy); ring.setAttribute('r', 6);
+      ring.setAttribute('fill', 'var(--bg)');
+      svg.appendChild(ring);
+      const dot = document.createElementNS(svgNS, 'circle');
+      dot.setAttribute('cx', cx); dot.setAttribute('cy', cy); dot.setAttribute('r', 4);
+      dot.setAttribute('fill', owner.color);
+      svg.appendChild(dot);
+    });
+
+    // End label: leader line if nudged away from its true end-y
+    const trueEndY = endYs[i], labelY = nudged[i];
+    const endX = x(rows[rows.length - 1].episode);
+    if (Math.abs(labelY - trueEndY) > 0.5) {
+      const leader = document.createElementNS(svgNS, 'line');
+      leader.setAttribute('x1', endX + 6); leader.setAttribute('x2', endX + 16);
+      leader.setAttribute('y1', trueEndY); leader.setAttribute('y2', labelY);
+      leader.setAttribute('class', 'leader-line');
+      svg.appendChild(leader);
+    }
+    const label = document.createElementNS(svgNS, 'text');
+    label.setAttribute('x', endX + 18); label.setAttribute('y', labelY + 4);
+    label.setAttribute('class', 'end-label');
+    label.textContent = `${owner.name} ${round1(rows[rows.length - 1].totals[owner.id] ?? 0)}`;
+    svg.appendChild(label);
+  });
+
+  // Crosshair + tooltip layer
+  const crosshair = document.createElementNS(svgNS, 'line');
+  crosshair.setAttribute('y1', padT); crosshair.setAttribute('y2', H - padB);
+  crosshair.setAttribute('class', 'crosshair'); crosshair.setAttribute('visibility', 'hidden');
+  svg.appendChild(crosshair);
+
+  const hitLayer = document.createElementNS(svgNS, 'rect');
+  hitLayer.setAttribute('x', padL); hitLayer.setAttribute('y', padT);
+  hitLayer.setAttribute('width', plotW); hitLayer.setAttribute('height', plotH);
+  hitLayer.setAttribute('fill', 'transparent');
+  svg.appendChild(hitLayer);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'scoreboard-chart card';
+  wrap.appendChild(svg);
+
+  const legend = document.createElement('div');
+  legend.className = 'chart-legend';
+  OWNERS.forEach(o => {
+    const item = document.createElement('span');
+    item.className = 'legend-item';
+    const swatch = document.createElement('span');
+    swatch.className = 'legend-swatch';
+    swatch.style.background = o.color;
+    item.appendChild(swatch);
+    const label = document.createElement('span');
+    label.textContent = o.name;
+    item.appendChild(label);
+    legend.appendChild(item);
+  });
+  wrap.appendChild(legend);
+
+  const tooltip = document.createElement('div');
+  tooltip.className = 'chart-tooltip';
+  tooltip.hidden = true;
+  wrap.appendChild(tooltip);
+
+  function showTooltip(clientEp, evt) {
+    const r = rows.find(r => r.episode === clientEp);
+    if (!r) return;
+    tooltip.innerHTML = '';
+    const title = document.createElement('div');
+    title.className = 'tt-title';
+    title.textContent = r.episode === 0 ? 'Start' : `Episode ${r.episode}`;
+    tooltip.appendChild(title);
+    OWNERS.forEach(o => {
+      const row = document.createElement('div');
+      row.className = 'tt-row';
+      const key = document.createElement('span');
+      key.className = 'tt-key';
+      key.style.background = o.color;
+      row.appendChild(key);
+      const name = document.createElement('span');
+      name.className = 'tt-name';
+      name.textContent = o.name;
+      row.appendChild(name);
+      const val = document.createElement('span');
+      val.className = 'tt-val';
+      val.textContent = round1(r.totals[o.id] ?? 0);
+      row.appendChild(val);
+      tooltip.appendChild(row);
+    });
+    tooltip.hidden = false;
+    const svgRect = svg.getBoundingClientRect();
+    const scale = svgRect.width / W;
+    const px = x(r.episode) * scale;
+    tooltip.style.left = Math.min(px + 12, svgRect.width - tooltip.offsetWidth - 4) + 'px';
+    tooltip.style.top = '4px';
+    crosshair.setAttribute('x1', x(r.episode));
+    crosshair.setAttribute('x2', x(r.episode));
+    crosshair.setAttribute('visibility', 'visible');
+  }
+
+  function hideTooltip() {
+    tooltip.hidden = true;
+    crosshair.setAttribute('visibility', 'hidden');
+  }
+
+  function nearestEpisode(evtX) {
+    const svgRect = svg.getBoundingClientRect();
+    const scale = W / svgRect.width;
+    const localX = (evtX - svgRect.left) * scale;
+    let best = rows[0].episode, bestDist = Infinity;
+    rows.forEach(r => {
+      const d = Math.abs(x(r.episode) - localX);
+      if (d < bestDist) { bestDist = d; best = r.episode; }
+    });
+    return best;
+  }
+
+  hitLayer.addEventListener('pointermove', evt => showTooltip(nearestEpisode(evt.clientX), evt));
+  hitLayer.addEventListener('pointerleave', hideTooltip);
+  hitLayer.addEventListener('pointerdown', evt => showTooltip(nearestEpisode(evt.clientX), evt));
+
+  chartArea.appendChild(wrap);
+}
+
+function renderWeeklyTable(rows) {
+  const head = document.getElementById('weekly-head');
+  head.innerHTML = ['<th>Episode</th>', ...OWNERS.map(o => `<th>${o.name}</th>`)].join('');
+
+  const tbody = document.querySelector('#weekly-table tbody');
+  const body = [];
+  for (let i = 1; i < rows.length; i++) {
+    const prev = rows[i - 1], cur = rows[i];
+    const cells = OWNERS.map(o => {
+      const gain = round1((cur.totals[o.id] ?? 0) - (prev.totals[o.id] ?? 0));
+      const cls = gain < 0 ? ' class="score negative"' : ' class="score"';
+      const sign = gain > 0 ? '+' : '';
+      return `<td${cls}>${sign}${gain}</td>`;
+    }).join('');
+    body.push(`<tr><td class="pname">Episode ${cur.episode}</td>${cells}</tr>`);
+  }
+  body.reverse();
+  tbody.innerHTML = body.join('');
+}
+</script>
+</body>
+</html>

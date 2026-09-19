@@ -1,10 +1,12 @@
 // Shared scoring config + calculations for The Traitors: New Blood fantasy league.
 // Single source of truth: rules.html renders this table, index.html/log.html/history pages use it to score.
 
+// Colors validated for 3-way categorical use (all-pairs CVD + contrast) against
+// this site's dark surface - see the dataviz skill's palette validator.
 export const OWNERS = [
-  { id: 'damon', name: 'Damon' },
-  { id: 'em', name: 'Em' },
-  { id: 'ronjan', name: 'Ronjan' },
+  { id: 'damon', name: 'Damon', color: '#3987e5' },
+  { id: 'em', name: 'Em', color: '#d95926' },
+  { id: 'ronjan', name: 'Ronjan', color: '#199e70' },
 ];
 
 // Fixed repeating pick order (not snake): Damon, Em, Ronjan, Damon, Em, Ronjan...
@@ -118,6 +120,20 @@ export function computeOwnerTotals(players, events) {
     }
   });
   return { playerTotals, ownerTotals };
+}
+
+// Cumulative owner totals as of each episode 0..N (0 = pre-season baseline, all
+// zero). Used by the scoreboard's graph. Re-scores from scratch at each episode
+// rather than accumulating deltas, so it stays correct even if a later event
+// retroactively affects an earlier episode's derived team credits.
+export function computeOwnerTotalsByEpisode(players, events) {
+  const lastEpisode = events.length ? Math.max(...events.map(e => e.episode)) : 0;
+  const rows = [];
+  for (let ep = 0; ep <= lastEpisode; ep++) {
+    const { ownerTotals } = computeOwnerTotals(players, events.filter(e => e.episode <= ep));
+    rows.push({ episode: ep, totals: ownerTotals });
+  }
+  return rows;
 }
 
 export function roleLabel(playerId, events) {

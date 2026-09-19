@@ -533,3 +533,86 @@ table.history-table td.pname { white-space: nowrap; }
 .summary-pick .pname { display: block; font-weight: 600; color: var(--text); }
 .summary-pick .pmeta { display: block; font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
 .summary-pick .pickno { flex: 0 0 auto; font-family: var(--font-display); color: var(--gold-bright); font-size: 0.95rem; }
+
+/* Scoreboard chart */
+.scoreboard-chart {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.scoreboard-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: var(--font-body);
+  overflow: visible;
+}
+
+.scoreboard-svg .grid-line { stroke: var(--border); stroke-width: 1; }
+.scoreboard-svg .axis-label { fill: var(--text-dim); font-size: 11px; }
+.scoreboard-svg .end-label { fill: var(--text); font-size: 12px; font-weight: 600; dominant-baseline: middle; }
+.scoreboard-svg .leader-line { stroke: var(--text-dim); stroke-width: 1; }
+.scoreboard-svg .crosshair { stroke: var(--text-dim); stroke-width: 1; stroke-dasharray: 3 3; }
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.chart-tooltip {
+  position: absolute;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  pointer-events: none;
+  min-width: 130px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.chart-tooltip .tt-title {
+  font-family: var(--font-display);
+  color: var(--gold-bright);
+  font-size: 0.88rem;
+  margin-bottom: 6px;
+}
+
+.chart-tooltip .tt-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.92rem;
+  padding: 2px 0;
+}
+
+.chart-tooltip .tt-key {
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+
+.chart-tooltip .tt-name { color: var(--text-dim); flex: 1; }
+.chart-tooltip .tt-val { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+table.history-table td.score.negative { color: var(--red); }
