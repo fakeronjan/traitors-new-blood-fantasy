@@ -80,7 +80,15 @@ function renderStandings() {
       const isTraitor = roleLabel(p.id, events) !== 'Faithful';
       const cls = [status.eliminated ? 'eliminated' : '', isTraitor ? 'traitor' : ''].filter(Boolean).join(' ');
       const ptsCls = pts < 0 ? 'negative' : '';
-      return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname ${cls}">${p.name}</span></span><span class="ppoints ${ptsCls}">${pts}</span></li>`;
+      return `<li>
+        <img class="avatar" src="${p.photo}" alt="">
+        <span class="pinfo">
+          <span class="pname ${cls}">${p.name}</span>
+          <span class="pmeta">${p.age} &middot; ${p.profession}</span>
+          <span class="pmeta">${p.hometown}</span>
+        </span>
+        <span class="ppoints ${ptsCls}">${pts}</span>
+      </li>`;
     }).join('');
 
     const isLeader = ownerTotals[owner.id] === topScore && topScore !== 0;

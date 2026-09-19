@@ -157,20 +157,20 @@ h2:first-of-type { margin-top: 0; }
 .roster-list li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 7px 0;
+  gap: 12px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
   font-size: 1.05rem;
 }
 
 .roster-list li:last-child { border-bottom: none; }
 
-.roster-list .pwho {
+.roster-list .pinfo {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 2px;
   min-width: 0;
+  flex: 1;
 }
 
 .avatar {
@@ -183,10 +183,13 @@ h2:first-of-type { margin-top: 0; }
   border: 1px solid var(--border);
 }
 
+.roster-list .avatar { width: 60px; height: 60px; }
+
 .roster-list .pname { color: var(--text); }
 .roster-list .pname.eliminated { color: var(--text-dim); text-decoration: line-through; }
 .roster-list .pname.traitor { color: var(--red); }
-.roster-list .ppoints { color: var(--gold-bright); font-variant-numeric: tabular-nums; }
+.roster-list .pmeta { display: block; font-size: 0.82rem; color: var(--text-dim); }
+.roster-list .ppoints { flex: 0 0 auto; color: var(--gold-bright); font-variant-numeric: tabular-nums; }
 .roster-list .ppoints.negative { color: var(--red); }
 
 .empty-state {
