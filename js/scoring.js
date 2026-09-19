@@ -1,12 +1,15 @@
 // Shared scoring config + calculations for The Traitors: New Blood fantasy league.
 // Single source of truth: rules.html renders this table, index.html/log.html/history pages use it to score.
 
-// Colors validated for 3-way categorical use (all-pairs CVD + contrast) against
-// this site's dark surface - see the dataviz skill's palette validator.
+// Damon = teal, Em = purple, Ronjan = pink (their picks). Stepped slightly off the
+// literal "bright" versions to clear the dataviz skill's all-pairs CVD validator
+// against this site's dark surface (teal-vs-pink is a classic deutan collision
+// pair at full brightness) - still reads as bright teal/purple/pink, just not the
+// most saturated possible values.
 export const OWNERS = [
-  { id: 'damon', name: 'Damon', color: '#3987e5' },
-  { id: 'em', name: 'Em', color: '#d95926' },
-  { id: 'ronjan', name: 'Ronjan', color: '#199e70' },
+  { id: 'damon', name: 'Damon', color: '#12a89a' },
+  { id: 'em', name: 'Em', color: '#9450d6' },
+  { id: 'ronjan', name: 'Ronjan', color: '#c94080' },
 ];
 
 // Fixed repeating pick order (not snake): Damon, Em, Ronjan, Damon, Em, Ronjan...
@@ -132,6 +135,25 @@ export function computeOwnerTotalsByEpisode(players, events) {
   for (let ep = 0; ep <= lastEpisode; ep++) {
     const { ownerTotals } = computeOwnerTotals(players, events.filter(e => e.episode <= ep));
     rows.push({ episode: ep, totals: ownerTotals });
+  }
+  return rows;
+}
+
+// Each owner's live (non-eliminated) roster size as of each episode 0..N. Used by
+// the Weekly Points table to show attrition alongside points.
+export function computeOwnerRosterCountsByEpisode(players, events) {
+  const lastEpisode = events.length ? Math.max(...events.map(e => e.episode)) : 0;
+  const rows = [];
+  for (let ep = 0; ep <= lastEpisode; ep++) {
+    const truncated = events.filter(e => e.episode <= ep);
+    const counts = {};
+    OWNERS.forEach(o => { counts[o.id] = 0; });
+    players.forEach(p => {
+      if (p.owner && counts[p.owner] !== undefined && !playerStatus(p.id, truncated).eliminated) {
+        counts[p.owner]++;
+      }
+    });
+    rows.push({ episode: ep, counts });
   }
   return rows;
 }
