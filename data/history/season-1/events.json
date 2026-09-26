@@ -674,5 +674,479 @@
     "episode": 1,
     "player": "cirie-fields",
     "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "amanda-clark-stoner",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "anjelica-conti",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "arie-luyendyk-jr",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "azra-valani",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "bam-nieves",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "brandi-glanville",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "christian-de-la-torre",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "cody-calafiore",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "geraldine-moreno",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "kyle-cooke",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "michael-davidson",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "rachel-reilly",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "reza-farahan",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ryan-lochte",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "shelbe-rodriguez",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 3,
+    "player": "amanda-clark-stoner",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "anjelica-conti",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "arie-luyendyk-jr",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "azra-valani",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "brandi-glanville",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "christian-de-la-torre",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "cody-calafiore",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "kyle-cooke",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "michael-davidson",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "rachel-reilly",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "ryan-lochte",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "shelbe-rodriguez",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 3,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "mission_won",
+    "note": "Banked $25,000 of $25,000"
+  },
+  {
+    "episode": 4,
+    "player": "amanda-clark-stoner",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "anjelica-conti",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "arie-luyendyk-jr",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "christian-de-la-torre",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "cody-calafiore",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "kyle-cooke",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "michael-davidson",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "rachel-reilly",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "ryan-lochte",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "shelbe-rodriguez",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 4,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "mission_won",
+    "note": "Banked $19,900 of $22,000"
+  },
+  {
+    "episode": 5,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "anjelica-conti",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "arie-luyendyk-jr",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "christian-de-la-torre",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "cody-calafiore",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "kyle-cooke",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "rachel-reilly",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "shelbe-rodriguez",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "arie-luyendyk-jr",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 7,
+    "player": "arie-luyendyk-jr",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 8,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "arie-luyendyk-jr",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "christian-de-la-torre",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "rachel-reilly",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "stephenie-lagrossa-kendrick",
+    "type": "mission_won",
+    "note": "Banked $35,000 of $35,000"
+  },
+  {
+    "episode": 8,
+    "player": "arie-luyendyk-jr",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 10,
+    "player": "andie-vanacore",
+    "type": "mission_won",
+    "note": "Banked $68,000 of $68,000"
+  },
+  {
+    "episode": 10,
+    "player": "cirie-fields",
+    "type": "mission_won",
+    "note": "Banked $68,000 of $68,000"
+  },
+  {
+    "episode": 10,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $68,000 of $68,000"
+  },
+  {
+    "episode": 10,
+    "player": "quentin-jiles",
+    "type": "mission_won",
+    "note": "Banked $68,000 of $68,000"
   }
 ]

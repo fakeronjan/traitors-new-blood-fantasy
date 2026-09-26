@@ -890,5 +890,893 @@
     "episode": 1,
     "player": "rob-rausch",
     "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "candiace-dillard-bassett",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "caroline-stanbury",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "colton-underwood",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "donna-kelce",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "dorinda-medley",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ian-terry",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "kristen-kish",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "lisa-rinna",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "michael-rapaport",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "monet-x-change",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "porsha-williams",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "rob-cesternino",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ron-funches",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "stephen-colletti",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "tiffany-mitchell",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "yam-yam-arocho",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "candiace-dillard-bassett",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "caroline-stanbury",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "colton-underwood",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "johnny-weir",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "kristen-kish",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "lisa-rinna",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "maura-higgins",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "monet-x-change",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "natalie-anderson",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "porsha-williams",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "stephen-colletti",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "tara-lipinski",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "tiffany-mitchell",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "yam-yam-arocho",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 2,
+    "player": "candiace-dillard-bassett",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "caroline-stanbury",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "colton-underwood",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "donna-kelce",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "dorinda-medley",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "kristen-kish",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "lisa-rinna",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "michael-rapaport",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "monet-x-change",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "porsha-williams",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "rob-cesternino",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "ron-funches",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "stephen-colletti",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "tiffany-mitchell",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "yam-yam-arocho",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $24,000"
+  },
+  {
+    "episode": 2,
+    "player": "caroline-stanbury",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 2,
+    "player": "colton-underwood",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 2,
+    "player": "yam-yam-arocho",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 4,
+    "player": "candiace-dillard-bassett",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "colton-underwood",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "dorinda-medley",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "kristen-kish",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "lisa-rinna",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "michael-rapaport",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "monet-x-change",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "ron-funches",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "stephen-colletti",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "tiffany-mitchell",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "yam-yam-arocho",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "candiace-dillard-bassett",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "colton-underwood",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "dorinda-medley",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "eric-nam",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "kristen-kish",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "mark-ballas",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "natalie-anderson",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "rob-rausch",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "candiace-dillard-bassett",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "colton-underwood",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "dorinda-medley",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "kristen-kish",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "lisa-rinna",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "michael-rapaport",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "ron-funches",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "stephen-colletti",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "yam-yam-arocho",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $16,000"
+  },
+  {
+    "episode": 5,
+    "player": "candiace-dillard-bassett",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "colton-underwood",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "dorinda-medley",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "eric-nam",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "johnny-weir",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "kristen-kish",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "lisa-rinna",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "mark-ballas",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "maura-higgins",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "natalie-anderson",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "rob-rausch",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "ron-funches",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "stephen-colletti",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "tara-lipinski",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "yam-yam-arocho",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 6,
+    "player": "candiace-dillard-bassett",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "colton-underwood",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "dorinda-medley",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "kristen-kish",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "lisa-rinna",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "ron-funches",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "stephen-colletti",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 6,
+    "player": "yam-yam-arocho",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $18,000"
+  },
+  {
+    "episode": 8,
+    "player": "kristen-kish",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 10,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "mark-ballas",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "natalie-anderson",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $24,500 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "eric-nam",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 11,
+    "player": "eric-nam",
+    "type": "mission_won",
+    "note": "Banked $40,000 of $40,000"
+  },
+  {
+    "episode": 11,
+    "player": "johnny-weir",
+    "type": "mission_won",
+    "note": "Banked $40,000 of $40,000"
+  },
+  {
+    "episode": 11,
+    "player": "maura-higgins",
+    "type": "mission_won",
+    "note": "Banked $40,000 of $40,000"
+  },
+  {
+    "episode": 11,
+    "player": "rob-rausch",
+    "type": "mission_won",
+    "note": "Banked $40,000 of $40,000"
+  },
+  {
+    "episode": 11,
+    "player": "tara-lipinski",
+    "type": "mission_won",
+    "note": "Banked $40,000 of $40,000"
   }
 ]

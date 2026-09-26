@@ -846,5 +846,617 @@
     "episode": 1,
     "player": "phaedra-parks",
     "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "carsten-bergersen",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "dan-gheesling",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "deontay-wilder",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ekin-su-culculoglu",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "janelle-pierzina",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "john-bercow",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "johnny-devenanzio",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "kevin-kreider",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "larsa-pippen",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "maksim-chmerkovskiy",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "marcus-jordan",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "parvati-shallow",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "peppermint",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "peter-weber",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "phaedra-parks",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "sheree-whitfield",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "tamra-judge",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 1,
+    "player": "ct-tamburello",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 1,
+    "player": "deontay-wilder",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 1,
+    "player": "janelle-pierzina",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 2,
+    "player": "carsten-bergersen",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "dan-gheesling",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "deontay-wilder",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "ekin-su-culculoglu",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "janelle-pierzina",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "john-bercow",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "kevin-kreider",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "larsa-pippen",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "maksim-chmerkovskiy",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "marcus-jordan",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "parvati-shallow",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "peppermint",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "peter-weber",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "phaedra-parks",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "sheree-whitfield",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "tamra-judge",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $16,000 of $20,000"
+  },
+  {
+    "episode": 2,
+    "player": "dan-gheesling",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 3,
+    "player": "carsten-bergersen",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "dan-gheesling",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "deontay-wilder",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "ekin-su-culculoglu",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "janelle-pierzina",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "john-bercow",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "kevin-kreider",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "larsa-pippen",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "maksim-chmerkovskiy",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "parvati-shallow",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "peter-weber",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "phaedra-parks",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "sheree-whitfield",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "tamra-judge",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $19,500 of $20,000"
+  },
+  {
+    "episode": 3,
+    "player": "janelle-pierzina",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 3,
+    "player": "peter-weber",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 3,
+    "player": "tamra-judge",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 5,
+    "player": "carsten-bergersen",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 5,
+    "player": "trishelle-cannatella",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 6,
+    "player": "carsten-bergersen",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "dan-gheesling",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "john-bercow",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "kevin-kreider",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "parvati-shallow",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "peter-weber",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "phaedra-parks",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "sheree-whitfield",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "sheree-whitfield",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 7,
+    "player": "kevin-kreider",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 7,
+    "player": "sandra-diaz-twine",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 8,
+    "player": "trishelle-cannatella",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 9,
+    "player": "ct-tamburello",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 10,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "phaedra-parks",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "sheree-whitfield",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $28,350 of $30,000"
+  },
+  {
+    "episode": 10,
+    "player": "mercedes-javid",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 11,
+    "player": "ct-tamburello",
+    "type": "mission_won",
+    "note": "Banked $50,000 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "kate-chastain",
+    "type": "mission_won",
+    "note": "Banked $50,000 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "mercedes-javid",
+    "type": "mission_won",
+    "note": "Banked $50,000 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "sandra-diaz-twine",
+    "type": "mission_won",
+    "note": "Banked $50,000 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "trishelle-cannatella",
+    "type": "mission_won",
+    "note": "Banked $50,000 of $50,000"
   }
 ]

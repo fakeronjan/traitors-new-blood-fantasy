@@ -878,5 +878,809 @@
     "episode": 1,
     "player": "danielle-reyes",
     "type": "traitor_from_start"
+  },
+  {
+    "episode": 1,
+    "player": "britney-haynes",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "carolyn-wiger",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "chrishell-stause",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "ciara-miller",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "dylan-efron",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "gabby-windey",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "ivar-mountbatten",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "jeremy-collins",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "nikki-garcia",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "tom-sandoval",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 1,
+    "player": "wells-adams",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 2,
+    "player": "bob-harper",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "bob-the-drag-queen",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "chanel-ayan",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "chrishell-stause",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "derrick-levasseur",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "jeremy-collins",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "nikki-garcia",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "rob-mariano",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "robyn-dixon",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "tony-vlachos",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "wells-adams",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "wes-bergmann",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $15,000"
+  },
+  {
+    "episode": 2,
+    "player": "dylan-efron",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 2,
+    "player": "jeremy-collins",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 2,
+    "player": "tony-vlachos",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 4,
+    "player": "bob-harper",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "bob-the-drag-queen",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "chrishell-stause",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "derrick-levasseur",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "nikki-garcia",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "rob-mariano",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "robyn-dixon",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "wes-bergmann",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 4,
+    "player": "bob-harper",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "bob-the-drag-queen",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "britney-haynes",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "chrishell-stause",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "danielle-reyes",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "dolores-catania",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "dylan-efron",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "rob-mariano",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "tom-sandoval",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 4,
+    "player": "wes-bergmann",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 5,
+    "player": "bob-harper",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "chrishell-stause",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "derrick-levasseur",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "nikki-garcia",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "rob-mariano",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "wes-bergmann",
+    "type": "mission_won",
+    "note": "Banked $15,000 of $20,000"
+  },
+  {
+    "episode": 5,
+    "player": "ciara-miller",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 5,
+    "player": "dolores-catania",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 6,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "chrishell-stause",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "derrick-levasseur",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "rob-mariano",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "wes-bergmann",
+    "type": "mission_won",
+    "note": "Banked $30,000 of $30,000"
+  },
+  {
+    "episode": 6,
+    "player": "carolyn-wiger",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 6,
+    "player": "chrishell-stause",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 6,
+    "player": "dylan-efron",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 7,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "chrishell-stause",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "rob-mariano",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $22,500 of $27,000"
+  },
+  {
+    "episode": 7,
+    "player": "britney-haynes",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 7,
+    "player": "ciara-miller",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 7,
+    "player": "danielle-reyes",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 7,
+    "player": "ivar-mountbatten",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 7,
+    "player": "rob-mariano",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 7,
+    "player": "sam-asghari",
+    "type": "advantage_won",
+    "note": "Reached safety in a group mission"
+  },
+  {
+    "episode": 8,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "carolyn-wiger",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "ciara-miller",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "sam-asghari",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "tom-sandoval",
+    "type": "mission_won",
+    "note": "Banked $20,000 of $20,000"
+  },
+  {
+    "episode": 8,
+    "player": "ciara-miller",
+    "type": "advantage_won",
+    "note": "Won a shield"
+  },
+  {
+    "episode": 11,
+    "player": "britney-haynes",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "danielle-reyes",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "dolores-catania",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "dylan-efron",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "gabby-windey",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
+  },
+  {
+    "episode": 11,
+    "player": "ivar-mountbatten",
+    "type": "mission_won",
+    "note": "Banked $37,500 of $50,000"
   }
 ]
