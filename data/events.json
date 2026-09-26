@@ -379,5 +379,358 @@
     "player": "madeline-kostopulos",
     "type": "banished",
     "note": "Banished on a mistaken accusation - she was actually Faithful"
+  },
+  {
+    "episode": 3,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "arisa-thomas",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "logan-smith",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "michael-foote",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "niyyah-hayes",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "sherry-kuehl",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 3,
+    "player": "katie-fites",
+    "type": "recruited",
+    "note": "Chosen over Xavier after both accomplices retrieved their murder warrants"
+  },
+  {
+    "episode": 3,
+    "player": "clyde-moser",
+    "type": "advantage_won",
+    "note": "Took the shield from the second crypt (Tomica passed it to him)"
+  },
+  {
+    "episode": 3,
+    "player": "xavier-scruggs",
+    "type": "murdered",
+    "note": "Lost the accomplice run-off to Katie"
+  },
+  {
+    "episode": 4,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "michael-foote",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "niyyah-hayes",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "sherry-kuehl",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 4,
+    "player": "arisa-thomas",
+    "type": "banished",
+    "note": "Banished on a misread clue - she was actually Faithful"
+  },
+  {
+    "episode": 4,
+    "player": "logan-smith",
+    "type": "murdered"
+  },
+  {
+    "episode": 4,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "abby-lee",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "ben-mcdonnell",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "clyde-moser",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "jay-vinnedge",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "joe-vanella",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "mark-zgoda",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "michael-foote",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "morgan-cook",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "niyyah-hayes",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "sherry-kuehl",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "tomica-adams",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Death Parade: banked $12,000 of $24,000"
+  },
+  {
+    "episode": 4,
+    "player": "abbey-benjamin",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "ben-mcdonnell",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "jay-vinnedge",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "katie-fites",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "michael-foote",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "shane-beatty",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 4,
+    "player": "wyatt-gillespie",
+    "type": "advantage_won",
+    "note": "Reached the end of the Death Parade, safe from murder"
   }
 ]
