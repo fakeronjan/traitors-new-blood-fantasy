@@ -630,5 +630,11 @@
     "player": "wyatt-gillespie",
     "type": "advantage_won",
     "note": "Reached the end of the Death Parade, safe from murder"
+  },
+  {
+    "episode": 5,
+    "player": "sherry-kuehl",
+    "type": "banished",
+    "note": "Banished after claiming there were three Traitors - she was actually Faithful"
   }
 ]
