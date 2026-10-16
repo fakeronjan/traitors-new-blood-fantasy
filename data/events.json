@@ -636,5 +636,257 @@
     "player": "sherry-kuehl",
     "type": "banished",
     "note": "Banished after claiming there were three Traitors - she was actually Faithful"
+  },
+  {
+    "episode": 5,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "michael-foote",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "niyyah-hayes",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 5,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "mark-zgoda",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 6,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "abby-lee",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "ben-mcdonnell",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "clyde-moser",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "jay-vinnedge",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "joe-vanella",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "mark-zgoda",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "michael-foote",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "morgan-cook",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "tomica-adams",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Matched the screams to the graves, banked $20,000 of $20,000"
+  },
+  {
+    "episode": 6,
+    "player": "niyyah-hayes",
+    "type": "murdered",
+    "note": "Caught the poisoned apple at the wake"
+  },
+  {
+    "episode": 6,
+    "player": "michael-foote",
+    "type": "banished",
+    "note": "Banished at the roundtable - he was actually Faithful"
   }
 ]

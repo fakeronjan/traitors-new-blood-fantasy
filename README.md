@@ -20,7 +20,3 @@ Add one object per event to `data/events.json`:
 ```
 
 Valid `type` values are the keys in `EVENT_TYPES` in `js/scoring.js`. Optional `"note"` field shows up in the episode log for context.
-
-## Pending
-
-- **Ep5 survival and the Ep5 murder:** Ep5 ended on a cliffhanger. The Traitors murdered one of Clyde, Mark, or Niyyah, but the victim is only revealed in Ep6. Once Ep6 airs, log the murder, then `survive` for every Ep5 player still in the game. Only Sherry's banishment is logged for Ep5 so far.
