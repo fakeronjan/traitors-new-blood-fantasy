@@ -20,3 +20,7 @@ Add one object per event to `data/events.json`:
 ```
 
 Valid `type` values are the keys in `EVENT_TYPES` in `js/scoring.js`. Optional `"note"` field shows up in the episode log for context.
+
+## Pending
+
+- **Ep7 survival, Victor's banishment, and the Power of the Pardon:** Ep7 ended with the roundtable voting out Victor, but the winner of the Power of the Pardon can still save him, and that is only revealed in Ep8. Once Ep8 airs, log `advantage_won` for the Pardon winner (Ep7), Victor's banishment if it stands, then `survive` for every Ep7 player still in the game. Only Mark's murder and the mission are logged for Ep7 so far.

@@ -888,5 +888,89 @@
     "player": "michael-foote",
     "type": "banished",
     "note": "Banished at the roundtable - he was actually Faithful"
+  },
+  {
+    "episode": 7,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "abby-lee",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "ben-mcdonnell",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "clyde-moser",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "jay-vinnedge",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "joe-vanella",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "morgan-cook",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "tomica-adams",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Gathered gold from the scarecrows, banked $15,300 of $15,300"
+  },
+  {
+    "episode": 7,
+    "player": "mark-zgoda",
+    "type": "murdered",
+    "note": "Murdered overnight, revealed at breakfast"
   }
 ]
