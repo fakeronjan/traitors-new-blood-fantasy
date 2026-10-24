@@ -1,6 +1,6 @@
 # The Traitors: New Blood - Fantasy League
 
-Family fantasy draft league for NBC's *The Traitors: New Blood* (Season 1, premieres Sept 17, 2026). All 22 castmates get drafted across three owners (Damon, Em, Ronjan) before the premiere, then score points episode by episode based on what happens to them in the game.
+Family fantasy draft league for NBC's *The Traitors: New Blood* (Season 1, premieres Sept 17, 2026). All 22 castmates get drafted across three owners (Damon, Em, RJ) before the premiere, then score points episode by episode based on what happens to them in the game.
 
 Static site, no backend. Deployed via GitHub Pages from `main`.
 

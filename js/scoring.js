@@ -1,7 +1,7 @@
 // Shared scoring config + calculations for The Traitors: New Blood fantasy league.
 // Single source of truth: rules.html renders this table, index.html/log.html/history pages use it to score.
 
-// Damon = teal, Em = purple, Ronjan = pink (their picks). Stepped slightly off the
+// Damon = teal, Em = purple, RJ = pink (their picks). Stepped slightly off the
 // literal "bright" versions to clear the dataviz skill's all-pairs CVD validator
 // against this site's dark surface (teal-vs-pink is a classic deutan collision
 // pair at full brightness) - still reads as bright teal/purple/pink, just not the
@@ -9,10 +9,10 @@
 export const OWNERS = [
   { id: 'damon', name: 'Damon', color: '#12a89a' },
   { id: 'em', name: 'Em', color: '#9450d6' },
-  { id: 'ronjan', name: 'Ronjan', color: '#c94080' },
+  { id: 'ronjan', name: 'RJ', color: '#c94080' },
 ];
 
-// Fixed repeating pick order (not snake): Damon, Em, Ronjan, Damon, Em, Ronjan...
+// Fixed repeating pick order (not snake): Damon, Em, RJ, Damon, Em, RJ...
 export const DRAFT_ORDER = ['damon', 'em', 'ronjan'];
 
 // The winning side splits this pool evenly, same as the real prize pot - a solo winner
