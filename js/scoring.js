@@ -20,6 +20,11 @@ export const DRAFT_ORDER = ['damon', 'em', 'ronjan'];
 // per-person bonus: a rare solo win should outscore a large group split.
 export const WINNER_POOL = 20;
 
+// Only each owner's top N scorers count toward the team score, so Damon's 8th
+// pick evens out against Em and RJ's 7. Re-picked from cumulative totals at every
+// episode, so the dropped player can change as the season goes.
+export const COUNTED_PLAYERS = 7;
+
 // traitor_from_start and recruited are both pure role-timeline markers (a player is a
 // Traitor from that episode on) - only "recruited" carries a point bonus, since that's
 // the mid-season-flip drama the bonus is meant to reward. banished/murdered/traitor_from_start
@@ -124,13 +129,17 @@ export function computePlayerTotals(players, events) {
 export function computeOwnerTotals(players, events) {
   const playerTotals = computePlayerTotals(players, events);
   const ownerTotals = {};
-  OWNERS.forEach(o => { ownerTotals[o.id] = 0; });
-  players.forEach(p => {
-    if (p.owner && ownerTotals[p.owner] !== undefined) {
-      ownerTotals[p.owner] += playerTotals[p.id] ?? 0;
-    }
+  const droppedPlayers = new Set();
+  OWNERS.forEach(o => {
+    const roster = players
+      .filter(p => p.owner === o.id)
+      .sort((a, b) => (playerTotals[b.id] ?? 0) - (playerTotals[a.id] ?? 0));
+    roster.slice(COUNTED_PLAYERS).forEach(p => droppedPlayers.add(p.id));
+    ownerTotals[o.id] = roster
+      .slice(0, COUNTED_PLAYERS)
+      .reduce((sum, p) => sum + (playerTotals[p.id] ?? 0), 0);
   });
-  return { playerTotals, ownerTotals };
+  return { playerTotals, ownerTotals, droppedPlayers };
 }
 
 // Cumulative owner totals as of each episode 0..N (0 = pre-season baseline, all

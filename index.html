@@ -57,7 +57,7 @@ renderStandings();
 renderScoreboard();
 
 function renderStandings() {
-  const { playerTotals, ownerTotals } = computeOwnerTotals(players, events);
+  const { playerTotals, ownerTotals, droppedPlayers } = computeOwnerTotals(players, events);
   const drafted = players.some(p => p.owner);
   const board = document.getElementById('leaderboard');
 
@@ -79,7 +79,9 @@ function renderStandings() {
       const status = playerStatus(p.id, events);
       const isTraitor = roleLabel(p.id, events) !== 'Faithful';
       const cls = [status.eliminated ? 'eliminated' : '', isTraitor ? 'traitor' : ''].filter(Boolean).join(' ');
-      const ptsCls = pts < 0 ? 'negative' : '';
+      const dropped = droppedPlayers.has(p.id);
+      const ptsCls = [pts < 0 ? 'negative' : '', dropped ? 'dropped' : ''].filter(Boolean).join(' ');
+      const dropNote = dropped ? ' <span class="pnote">(Not counted)</span>' : '';
       const elimNote = status.eliminated
         ? (() => {
             const verb = ELIMINATION_VERB[status.type] ?? status.type;
@@ -90,7 +92,7 @@ function renderStandings() {
       return `<li>
         <img class="avatar" src="${p.photo}" alt="">
         <span class="pinfo">
-          <span class="pname ${cls}">${p.name}</span>${elimNote}
+          <span class="pname ${cls}">${p.name}</span>${elimNote}${dropNote}
           <span class="pmeta">${p.age} &middot; ${p.profession}</span>
           <span class="pmeta">${p.hometown}</span>
         </span>
