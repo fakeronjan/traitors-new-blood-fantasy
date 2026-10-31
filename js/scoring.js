@@ -78,10 +78,15 @@ export function deriveTeamCredits(players, events) {
   const isTraitorAt = (pid, ep) => traitorSinceEp[pid] !== undefined && ep >= traitorSinceEp[pid];
 
   const elimEp = {};
+  const murderedEp = {};
   events.forEach(e => {
     if (ELIMINATING_TYPES.has(e.type)) elimEp[e.player] = e.episode;
+    if (e.type === 'murdered') murderedEp[e.player] = e.episode;
   });
   const isActiveAt = (pid, ep) => elimEp[pid] === undefined || elimEp[pid] >= ep;
+  // A murder is revealed at breakfast, before that episode's roundtable, so
+  // that episode's victim wasn't around to help banish a Traitor.
+  const isAtRoundtable = (pid, ep) => isActiveAt(pid, ep) && murderedEp[pid] !== ep;
 
   const credits = [];
   events.forEach(e => {
@@ -93,7 +98,7 @@ export function deriveTeamCredits(players, events) {
       });
     } else if (e.type === 'banished' && isTraitorAt(e.player, e.episode)) {
       players.forEach(p => {
-        if (p.id !== e.player && isActiveAt(p.id, e.episode) && !isTraitorAt(p.id, e.episode)) {
+        if (p.id !== e.player && isAtRoundtable(p.id, e.episode) && !isTraitorAt(p.id, e.episode)) {
           credits.push({ episode: e.episode, player: p.id, type: 'banish_credit' });
         }
       });
