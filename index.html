@@ -89,7 +89,7 @@ function renderStandings() {
             return ` <span class="pnote">(${capVerb}: Ep${status.episode})</span>`;
           })()
         : '';
-      return `<li>
+      return `<li${status.eliminated ? ' class="out"' : ''}>
         <img class="avatar" src="${p.photo}" alt="">
         <span class="pinfo">
           <span class="pname ${cls}">${p.name}</span>${elimNote}${dropNote}
@@ -106,7 +106,7 @@ function renderStandings() {
       <div class="owner-card ${isLeader ? 'leader' : ''}" style="--owner-color: ${owner.color}">
         <h3>${owner.name}</h3>
         <div class="owner-score">${round1(ownerTotals[owner.id])}<span class="unit">pts</span></div>
-        <ul class="roster-list">${rows || '<li><span class="pname">No players</span></li>'}</ul>
+        <ul class="roster-list standings-roster">${rows || '<li><span class="pname">No players</span></li>'}</ul>
       </div>`;
   }).join('');
 }
