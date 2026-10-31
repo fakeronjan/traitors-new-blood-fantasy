@@ -972,5 +972,143 @@
     "player": "mark-zgoda",
     "type": "murdered",
     "note": "Murdered overnight, revealed at breakfast"
+  },
+  {
+    "episode": 7,
+    "player": "shane-beatty",
+    "type": "advantage_won",
+    "note": "Banked the most gold in the scarecrow mission, winning the Power of the Pardon (used in Ep8 to save Victor)"
+  },
+  {
+    "episode": 7,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "abby-lee",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "tomica-adams",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 7,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "abby-lee",
+    "type": "murdered",
+    "note": "Murdered overnight, revealed at breakfast"
+  },
+  {
+    "episode": 8,
+    "player": "tomica-adams",
+    "type": "banished",
+    "note": "Banished at the roundtable - she was a Traitor"
+  },
+  {
+    "episode": 8,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "morgan-cook",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 8,
+    "player": "wyatt-gillespie",
+    "type": "survive"
   }
 ]
