@@ -1110,5 +1110,67 @@
     "episode": 8,
     "player": "wyatt-gillespie",
     "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "morgan-cook",
+    "type": "murdered",
+    "note": "Murdered with the poisoned chalice at dinner"
+  },
+  {
+    "episode": 9,
+    "player": "victor-vollbrechthausen",
+    "type": "advantage_won",
+    "note": "Found the only shield in the haunted-cabin mission"
+  },
+  {
+    "episode": 9,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "ben-mcdonnell",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "joe-vanella",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 9,
+    "player": "wyatt-gillespie",
+    "type": "survive"
   }
 ]
