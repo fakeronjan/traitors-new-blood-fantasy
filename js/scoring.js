@@ -84,21 +84,32 @@ export function deriveTeamCredits(players, events) {
     if (e.type === 'murdered') murderedEp[e.player] = e.episode;
   });
   const isActiveAt = (pid, ep) => elimEp[pid] === undefined || elimEp[pid] >= ep;
-  // A murder is revealed at breakfast, before that episode's roundtable, so
-  // that episode's victim wasn't around to help banish a Traitor.
-  const isAtRoundtable = (pid, ep) => isActiveAt(pid, ep) && murderedEp[pid] !== ep;
+  // Usually a murder is revealed at breakfast, before that episode's roundtable, so
+  // that episode's victim wasn't around to help banish a Traitor. A banishment
+  // marked roundtable_first (New Blood Ep10: the roundtable carried over from the
+  // previous episode) happened before that episode's murder and recruitment, so
+  // the murder victim was there to vote, a same-episode recruit was still
+  // Faithful, and the banished Traitor was gone before the murder.
+  const roundtableFirstEps = new Set(events
+    .filter(e => e.type === 'banished' && e.roundtable_first).map(e => e.episode));
+  const isAtRoundtable = (pid, ep) => isActiveAt(pid, ep) &&
+    (murderedEp[pid] !== ep || roundtableFirstEps.has(ep));
+  const isTraitorAtRoundtable = (pid, ep) => roundtableFirstEps.has(ep)
+    ? isTraitorAt(pid, ep - 1) : isTraitorAt(pid, ep);
+  const isAtMurder = (pid, ep) => isActiveAt(pid, ep) &&
+    !(roundtableFirstEps.has(ep) && elimEp[pid] === ep && murderedEp[pid] !== ep);
 
   const credits = [];
   events.forEach(e => {
     if (e.type === 'murdered') {
       players.forEach(p => {
-        if (p.id !== e.player && isActiveAt(p.id, e.episode) && isTraitorAt(p.id, e.episode)) {
+        if (p.id !== e.player && isAtMurder(p.id, e.episode) && isTraitorAt(p.id, e.episode)) {
           credits.push({ episode: e.episode, player: p.id, type: 'murder_credit' });
         }
       });
     } else if (e.type === 'banished' && isTraitorAt(e.player, e.episode)) {
       players.forEach(p => {
-        if (p.id !== e.player && isAtRoundtable(p.id, e.episode) && !isTraitorAt(p.id, e.episode)) {
+        if (p.id !== e.player && isAtRoundtable(p.id, e.episode) && !isTraitorAtRoundtable(p.id, e.episode)) {
           credits.push({ episode: e.episode, player: p.id, type: 'banish_credit' });
         }
       });

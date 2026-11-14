@@ -1172,5 +1172,64 @@
     "episode": 9,
     "player": "wyatt-gillespie",
     "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "joe-vanella",
+    "type": "banished",
+    "roundtable_first": true,
+    "note": "Banished at the roundtable carried over from Ep9, before the murder - he was a Traitor"
+  },
+  {
+    "episode": 10,
+    "player": "shane-beatty",
+    "type": "recruited",
+    "note": "Took Katie's ultimatum to join or be murdered, after Joe's banishment"
+  },
+  {
+    "episode": 10,
+    "player": "ben-mcdonnell",
+    "type": "murdered",
+    "note": "Murdered overnight after Joe's banishment, revealed at breakfast"
+  },
+  {
+    "episode": 10,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "clyde-moser",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "jay-vinnedge",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "wyatt-gillespie",
+    "type": "survive"
   }
 ]
