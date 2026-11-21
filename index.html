@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Traitors: New Blood - Fantasy League</title>
+<title>The Traitors - Fantasy League</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1 class="site-title">The Traitors: New Blood</h1>
+    <h1 class="site-title">The Traitors</h1>
     <p class="site-subtitle">Family Fantasy League</p>
     <nav class="main-nav">
       <a href="index.html" class="active">Leaderboard</a>
@@ -24,6 +24,7 @@
 </header>
 
 <div class="wrap">
+  <div class="season-tabs" id="league-season-tabs"></div>
   <h2>Standings</h2>
   <div id="leaderboard" class="owner-grid"></div>
 
@@ -41,17 +42,20 @@
   </div>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+<footer class="site-footer"></footer>
 
 <script type="module">
 import {
   OWNERS, loadData, computeOwnerTotals, playerStatus, roleLabel, ELIMINATION_VERB,
   computeOwnerTotalsByEpisode, computeOwnerRosterCountsByEpisode,
 } from './js/scoring.js';
+import { loadLeague, applySeasonChrome, champBadge, champBadgeText, metaLines } from './js/season.js';
 
 const round1 = n => Math.round(n * 10) / 10;
 
-const { players, events } = await loadData();
+const { league, season } = await loadLeague();
+applySeasonChrome(league, season);
+const { players, events } = await loadData(season.id);
 
 renderStandings();
 renderScoreboard();
@@ -93,8 +97,7 @@ function renderStandings() {
         <img class="avatar" src="${p.photo}" alt="">
         <span class="pinfo">
           <span class="pname ${cls}">${p.name}</span>${elimNote}${dropNote}
-          <span class="pmeta">${p.age} &middot; ${p.profession}</span>
-          <span class="pmeta">${p.hometown}</span>
+          ${metaLines(p).map(m => `<span class="pmeta">${m}</span>`).join('')}
         </span>
         <span class="ppoints ${ptsCls}">${pts}</span>
       </li>`;
@@ -104,7 +107,7 @@ function renderStandings() {
 
     return `
       <div class="owner-card ${isLeader ? 'leader' : ''}" style="--owner-color: ${owner.color}">
-        <h3>${owner.name}</h3>
+        <h3>${owner.name}${champBadge(owner.id, season)}</h3>
         <div class="owner-score">${round1(ownerTotals[owner.id])}<span class="unit">pts</span></div>
         <ul class="roster-list standings-roster">${rows || '<li><span class="pname">No players</span></li>'}</ul>
       </div>`;
@@ -217,7 +220,7 @@ function renderScoreboard() {
       const label = document.createElementNS(svgNS, 'text');
       label.setAttribute('x', endX + 18); label.setAttribute('y', labelY + 4);
       label.setAttribute('class', 'end-label');
-      label.textContent = `${owner.name} ${round1(rows[rows.length - 1].totals[owner.id] ?? 0)}`;
+      label.textContent = `${owner.name}${champBadgeText(owner.id, season)} ${round1(rows[rows.length - 1].totals[owner.id] ?? 0)}`;
       svg.appendChild(label);
     });
 
@@ -247,7 +250,7 @@ function renderScoreboard() {
       swatch.style.background = o.color;
       item.appendChild(swatch);
       const label = document.createElement('span');
-      label.textContent = o.name;
+      label.innerHTML = o.name + champBadge(o.id, season);
       item.appendChild(label);
       legend.appendChild(item);
     });
@@ -275,7 +278,7 @@ function renderScoreboard() {
         row.appendChild(key);
         const name = document.createElement('span');
         name.className = 'tt-name';
-        name.textContent = o.name;
+        name.textContent = o.name + champBadgeText(o.id, season);
         row.appendChild(name);
         const val = document.createElement('span');
         val.className = 'tt-val';
@@ -320,7 +323,7 @@ function renderScoreboard() {
 
   function renderWeeklyTable(rows, rosterRows) {
     const head = document.getElementById('weekly-head');
-    head.innerHTML = ['<th>Episode</th>', ...OWNERS.map(o => `<th>${o.name}</th>`)].join('');
+    head.innerHTML = ['<th>Episode</th>', ...OWNERS.map(o => `<th>${o.name}${champBadge(o.id, season)}</th>`)].join('');
 
     const tbody = document.querySelector('#weekly-table tbody');
     const body = [];

@@ -5,7 +5,7 @@
     "age": 37,
     "profession": "Nurse",
     "hometown": "Mangham, LA",
-    "photo": "img/players/abbey-benjamin.jpg",
+    "photo": "img/seasons/5/abbey-benjamin.jpg",
     "owner": "damon",
     "pick": 22
   },
@@ -15,7 +15,7 @@
     "age": 29,
     "profession": "Astrophysicist",
     "hometown": "Saint Paul, MN",
-    "photo": "img/players/abby-lee.jpg",
+    "photo": "img/seasons/5/abby-lee.jpg",
     "owner": "ronjan",
     "pick": 18
   },
@@ -25,7 +25,7 @@
     "age": 36,
     "profession": "Dog Groomer",
     "hometown": "Los Angeles, CA",
-    "photo": "img/players/arisa-thomas.jpg",
+    "photo": "img/seasons/5/arisa-thomas.jpg",
     "owner": "damon",
     "pick": 4
   },
@@ -35,7 +35,7 @@
     "age": 34,
     "profession": "Barrel Racer",
     "hometown": "Granbury, TX",
-    "photo": "img/players/ben-mcdonnell.jpg",
+    "photo": "img/seasons/5/ben-mcdonnell.jpg",
     "owner": "em",
     "pick": 17
   },
@@ -45,7 +45,7 @@
     "age": 32,
     "profession": "Teacher",
     "hometown": "Charleston, SC",
-    "photo": "img/players/clyde-moser.jpg",
+    "photo": "img/seasons/5/clyde-moser.jpg",
     "owner": "damon",
     "pick": 7
   },
@@ -55,7 +55,7 @@
     "age": 36,
     "profession": "Physician",
     "hometown": "Oklahoma City, OK",
-    "photo": "img/players/jay-vinnedge.jpg",
+    "photo": "img/seasons/5/jay-vinnedge.jpg",
     "owner": "em",
     "pick": 8
   },
@@ -65,7 +65,7 @@
     "age": 44,
     "profession": "Funeral Director",
     "hometown": "Wantagh, NY",
-    "photo": "img/players/joe-vanella.jpg",
+    "photo": "img/seasons/5/joe-vanella.jpg",
     "owner": "damon",
     "pick": 10
   },
@@ -75,7 +75,7 @@
     "age": 23,
     "profession": "Marketing Manager",
     "hometown": "Jacksonville, FL",
-    "photo": "img/players/katie-fites.jpg",
+    "photo": "img/seasons/5/katie-fites.jpg",
     "owner": "ronjan",
     "pick": 15
   },
@@ -85,7 +85,7 @@
     "age": 37,
     "profession": "Lawyer",
     "hometown": "Houston, TX",
-    "photo": "img/players/kim-daily.jpg",
+    "photo": "img/seasons/5/kim-daily.jpg",
     "owner": "em",
     "pick": 5
   },
@@ -95,7 +95,7 @@
     "age": 52,
     "profession": "Realtor",
     "hometown": "Hattiesburg, MS",
-    "photo": "img/players/kriste-lewis.jpg",
+    "photo": "img/seasons/5/kriste-lewis.jpg",
     "owner": "ronjan",
     "pick": 21
   },
@@ -105,7 +105,7 @@
     "age": 26,
     "profession": "Realtor",
     "hometown": "Gatlinburg, TN",
-    "photo": "img/players/logan-smith.jpg",
+    "photo": "img/seasons/5/logan-smith.jpg",
     "owner": "em",
     "pick": 20
   },
@@ -115,7 +115,7 @@
     "age": 26,
     "profession": "Construction Manager",
     "hometown": "San Diego, CA",
-    "photo": "img/players/madeline-kostopulos.jpg",
+    "photo": "img/seasons/5/madeline-kostopulos.jpg",
     "owner": "damon",
     "pick": 16
   },
@@ -125,7 +125,7 @@
     "age": 26,
     "profession": "Personal Trainer",
     "hometown": "Phillipsburg, NJ",
-    "photo": "img/players/mark-zgoda.jpg",
+    "photo": "img/seasons/5/mark-zgoda.jpg",
     "owner": "damon",
     "pick": 13
   },
@@ -135,7 +135,7 @@
     "age": 38,
     "profession": "Lawyer",
     "hometown": "New York, NY",
-    "photo": "img/players/michael-foote.jpg",
+    "photo": "img/seasons/5/michael-foote.jpg",
     "owner": "ronjan",
     "pick": 3
   },
@@ -145,7 +145,7 @@
     "age": 30,
     "profession": "Content Creator",
     "hometown": "Midland, MI",
-    "photo": "img/players/morgan-cook.jpg",
+    "photo": "img/seasons/5/morgan-cook.jpg",
     "owner": "ronjan",
     "pick": 12
   },
@@ -155,7 +155,7 @@
     "age": 29,
     "profession": "Therapist",
     "hometown": "Indianapolis, IN",
-    "photo": "img/players/niyyah-hayes.jpg",
+    "photo": "img/seasons/5/niyyah-hayes.jpg",
     "owner": "em",
     "pick": 2
   },
@@ -165,7 +165,7 @@
     "age": 32,
     "profession": "Ironworker",
     "hometown": "Staten Island, NY",
-    "photo": "img/players/shane-beatty.jpg",
+    "photo": "img/seasons/5/shane-beatty.jpg",
     "owner": "em",
     "pick": 14
   },
@@ -175,7 +175,7 @@
     "age": 65,
     "profession": "Writer",
     "hometown": "Leawood, KS",
-    "photo": "img/players/sherry-kuehl.jpg",
+    "photo": "img/seasons/5/sherry-kuehl.jpg",
     "owner": "ronjan",
     "pick": 9
   },
@@ -185,7 +185,7 @@
     "age": 54,
     "profession": "Pilot",
     "hometown": "Boston, MA",
-    "photo": "img/players/tomica-adams.jpg",
+    "photo": "img/seasons/5/tomica-adams.jpg",
     "owner": "damon",
     "pick": 1
   },
@@ -195,7 +195,7 @@
     "age": 26,
     "profession": "Business Executive",
     "hometown": "New York, NY",
-    "photo": "img/players/victor-vollbrechthausen.jpg",
+    "photo": "img/seasons/5/victor-vollbrechthausen.jpg",
     "owner": "em",
     "pick": 11
   },
@@ -205,7 +205,7 @@
     "age": 26,
     "profession": "Designer",
     "hometown": "Ligonier, PA",
-    "photo": "img/players/wyatt-gillespie.jpg",
+    "photo": "img/seasons/5/wyatt-gillespie.jpg",
     "owner": "damon",
     "pick": 19
   },
@@ -215,7 +215,7 @@
     "age": 38,
     "profession": "MLB Analyst",
     "hometown": "Wesley Chapel, FL",
-    "photo": "img/players/xavier-scruggs.jpg",
+    "photo": "img/seasons/5/xavier-scruggs.jpg",
     "owner": "ronjan",
     "pick": 6
   }

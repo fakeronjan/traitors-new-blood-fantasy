@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Traitors: New Blood - Fantasy League</title>
+<title>The Traitors - Fantasy League</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1 class="site-title">The Traitors: New Blood</h1>
+    <h1 class="site-title">The Traitors</h1>
     <p class="site-subtitle">Family Fantasy League</p>
     <nav class="main-nav">
       <a href="index.html">Leaderboard</a>
@@ -24,9 +24,9 @@
 </header>
 
 <div class="wrap prose">
+  <div class="season-tabs" id="league-season-tabs"></div>
   <h2>The Draft</h2>
-  <p>All 22 castmates get drafted before the season starts. Picks go in a fixed repeating order: Damon, then Em, then RJ, then back to Damon, and so on until all 22 are taken. Since 22 doesn't divide evenly by three, Damon picks first each cycle and ends up with 8 players; Em and RJ each get 7.</p>
-  <p>Only each team's top 7 scorers count toward the team score. For Damon's 8-player roster, his lowest scorer is dropped, and this is recalculated after every episode.</p>
+  <div id="draft-rules"></div>
   <p>Once a player is drafted, every point they earn for the rest of the season goes to their owner. There's no trading and no free agency; whoever you draft is who you're stuck with.</p>
 
   <h2>Scoring</h2>
@@ -52,10 +52,15 @@
   <p>If the season throws a twist the list above doesn't cover, we'll log the closest matching event and note it in the episode log so it's clear why the points landed the way they did.</p>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+<footer class="site-footer"></footer>
 
 <script type="module">
 import { EVENT_TYPES, WINNER_POOL } from './js/scoring.js';
+import { loadLeague, applySeasonChrome } from './js/season.js';
+
+const { league, season } = await loadLeague();
+applySeasonChrome(league, season);
+document.getElementById('draft-rules').innerHTML = season.draft_rules.map(t => `<p>${t}</p>`).join('');
 
 const tbody = document.querySelector('#rules-table tbody');
 tbody.innerHTML = Object.values(EVENT_TYPES).filter(def => def.points !== 0).map(def => {

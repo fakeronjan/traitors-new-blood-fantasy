@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Traitors: New Blood - Fantasy League</title>
+<title>The Traitors - Fantasy League</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1 class="site-title">The Traitors: New Blood</h1>
+    <h1 class="site-title">The Traitors</h1>
     <p class="site-subtitle">Family Fantasy League</p>
     <nav class="main-nav">
       <a href="index.html">Leaderboard</a>
@@ -23,15 +23,19 @@
   </div>
 </header>
 
+<div class="wrap">
+  <div class="season-tabs" id="league-season-tabs"></div>
+</div>
+
 <div class="wrap" id="draft-complete-view" hidden>
   <h2>Draft Results</h2>
-  <p class="site-subtitle" style="margin-bottom: 20px;">All 22 castmates, drafted live. Order repeated Damon &rarr; Em &rarr; RJ for all 22 picks.</p>
+  <p class="site-subtitle" style="margin-bottom: 20px;">All <span class="cast-count"></span> castmates, drafted live. Order repeated <span class="order-text"></span> for all <span class="cast-count"></span> picks.</p>
   <div class="draft-board" id="summary-board"></div>
 </div>
 
 <div class="wrap" id="draft-live-view" hidden>
   <h2>Live Draft</h2>
-  <p class="site-subtitle" style="margin-bottom: 20px;">Order repeats Damon &rarr; Em &rarr; RJ until all 22 are picked. Click a name for whoever's on the clock. This only saves in this browser until you download the results.</p>
+  <p class="site-subtitle" style="margin-bottom: 20px;">Order repeats <span class="order-text"></span> until all <span class="cast-count"></span> are picked. Click a name for whoever's on the clock. This only saves in this browser until you download the results.</p>
 
   <div class="draft-status">
     <div class="on-the-clock" id="on-the-clock"></div>
@@ -48,18 +52,27 @@
   <div class="pool-grid" id="pool"></div>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+<footer class="site-footer"></footer>
 
 <script type="module">
-import { OWNERS, DRAFT_ORDER, ownerName } from './js/scoring.js';
+import { OWNERS, ownerName } from './js/scoring.js';
+import { loadLeague, applySeasonChrome, champBadge, metaLines } from './js/season.js';
 
-const players = await fetch('data/players.json').then(r => r.json());
+const { league, season } = await loadLeague();
+applySeasonChrome(league, season);
+const DRAFT_ORDER = season.draft_order;
+const DRAFT_OWNERS = DRAFT_ORDER.map(id => OWNERS.find(o => o.id === id));
+const players = await fetch(`data/seasons/${season.id}/players.json`).then(r => r.json());
+document.querySelectorAll('.cast-count').forEach(el => { el.textContent = players.length; });
+document.querySelectorAll('.order-text').forEach(el => {
+  el.innerHTML = DRAFT_ORDER.map(ownerName).join(' &rarr; ');
+});
 const draftComplete = players.length > 0 && players.every(p => p.owner);
 
 if (draftComplete) {
   document.getElementById('draft-complete-view').hidden = false;
 
-  document.getElementById('summary-board').innerHTML = OWNERS.map(owner => {
+  document.getElementById('summary-board').innerHTML = DRAFT_OWNERS.map(owner => {
     const picks = players
       .filter(p => p.owner === owner.id)
       .sort((a, b) => a.pick - b.pick);
@@ -68,20 +81,23 @@ if (draftComplete) {
         <img class="thumb" src="${p.photo}" alt="">
         <span class="info">
           <span class="pname">${p.name}</span>
-          <span class="pmeta">${p.age} &middot; ${p.profession}</span>
+          <span class="pmeta">${metaLines(p)[0]}</span>
         </span>
         <span class="pickno">#${p.pick}</span>
       </div>
     `).join('');
     return `<div class="owner-card">
-      <h3>${owner.name}</h3>
+      <h3>${owner.name}${champBadge(owner.id, season)}</h3>
       ${rows}
     </div>`;
   }).join('');
 } else {
   document.getElementById('draft-live-view').hidden = false;
 
-  const STORAGE_KEY = 'traitors-new-blood-draft-history-v1';
+  // Season 5 kept its original key so an in-progress draft there was never lost.
+  const STORAGE_KEY = season.id === 5
+    ? 'traitors-new-blood-draft-history-v1'
+    : `traitors-fantasy-draft-history-s${season.id}`;
 
   function loadHistory() {
     try {
@@ -93,7 +109,7 @@ if (draftComplete) {
   }
 
   function saveHistory(history) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(history)); } catch {}
   }
 
   let history = loadHistory();
@@ -122,7 +138,7 @@ if (draftComplete) {
       clockEl.innerHTML = `On the clock: <span class="owner-name">${turnOwner}</span> &middot; Pick ${history.length + 1} of ${players.length}`;
     }
 
-    boardEl.innerHTML = OWNERS.map(owner => {
+    boardEl.innerHTML = DRAFT_OWNERS.map(owner => {
       const picks = history
         .map((playerId, i) => ({ playerId, owner: DRAFT_ORDER[i % DRAFT_ORDER.length], pick: i + 1 }))
         .filter(a => a.owner === owner.id);
@@ -131,7 +147,7 @@ if (draftComplete) {
         return `<li><span class="pwho"><img class="avatar" src="${p.photo}" alt=""><span class="pname">${p.name}</span></span><span class="ppoints">#${a.pick}</span></li>`;
       }).join('');
       return `<div class="owner-card">
-        <h3>${owner.name}</h3>
+        <h3>${owner.name}${champBadge(owner.id, season)}</h3>
         <ul class="roster-list">${rows || '<li><span class="pname">No picks yet</span></li>'}</ul>
       </div>`;
     }).join('');
@@ -141,15 +157,14 @@ if (draftComplete) {
       .sort((a, b) => a.name.localeCompare(b.name));
 
     if (!undrafted.length) {
-      poolEl.innerHTML = '<div class="empty-state">All 22 players are drafted.</div>';
+      poolEl.innerHTML = `<div class="empty-state">All ${players.length} players are drafted.</div>`;
     } else {
       poolEl.innerHTML = undrafted.map(p => `
         <button class="pool-card" data-id="${p.id}">
           <span class="photo-wrap"><img src="${p.photo}" alt=""></span>
           <span class="pinfo">
             <span class="pname">${p.name}</span>
-            <span class="pmeta">${p.age} &middot; ${p.profession}</span>
-            <span class="pmeta">${p.hometown}</span>
+            ${metaLines(p).map(m => `<span class="pmeta">${m}</span>`).join('')}
           </span>
         </button>
       `).join('');

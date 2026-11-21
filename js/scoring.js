@@ -1,4 +1,5 @@
-// Shared scoring config + calculations for The Traitors: New Blood fantasy league.
+// Shared scoring config + calculations for the Traitors family fantasy league.
+// One ruleset for every season so far (Season 6 kept Season 5's rules unchanged).
 // Single source of truth: rules.html renders this table, index.html/log.html/history pages use it to score.
 
 // Damon = teal, Em = purple, RJ = pink (their picks). Stepped slightly off the
@@ -11,9 +12,6 @@ export const OWNERS = [
   { id: 'em', name: 'Em', color: '#9450d6' },
   { id: 'ronjan', name: 'RJ', color: '#c94080' },
 ];
-
-// Fixed repeating pick order (not snake): Damon, Em, RJ, Damon, Em, RJ...
-export const DRAFT_ORDER = ['damon', 'em', 'ronjan'];
 
 // The winning side splits this pool evenly, same as the real prize pot - a solo winner
 // takes it all, a 4-way Faithful split gets a quarter each. Deliberately NOT a flat
@@ -208,10 +206,10 @@ export function playerStatus(playerId, events) {
   return { eliminated: false };
 }
 
-export async function loadData() {
+export async function loadData(seasonId) {
   const [players, events] = await Promise.all([
-    fetch('data/players.json').then(r => r.json()),
-    fetch('data/events.json').then(r => r.json()),
+    fetch(`data/seasons/${seasonId}/players.json`).then(r => r.json()),
+    fetch(`data/seasons/${seasonId}/events.json`).then(r => r.json()),
   ]);
   return { players, events };
 }

@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Traitors: New Blood - Fantasy League</title>
+<title>The Traitors - Fantasy League</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <h1 class="site-title">The Traitors: New Blood</h1>
+    <h1 class="site-title">The Traitors</h1>
     <p class="site-subtitle">Family Fantasy League</p>
     <nav class="main-nav">
       <a href="index.html">Leaderboard</a>
@@ -35,10 +35,16 @@
   </div>
 </div>
 
-<footer class="site-footer">Season premieres Sept 17, 2026 on NBC/Peacock. Cast photos courtesy of NBC.</footer>
+<footer class="site-footer"></footer>
 
 <script type="module">
 import { computePlayerTotals, roleLabel } from './js/scoring.js';
+import { loadLeague, applySeasonChrome } from './js/season.js';
+
+{
+  const { league } = await loadLeague();
+  applySeasonChrome(league, league.seasons.find(s => s.id === league.current));
+}
 
 const round1 = n => Math.round(n * 10) / 10;
 
