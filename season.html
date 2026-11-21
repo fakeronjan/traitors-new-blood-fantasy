@@ -93,7 +93,7 @@ const tbody = document.querySelector('#season-table tbody');
 if (view === 'all') {
   document.getElementById('season-title').textContent = 'All Seasons';
   document.getElementById('season-summary').textContent = `Every contestant from the first ${seasons.length} US seasons, scored with this exact ruleset and ranked together.`;
-  tableHead.innerHTML = '<th>#</th><th>Name</th><th>Season</th><th>Role</th><th>Fate</th><th>Score</th>';
+  tableHead.innerHTML = '<th>#</th><th>Name</th><th class="col-season">Season</th><th class="col-wide">Role</th><th class="col-wide">Fate</th><th>Score</th>';
 
   const seasonData = await Promise.all(seasons.map(s => loadSeason(s.season)));
   const combined = [];
@@ -117,10 +117,10 @@ if (view === 'all') {
     const roleCls = r.role === 'Traitor' ? 'traitor' : (r.role === 'Recruited Traitor' ? 'recruited' : '');
     return `<tr class="${r.isWinner ? 'winner-row' : ''}">
       <td class="rank">${i + 1}</td>
-      <td class="pname">${r.name}</td>
-      <td>${r.season}</td>
-      <td><span class="role-badge ${roleCls}">${r.role}</span></td>
-      <td>${r.fate}</td>
+      <td class="pname">${r.name}<span class="row-sub"><span class="role-badge ${roleCls}">${r.role}</span><span>Season ${r.season} &middot; ${r.fate}</span></span></td>
+      <td class="col-season">${r.season}</td>
+      <td class="col-wide"><span class="role-badge ${roleCls}">${r.role}</span></td>
+      <td class="col-wide">${r.fate}</td>
       <td class="score">${round1(r.score)}</td>
     </tr>`;
   }).join('');
@@ -131,7 +131,7 @@ if (view === 'all') {
 
   document.getElementById('season-title').textContent = `Season ${season}`;
   document.getElementById('season-summary').textContent = meta ? `Winner: ${meta.winners.join(' & ')} - ${meta.note}` : '';
-  tableHead.innerHTML = '<th>#</th><th>Name</th><th>Role</th><th>Fate</th><th>Score</th>';
+  tableHead.innerHTML = '<th>#</th><th>Name</th><th class="col-wide">Role</th><th class="col-wide">Fate</th><th>Score</th>';
 
   const totals = computePlayerTotals(players, events);
   const ranked = [...players].sort((a, b) => (totals[b.id] ?? 0) - (totals[a.id] ?? 0));
@@ -142,9 +142,9 @@ if (view === 'all') {
     const isWinner = events.some(e => e.player === p.id && e.type === 'winner');
     return `<tr class="${isWinner ? 'winner-row' : ''}">
       <td class="rank">${i + 1}</td>
-      <td class="pname">${p.name}</td>
-      <td><span class="role-badge ${roleCls}">${role}</span></td>
-      <td>${p.fate_summary}</td>
+      <td class="pname">${p.name}<span class="row-sub"><span class="role-badge ${roleCls}">${role}</span><span>${p.fate_summary}</span></span></td>
+      <td class="col-wide"><span class="role-badge ${roleCls}">${role}</span></td>
+      <td class="col-wide">${p.fate_summary}</td>
       <td class="score">${round1(totals[p.id] ?? 0)}</td>
     </tr>`;
   }).join('');

@@ -526,9 +526,12 @@ table.history-table td.pname { white-space: nowrap; }
 
 .role-badge {
   display: inline-block;
-  padding: 2px 9px;
-  border-radius: 20px;
-  font-size: 0.82rem;
+  padding: 3px 10px 4px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  vertical-align: middle;
   border: 1px solid var(--border);
   color: var(--text-dim);
 }
@@ -685,4 +688,16 @@ table.history-table td.score.negative { color: var(--red); }
 /* Narrow phones: the "20-pt pool, split evenly" cell was pushing the rules table 3px wide */
 @media (max-width: 400px) {
   table.rules-table th, table.rules-table td { padding: 10px 8px; }
+}
+
+/* Past Seasons on phones: role + fate move under the name instead of scrolling sideways */
+table.history-table .row-sub { display: none; }
+@media (max-width: 700px) {
+  #season-table .col-wide, #season-table .col-season { display: none; }
+  #season-table td.pname { white-space: normal; }
+  #season-table .row-sub {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px;
+    margin-top: 4px; font-size: 0.9rem; color: var(--text-dim);
+  }
+  table.history-table th, table.history-table td { padding: 10px 8px; }
 }
