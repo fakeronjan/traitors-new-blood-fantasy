@@ -46,7 +46,15 @@
 
   <div class="draft-board" id="draft-board"></div>
 
-  <h2>Available Players</h2>
+  <div class="pool-head">
+    <h2>Available Players</h2>
+    <div class="sort-control" id="sort-control" role="group" aria-label="Sort players" hidden>
+      <span class="sort-label">Sort by</span>
+      <button type="button" class="sort-btn" data-sort="tier">Tier</button>
+      <button type="button" class="sort-btn" data-sort="name">Name</button>
+      <button type="button" class="sort-btn" data-sort="category">Category</button>
+    </div>
+  </div>
   <div class="pool-grid" id="pool"></div>
 </div>
 
@@ -124,7 +132,40 @@ if (draftComplete) {
     return map;
   }
 
+  // Pool sort: Tier (A to C, then stronger category, then name), Name, or Category (A to Z).
+  // Only seasons with scouting tiers get the control; the choice is remembered per browser.
+  const SORT_KEY = 'traitors-fantasy-pool-sort';
+  const hasScouting = Object.keys(scouting).length > 0;
+  let sortBy = 'name';
+  if (hasScouting) {
+    try { sortBy = localStorage.getItem(SORT_KEY) || 'tier'; } catch { sortBy = 'tier'; }
+    document.getElementById('sort-control').hidden = false;
+  }
+  const byName = (a, b) => a.name.localeCompare(b.name);
+  function poolSort(a, b) {
+    const sa = scouting[a.id], sb = scouting[b.id];
+    if (sortBy === 'tier' && sa && sb) {
+      return sa.tier.localeCompare(sb.tier) || sb.avg - sa.avg || sa.category.localeCompare(sb.category) || byName(a, b);
+    }
+    if (sortBy === 'category' && sa && sb) {
+      return sa.category.localeCompare(sb.category) || byName(a, b);
+    }
+    return byName(a, b);
+  }
+  document.querySelectorAll('.sort-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      sortBy = btn.dataset.sort;
+      try { localStorage.setItem(SORT_KEY, sortBy); } catch {}
+      render();
+    });
+  });
+
   function render() {
+    document.querySelectorAll('.sort-btn').forEach(btn => {
+      const on = btn.dataset.sort === sortBy;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on);
+    });
     const assignments = assignmentsFromHistory(history);
     const clockEl = document.getElementById('on-the-clock');
     const boardEl = document.getElementById('draft-board');
@@ -156,7 +197,7 @@ if (draftComplete) {
 
     const undrafted = players
       .filter(p => !assignments.has(p.id))
-      .sort((a, b) => a.name.localeCompare(b.name));
+      .sort(poolSort);
 
     if (!undrafted.length) {
       poolEl.innerHTML = `<div class="empty-state">All ${players.length} players are drafted.</div>`;

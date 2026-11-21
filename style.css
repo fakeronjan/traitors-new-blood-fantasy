@@ -732,3 +732,31 @@ table.history-table .row-sub { display: none; }
 }
 .pool-card .pmeta { text-wrap: balance; }
 .pool-card .nowrap { white-space: nowrap; }
+
+/* Available Players heading row with the sort control on the right */
+.pool-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin: 40px 0 16px;
+}
+.pool-head h2 { margin: 0; }
+.sort-control { display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; }
+.sort-label { color: var(--text-dim); font-size: 0.95rem; margin-right: 4px; white-space: nowrap; }
+.sort-btn {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sort-btn:hover { color: var(--gold-bright); }
+.sort-btn.active { color: var(--gold-bright); border-color: var(--gold); }
+.sort-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+@media (max-width: 360px) { .sort-btn { padding: 6px 10px; } }
