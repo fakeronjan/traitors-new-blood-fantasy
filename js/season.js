@@ -15,6 +15,9 @@ export async function loadLeague() {
 // season switcher (only on pages that have a #league-season-tabs slot).
 export function applySeasonChrome(league, season) {
   const isCurrent = season.id === league.current;
+  if (location.pathname.split('/').pop() !== 'season.html') {
+    document.documentElement.dataset.season = season.id;
+  }
   const suffix = isCurrent ? '' : `?season=${season.id}`;
 
   document.querySelectorAll('nav.main-nav a').forEach(a => {

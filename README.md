@@ -11,6 +11,7 @@ Static site, no backend. Deployed via GitHub Pages from `main`.
 - `data/seasons/N/events.json` - that season's episode-by-episode event log. Append new events after each episode airs, then commit and push.
 - `js/scoring.js` - owners and the point value of every event type (one ruleset for all seasons so far). `rules.html` renders its table straight from this file.
 - `js/season.js` - season lookup, the season switcher, and the reigning-champion badge.
+- `js/theme-boot.js` - sets each page's season colors before first paint. Its `CURRENT` must match `current` in `data/league.json`; per-season colors live at the top of `style.css`.
 - `draft.html` - the live draft tool. Runs entirely in the browser (state saved to `localStorage`, per season); use "Download Results" when the draft is done and commit the downloaded file over `data/seasons/N/players.json`.
 - `data/history/` - the Season 1-4 backtests on the Past Seasons page (not real family leagues).
 

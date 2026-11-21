@@ -11,9 +11,22 @@
   --green: #4f8f6b;
   --text: #ece6d8;
   --text-dim: #8faaa8;
+  --bg-out: #2a2e2d;
   --font-display: 'Cinzel', Georgia, serif;
   --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --bg-pattern: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIj4KICA8ZyBmb250LWZhbWlseT0iQXBwbGUgQ29sb3IgRW1vamksIFNlZ29lIFVJIEVtb2ppLCBOb3RvIENvbG9yIEVtb2ppLCBzYW5zLXNlcmlmIiBvcGFjaXR5PSIwLjEzIj4KICAgIDx0ZXh0IHg9IjYwIiB5PSI4MCIgZm9udC1zaXplPSI0NCIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1IDYwIDgwKSI+JiN4MUY1RTE7JiN4RkUwRjs8L3RleHQ+CiAgICA8dGV4dCB4PSIyMzUiIHk9IjU1IiBmb250LXNpemU9IjQ2IiB0cmFuc2Zvcm09InJvdGF0ZSgxMCAyMzUgNTUpIj4mI3gxRjNGMDs8L3RleHQ+CiAgICA8dGV4dCB4PSI0MDUiIHk9Ijk1IiBmb250LXNpemU9IjQyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOCA0MDUgOTUpIj4mI3gxRjNBRDs8L3RleHQ+CiAgICA8dGV4dCB4PSI4NSIgeT0iMjI1IiBmb250LXNpemU9IjQwIiB0cmFuc2Zvcm09InJvdGF0ZSgxMiA4NSAyMjUpIj4mI3gxRjQ0MTsmI3hGRTBGOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1NSIgeT0iMjE1IiBmb250LXNpemU9IjQ0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIgMjU1IDIxNSkiPiYjeDFGNDUxOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjQxNSIgeT0iMjUwIiBmb250LXNpemU9IjQwIiB0cmFuc2Zvcm09InJvdGF0ZSg4IDQxNSAyNTApIj4mI3gxRjU2RjsmI3hGRTBGOzwvdGV4dD4KICAgIDx0ZXh0IHg9IjE0NSIgeT0iMzY1IiBmb250LXNpemU9IjQ2IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTggMTQ1IDM2NSkiPiYjeDFGMzE5OzwvdGV4dD4KICAgIDx0ZXh0IHg9IjMyNSIgeT0iMzg1IiBmb250LXNpemU9IjQyIiB0cmFuc2Zvcm09InJvdGF0ZSgxNSAzMjUgMzg1KSI+JiN4MUY1RTE7JiN4RkUwRjs8L3RleHQ+CiAgICA8dGV4dCB4PSI0MzUiIHk9IjQzMCIgZm9udC1zaXplPSI0MCIgdHJhbnNmb3JtPSJyb3RhdGUoLTEwIDQzNSA0MzApIj4mI3gxRjNBRDs8L3RleHQ+CiAgPC9nPgo8L3N2Zz4K");
+}
+
+/* Season 6 (celebrity season): moonlit steel blue, matched to Peacock's cast-photo
+   backdrops. Season 5 (New Blood) keeps the green above. js/theme-boot.js sets
+   data-season before first paint so neither season flashes the other's colors. */
+:root[data-season="6"] {
+  --bg: #0f1b2b;
+  --bg-raised: #15253a;
+  --bg-card: #1b2f47;
+  --border: #2b4058;
+  --text-dim: #8fa8c4;
+  --bg-out: #252c37;
 }
 
 * { box-sizing: border-box; }
@@ -184,13 +197,16 @@ h2:first-of-type { margin-top: 0; }
 }
 
 .roster-list .avatar { width: 60px; height: 60px; }
+/* Live draft board rows: small photo beside the name, pick number pushed right */
+.roster-list .pwho { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+.roster-list .pwho .avatar { width: 30px; height: 30px; }
 
 .roster-list .pname { color: var(--text); }
 .roster-list .pname.eliminated { color: var(--text-dim); text-decoration: line-through; }
 .standings-roster li { padding: 10px 8px; }
 .standings-roster .pname { font-weight: 600; }
 .standings-roster .pname.eliminated { font-weight: 400; }
-.standings-roster li.out { background: #2a2e2d; border-radius: 6px; }
+.standings-roster li.out { background: var(--bg-out); border-radius: 6px; }
 .standings-roster li.out .avatar { filter: grayscale(1); }
 .roster-list .pname.traitor { color: var(--red); }
 .roster-list .pmeta { display: block; font-size: 0.82rem; color: var(--text-dim); }
