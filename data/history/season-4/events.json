@@ -818,7 +818,8 @@
   {
     "episode": 11,
     "player": "eric-nam",
-    "type": "banished"
+    "type": "banished",
+    "order": 3
   },
   {
     "episode": 11,
@@ -828,7 +829,8 @@
   {
     "episode": 11,
     "player": "johnny-weir",
-    "type": "banished"
+    "type": "banished",
+    "order": 1
   },
   {
     "episode": 11,
@@ -864,7 +866,8 @@
   {
     "episode": 11,
     "player": "tara-lipinski",
-    "type": "banished"
+    "type": "banished",
+    "order": 2
   },
   {
     "episode": 11,

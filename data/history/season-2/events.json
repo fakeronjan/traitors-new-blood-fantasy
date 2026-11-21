@@ -568,7 +568,8 @@
   {
     "episode": 11,
     "player": "sandra-diaz-twine",
-    "type": "banished"
+    "type": "banished",
+    "order": 1
   },
   {
     "episode": 1,
@@ -629,7 +630,8 @@
   {
     "episode": 11,
     "player": "kate-chastain",
-    "type": "banished"
+    "type": "banished",
+    "order": 2
   },
   {
     "episode": 11,
@@ -830,7 +832,8 @@
     "episode": 11,
     "player": "mercedes-javid",
     "type": "banished",
-    "note": "Banished by CT and Trishelle at the Fire of Truth after a 1-1-1 tie revote, so they could split the prize two ways instead of three"
+    "note": "Banished by CT and Trishelle at the Fire of Truth after a 1-1-1 tie revote, so they could split the prize two ways instead of three",
+    "order": 3
   },
   {
     "episode": 1,
