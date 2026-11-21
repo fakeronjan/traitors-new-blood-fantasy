@@ -97,6 +97,17 @@ export function deriveTeamCredits(players, events) {
   const isAtMurder = (pid, ep) => isActiveAt(pid, ep) &&
     !(roundtableFirstEps.has(ep) && elimEp[pid] === ep && murderedEp[pid] !== ep);
 
+  // Optional "order" on eliminations within one episode (New Blood Ep12: Kriste's final
+  // Round Table, then Katie and Victor at the Fire of Truth). Someone eliminated earlier
+  // in the same episode wasn't there for a later Traitor banishment.
+  const elimEvent = {};
+  events.forEach(e => { if (ELIMINATING_TYPES.has(e.type)) elimEvent[e.player] = e; });
+  const goneEarlierSameEpisode = (pid, banish) => {
+    const x = elimEvent[pid];
+    return !!x && x.episode === banish.episode && x.order !== undefined && banish.order !== undefined
+      && x.order < banish.order;
+  };
+
   const credits = [];
   events.forEach(e => {
     if (e.type === 'murdered') {
@@ -107,7 +118,8 @@ export function deriveTeamCredits(players, events) {
       });
     } else if (e.type === 'banished' && isTraitorAt(e.player, e.episode)) {
       players.forEach(p => {
-        if (p.id !== e.player && isAtRoundtable(p.id, e.episode) && !isTraitorAtRoundtable(p.id, e.episode)) {
+        if (p.id !== e.player && isAtRoundtable(p.id, e.episode) && !isTraitorAtRoundtable(p.id, e.episode)
+            && !goneEarlierSameEpisode(p.id, e)) {
           credits.push({ episode: e.episode, player: p.id, type: 'banish_credit' });
         }
       });

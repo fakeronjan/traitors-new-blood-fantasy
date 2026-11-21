@@ -1348,34 +1348,40 @@
   },
   {
     "episode": 11,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "kriste-lewis",
+    "type": "survive"
+  },
+  {
+    "episode": 12,
     "player": "kriste-lewis",
     "type": "banished",
-    "note": "Banished at the last roundtable before the Fire of Truth - she was Faithful"
-  },
-  {
-    "episode": 11,
-    "player": "abbey-benjamin",
-    "type": "survive"
-  },
-  {
-    "episode": 11,
-    "player": "katie-fites",
-    "type": "survive"
-  },
-  {
-    "episode": 11,
-    "player": "shane-beatty",
-    "type": "survive"
-  },
-  {
-    "episode": 11,
-    "player": "victor-vollbrechthausen",
-    "type": "survive"
-  },
-  {
-    "episode": 11,
-    "player": "wyatt-gillespie",
-    "type": "survive"
+    "note": "Banished at the final Round Table that opened Ep12, before the Fire of Truth - she was Faithful",
+    "order": 1
   },
   {
     "episode": 12,
@@ -1406,13 +1412,15 @@
     "episode": 12,
     "player": "katie-fites",
     "type": "banished",
-    "note": "Banished first at the Fire of Truth - she was a Traitor"
+    "note": "Banished first at the Fire of Truth - she was a Traitor",
+    "order": 2
   },
   {
     "episode": 12,
     "player": "victor-vollbrechthausen",
     "type": "banished",
-    "note": "Banished second at the Fire of Truth - he was Faithful"
+    "note": "Banished second at the Fire of Truth - he was Faithful",
+    "order": 3
   },
   {
     "episode": 12,
