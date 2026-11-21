@@ -40,7 +40,12 @@
         "All 22 castmates get drafted before the season starts. Picks go in a fixed repeating order: Damon, then Em, then RJ, then back to Damon, and so on until all 22 are taken. Since 22 doesn't divide evenly by three, Damon picks first each cycle and ends up with 8 players; Em and RJ each get 7.",
         "Only each team's top 7 scorers count toward the team score. For Damon's 8-player roster, his lowest scorer is dropped, and this is recalculated after every episode."
       ],
-      "past_seasons_note": "Solo Traitor win - Shane was recruited in Episode 10 and was the last Traitor left at the Fire of Truth."
+      "past_seasons_note": "Solo Traitor win - Shane was recruited in Episode 10 and was the last Traitor left at the Fire of Truth.",
+      "recap_video": {
+        "youtube": "c3WPns3SPgc",
+        "title": "The Post-Mortem: The New Blood Fantasy League",
+        "runtime": "8:48"
+      }
     }
   ]
 }

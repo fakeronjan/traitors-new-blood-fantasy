@@ -26,6 +26,20 @@
 </header>
 
 <div class="wrap">
+  <section id="recap-section" hidden>
+    <h2>Season Recap</h2>
+    <div class="recap-card">
+      <button type="button" class="recap-player" id="recap-player" aria-label="Play the season recap">
+        <img id="recap-thumb" alt="">
+        <span class="recap-play" aria-hidden="true"></span>
+      </button>
+      <div class="recap-meta">
+        <span class="recap-title" id="recap-title"></span>
+        <div class="recap-row"><span class="recap-sub" id="recap-sub"></span><a class="recap-yt" id="recap-yt" target="_blank" rel="noopener">Open on YouTube &#8599;</a></div>
+      </div>
+    </div>
+  </section>
+
   <h2>Standings</h2>
   <div id="leaderboard" class="owner-grid"></div>
 
@@ -58,8 +72,31 @@ const { league, season } = await loadLeague();
 applySeasonChrome(league, season);
 const { players, events } = await loadData(season.id);
 
+renderRecap();
 renderStandings();
 renderScoreboard();
+
+// A finished season can carry a recap video (data/league.json "recap_video").
+// The thumbnail loads first; the YouTube player only loads when someone presses play.
+function renderRecap() {
+  const v = season.recap_video;
+  if (!v) return;
+  document.getElementById('recap-section').hidden = false;
+  document.getElementById('recap-thumb').src = `https://i.ytimg.com/vi/${v.youtube}/maxresdefault.jpg`;
+  document.getElementById('recap-title').textContent = v.title;
+  document.getElementById('recap-sub').textContent = v.runtime;
+  document.getElementById('recap-yt').href = `https://www.youtube.com/watch?v=${v.youtube}`;
+  const player = document.getElementById('recap-player');
+  player.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.src = `https://www.youtube-nocookie.com/embed/${v.youtube}?autoplay=1&rel=0`;
+    frame.title = v.title;
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    player.replaceWith(Object.assign(document.createElement('div'), { className: 'recap-player' }));
+    document.querySelector('.recap-card .recap-player').appendChild(frame);
+  }, { once: true });
+}
 
 function renderStandings() {
   const { playerTotals, ownerTotals, droppedPlayers } = computeOwnerTotals(players, events);
