@@ -24,3 +24,7 @@ Add one object per event to `data/seasons/N/events.json`:
 ```
 
 Valid `type` values are the keys in `EVENT_TYPES` in `js/scoring.js`. Optional `"note"` field shows up in the episode log for context.
+
+## Draft scouting tiers
+
+The A/B/C pills on Season 6 draft cards are a for-fun extra, not a vetted projection. `analysis/tags.json` tags every Season 1-4 player and Season 6 castmate by where they came from; `node analysis/analyze.mjs` scores the backtests by category (and shows category didn't predict scores out of sample); `node analysis/scouting.mjs` writes `data/seasons/N/scouting.json`, splitting the cast into thirds by category average without splitting a category. A season shows tiers only when `data/league.json` sets `"scouting": true`.

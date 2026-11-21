@@ -20,7 +20,8 @@
       "draft_rules": [
         "All 23 castmates get drafted before the season starts. The pick order is the reverse of the Season 5 standings: RJ, then Damon, then Em, then back to RJ, and so on until all 23 are taken. Since 23 doesn't divide evenly by three, RJ and Damon end up with 8 players each; Em gets 7.",
         "Only each team's top 7 scorers count toward the team score. For an 8-player roster, the lowest scorer is dropped, and this is recalculated after every episode."
-      ]
+      ],
+      "scouting": true
     },
     {
       "id": 5,

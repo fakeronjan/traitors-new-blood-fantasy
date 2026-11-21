@@ -1,0 +1,57 @@
+{
+ "groups": {
+  "Survivor": "Gamers", "Big Brother": "Gamers", "The Challenge": "Gamers",
+  "Real Housewives": "Housewives",
+  "Other Bravo": "Other Bravo",
+  "Bachelor Nation": "Dating shows", "Love Island": "Dating shows",
+  "Drag Race": "Drag Race",
+  "Athlete": "Athletes",
+  "Entertainer": "Entertainers",
+  "Other reality": "Other reality & personalities", "Personality": "Other reality & personalities",
+  "Civilian": "Civilians"
+ },
+ "players": {
+  "Reza Farahan": "Other Bravo", "Geraldine Moreno": "Civilian", "Robert \"Bam\" Nieves": "Civilian",
+  "Brandi Glanville": "Real Housewives", "Azra Valani": "Civilian", "Michael Davidson": "Civilian",
+  "Ryan Lochte": "Athlete", "Kyle Cooke": "Other Bravo", "Amanda Clark-Stoner": "Civilian",
+  "Cody Calafiore": "Big Brother", "Anjelica Conti": "Civilian", "Shelbe Rodriguez": "Civilian",
+  "Rachel Reilly": "Big Brother", "Stephenie LaGrossa Kendrick": "Survivor", "Christian de la Torre": "Civilian",
+  "Kate Chastain": "Other Bravo", "Arie Luyendyk Jr.": "Bachelor Nation", "Quentin Jiles": "Civilian",
+  "Andie Vanacore": "Civilian", "Cirie Fields": "Survivor",
+
+  "Johnny Devenanzio": "The Challenge", "Peppermint": "Drag Race", "Marcus Jordan": "Personality",
+  "Maksim Chmerkovskiy": "Other reality", "Deontay Wilder": "Athlete", "Ekin-Su Cülcüloğlu": "Love Island",
+  "Larsa Pippen": "Real Housewives", "Tamra Judge": "Real Housewives", "Janelle Pierzina": "Big Brother",
+  "Dan Gheesling": "Big Brother", "Carsten Bergersen": "Love Island", "Parvati Shallow": "Survivor",
+  "Kevin Kreider": "Other reality", "Peter Weber": "Bachelor Nation", "John Bercow": "Personality",
+  "Phaedra Parks": "Real Housewives", "Sherée Whitfield": "Real Housewives", "Sandra Diaz-Twine": "Survivor",
+  "Chris \"CT\" Tamburello": "The Challenge", "Trishelle Cannatella": "The Challenge", "Mercedes \"MJ\" Javid": "Other Bravo",
+
+  "Dorinda Medley": "Real Housewives", "Wells Adams": "Bachelor Nation", "Chanel Ayan": "Real Housewives",
+  "Tony Vlachos": "Survivor", "Jeremy Collins": "Survivor", "Bob the Drag Queen": "Drag Race",
+  "Robyn Dixon": "Real Housewives", "Nikki Garcia": "Athlete", "Bob Harper": "Other reality",
+  "Wes Bergmann": "The Challenge", "Derrick Levasseur": "Big Brother", "Rob Mariano": "Survivor",
+  "Chrishell Stause": "Other reality", "Ciara Miller": "Other Bravo", "Sam Asghari": "Entertainer",
+  "Carolyn Wiger": "Survivor", "Tom Sandoval": "Other Bravo", "Danielle Reyes": "Big Brother",
+  "Britney Haynes": "Big Brother", "Dolores Catania": "Real Housewives", "Dylan Efron": "Personality",
+  "Ivar Mountbatten": "Personality", "Gabby Windey": "Bachelor Nation",
+
+  "Ian Terry": "Big Brother", "Porsha Williams": "Real Housewives", "Rob Cesternino": "Survivor",
+  "Donna Kelce": "Personality", "Caroline Stanbury": "Real Housewives", "Tiffany Mitchell": "Big Brother",
+  "Monét X Change": "Drag Race", "Michael Rapaport": "Entertainer", "Ron Funches": "Entertainer",
+  "Yam Yam Arocho": "Survivor", "Lisa Rinna": "Real Housewives", "Colton Underwood": "Bachelor Nation",
+  "Candiace Dillard Bassett": "Real Housewives", "Stephen Colletti": "Other reality", "Kristen Kish": "Other reality",
+  "Natalie Anderson": "Survivor", "Mark Ballas": "Other reality", "Johnny Weir": "Athlete",
+  "Tara Lipinski": "Athlete", "Eric Nam": "Entertainer", "Maura Higgins": "Love Island", "Rob Rausch": "Love Island"
+ },
+ "season6": {
+  "bianca-del-rio": "Drag Race", "boman-martinez-reid": "Personality", "bronwyn-newport": "Real Housewives",
+  "casey-wilson": "Entertainer", "chloe-kim": "Athlete", "cody-simpson": "Entertainer",
+  "craig-conover": "Other Bravo", "cynthia-bailey": "Real Housewives", "dominic-monaghan": "Entertainer",
+  "emira-dspain": "Other Bravo", "gizelle-bryant": "Real Housewives", "iain-stirling": "Entertainer",
+  "jag-bains": "Big Brother", "jana-craig": "Love Island", "joey-graziadei": "Bachelor Nation",
+  "johnny-sibilly": "Entertainer", "kristin-chenoweth": "Entertainer", "michele-fitzgerald": "Survivor",
+  "q-burdette": "Survivor", "rachel-robinson": "The Challenge", "rashad-jennings": "Athlete",
+  "taylor-hale": "Big Brother", "whitney-leavitt": "Other reality"
+ }
+}

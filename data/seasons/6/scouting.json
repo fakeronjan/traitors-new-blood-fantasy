@@ -1,0 +1,209 @@
+{
+  "bianca-del-rio": {
+    "tier": "C",
+    "category": "Drag Race",
+    "avg": 8,
+    "best": {
+      "name": "Monét X Change",
+      "score": 12
+    }
+  },
+  "boman-martinez-reid": {
+    "tier": "B",
+    "category": "Other reality",
+    "avg": 23,
+    "best": {
+      "name": "Dylan Efron",
+      "score": 51
+    }
+  },
+  "bronwyn-newport": {
+    "tier": "C",
+    "category": "Housewives",
+    "avg": 15,
+    "best": {
+      "name": "Dolores Catania",
+      "score": 47
+    }
+  },
+  "casey-wilson": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "chloe-kim": {
+    "tier": "C",
+    "category": "Athletes",
+    "avg": 20,
+    "best": {
+      "name": "Tara Lipinski",
+      "score": 38
+    }
+  },
+  "cody-simpson": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "craig-conover": {
+    "tier": "B",
+    "category": "Other Bravo",
+    "avg": 22,
+    "best": {
+      "name": "Mercedes \"MJ\" Javid",
+      "score": 36
+    }
+  },
+  "cynthia-bailey": {
+    "tier": "C",
+    "category": "Housewives",
+    "avg": 15,
+    "best": {
+      "name": "Dolores Catania",
+      "score": 47
+    }
+  },
+  "dominic-monaghan": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "emira-dspain": {
+    "tier": "B",
+    "category": "Other Bravo",
+    "avg": 22,
+    "best": {
+      "name": "Mercedes \"MJ\" Javid",
+      "score": 36
+    }
+  },
+  "gizelle-bryant": {
+    "tier": "C",
+    "category": "Housewives",
+    "avg": 15,
+    "best": {
+      "name": "Dolores Catania",
+      "score": 47
+    }
+  },
+  "iain-stirling": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "jag-bains": {
+    "tier": "B",
+    "category": "Gamers",
+    "avg": 20,
+    "best": {
+      "name": "Chris \"CT\" Tamburello",
+      "score": 48
+    }
+  },
+  "jana-craig": {
+    "tier": "A",
+    "category": "Dating shows",
+    "avg": 27,
+    "best": {
+      "name": "Rob Rausch",
+      "score": 56
+    }
+  },
+  "joey-graziadei": {
+    "tier": "A",
+    "category": "Dating shows",
+    "avg": 27,
+    "best": {
+      "name": "Rob Rausch",
+      "score": 56
+    }
+  },
+  "johnny-sibilly": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "kristin-chenoweth": {
+    "tier": "A",
+    "category": "Entertainers",
+    "avg": 23,
+    "best": {
+      "name": "Eric Nam",
+      "score": 45
+    }
+  },
+  "michele-fitzgerald": {
+    "tier": "B",
+    "category": "Gamers",
+    "avg": 20,
+    "best": {
+      "name": "Chris \"CT\" Tamburello",
+      "score": 48
+    }
+  },
+  "q-burdette": {
+    "tier": "B",
+    "category": "Gamers",
+    "avg": 20,
+    "best": {
+      "name": "Chris \"CT\" Tamburello",
+      "score": 48
+    }
+  },
+  "rachel-robinson": {
+    "tier": "B",
+    "category": "Gamers",
+    "avg": 20,
+    "best": {
+      "name": "Chris \"CT\" Tamburello",
+      "score": 48
+    }
+  },
+  "rashad-jennings": {
+    "tier": "C",
+    "category": "Athletes",
+    "avg": 20,
+    "best": {
+      "name": "Tara Lipinski",
+      "score": 38
+    }
+  },
+  "taylor-hale": {
+    "tier": "B",
+    "category": "Gamers",
+    "avg": 20,
+    "best": {
+      "name": "Chris \"CT\" Tamburello",
+      "score": 48
+    }
+  },
+  "whitney-leavitt": {
+    "tier": "B",
+    "category": "Other reality",
+    "avg": 23,
+    "best": {
+      "name": "Dylan Efron",
+      "score": 51
+    }
+  }
+}

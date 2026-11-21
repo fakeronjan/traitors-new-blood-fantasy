@@ -61,6 +61,10 @@ applySeasonChrome(league, season);
 const DRAFT_ORDER = season.draft_order;
 const DRAFT_OWNERS = DRAFT_ORDER.map(id => OWNERS.find(o => o.id === id));
 const players = await fetch(`data/seasons/${season.id}/players.json`).then(r => r.json());
+// For-fun A/B/C scouting tiers (analysis/scouting.mjs); only seasons that have them.
+const scouting = season.scouting
+  ? await fetch(`data/seasons/${season.id}/scouting.json`).then(r => r.json())
+  : {};
 document.querySelectorAll('.cast-count').forEach(el => { el.textContent = players.length; });
 document.querySelectorAll('.order-text').forEach(el => {
   el.innerHTML = DRAFT_ORDER.map(ownerName).join(' &rarr; ');
@@ -159,10 +163,11 @@ if (draftComplete) {
     } else {
       poolEl.innerHTML = undrafted.map(p => `
         <button class="pool-card" data-id="${p.id}">
-          <span class="photo-wrap"><img src="${p.photo}" alt=""></span>
+          <span class="photo-wrap"><img src="${p.photo}" alt="">${scouting[p.id] ? `<span class="tier-pill tier-${scouting[p.id].tier}">${scouting[p.id].tier}</span>` : ''}</span>
           <span class="pinfo">
             <span class="pname">${p.name}</span>
             ${metaLines(p).map(m => `<span class="pmeta">${m}</span>`).join('')}
+            ${scouting[p.id] ? `<span class="pscout"><span class="nowrap">${scouting[p.id].category}: avg ${scouting[p.id].avg},</span> <span class="nowrap">best ${scouting[p.id].best.name} ${scouting[p.id].best.score}</span></span>` : ''}
           </span>
         </button>
       `).join('');
