@@ -15,14 +15,11 @@ export async function loadLeague() {
 // season switcher (only on pages that have a #league-season-tabs slot).
 export function applySeasonChrome(league, season) {
   const isCurrent = season.id === league.current;
-  if (location.pathname.split('/').pop() !== 'season.html') {
-    document.documentElement.dataset.season = season.id;
-  }
+  document.documentElement.dataset.season = season.id;
   const suffix = isCurrent ? '' : `?season=${season.id}`;
 
   document.querySelectorAll('nav.main-nav a').forEach(a => {
-    const href = a.getAttribute('href').split('?')[0];
-    if (href !== 'season.html') a.setAttribute('href', href + suffix);
+    a.setAttribute('href', a.getAttribute('href').split('?')[0] + suffix);
   });
 
   const title = document.querySelector('h1.site-title');
@@ -34,15 +31,10 @@ export function applySeasonChrome(league, season) {
 
   const tabs = document.getElementById('league-season-tabs');
   if (tabs) {
-    // Past Seasons (the S1-4 backtests) isn't tied to a league season, so there the
-    // pills jump to that season's Leaderboard and none is highlighted.
-    let page = location.pathname.split('/').pop() || 'index.html';
-    const onBacktests = page === 'season.html';
-    if (onBacktests) page = 'index.html';
+    const page = location.pathname.split('/').pop() || 'index.html';
     tabs.innerHTML = league.seasons.map(s => {
       const href = s.id === league.current ? page : `${page}?season=${s.id}`;
-      const active = !onBacktests && s.id === season.id;
-      return `<a href="${href}" class="${active ? 'active' : ''}">${s.label}</a>`;
+      return `<a href="${href}" class="${s.id === season.id ? 'active' : ''}">${s.label}</a>`;
     }).join('');
   }
 }
@@ -64,4 +56,17 @@ export function champBadgeText(ownerId, season) {
 export function metaLines(p) {
   if (p.known_for) return [p.known_for];
   return [`${p.age} &middot; ${p.profession}`, p.hometown];
+}
+
+// How a player's run ended, in the same words as the backtest data's fate_summary.
+export function fateSummary(playerId, events) {
+  const mine = events.filter(e => e.player === playerId);
+  if (mine.some(e => e.type === 'winner')) return 'Made the finale (winner)';
+  const out = mine.find(e => ['murdered', 'banished', 'left'].includes(e.type));
+  if (out) {
+    const verb = { murdered: 'Murdered', banished: 'Banished', left: 'Left the game' }[out.type];
+    return `${verb} Episode ${out.episode}`;
+  }
+  if (mine.some(e => e.type === 'final_roundtable')) return 'Made the finale (runner-up)';
+  return 'Still in the game';
 }

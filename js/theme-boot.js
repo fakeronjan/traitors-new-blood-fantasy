@@ -4,7 +4,5 @@
 (function () {
   var CURRENT = 6;
   var s = Number(new URLSearchParams(location.search).get('season'));
-  var page = location.pathname.split('/').pop();
-  // Past Seasons (the S1-4 backtests) always uses the current season's look.
-  document.documentElement.dataset.season = (page !== 'season.html' && s) ? s : CURRENT;
+  document.documentElement.dataset.season = s || CURRENT;
 })();
