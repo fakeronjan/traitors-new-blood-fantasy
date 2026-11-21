@@ -1231,5 +1231,208 @@
     "episode": 10,
     "player": "wyatt-gillespie",
     "type": "survive"
+  },
+  {
+    "episode": 10,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "clyde-moser",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "jay-vinnedge",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Banked $26,000 of $26,000 in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "jay-vinnedge",
+    "type": "advantage_won",
+    "note": "Won a shield in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "wyatt-gillespie",
+    "type": "advantage_won",
+    "note": "Won a shield in the shield-building mission"
+  },
+  {
+    "episode": 10,
+    "player": "abbey-benjamin",
+    "type": "advantage_won",
+    "note": "Won a shield in the shield-building mission"
+  },
+  {
+    "episode": 11,
+    "player": "jay-vinnedge",
+    "type": "banished",
+    "note": "Banished at the roundtable carried over from Ep10 - he was Faithful"
+  },
+  {
+    "episode": 11,
+    "player": "clyde-moser",
+    "type": "murdered",
+    "note": "Murdered overnight after Jay's banishment"
+  },
+  {
+    "episode": 11,
+    "player": "abbey-benjamin",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "katie-fites",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "kriste-lewis",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "shane-beatty",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "victor-vollbrechthausen",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "wyatt-gillespie",
+    "type": "mission_won",
+    "note": "Banked $60,000 of $60,000 in the helicopter mission"
+  },
+  {
+    "episode": 11,
+    "player": "kriste-lewis",
+    "type": "banished",
+    "note": "Banished at the last roundtable before the Fire of Truth - she was Faithful"
+  },
+  {
+    "episode": 11,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "katie-fites",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "victor-vollbrechthausen",
+    "type": "survive"
+  },
+  {
+    "episode": 11,
+    "player": "wyatt-gillespie",
+    "type": "survive"
+  },
+  {
+    "episode": 12,
+    "player": "abbey-benjamin",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 12,
+    "player": "katie-fites",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 12,
+    "player": "shane-beatty",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 12,
+    "player": "victor-vollbrechthausen",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 12,
+    "player": "wyatt-gillespie",
+    "type": "final_roundtable"
+  },
+  {
+    "episode": 12,
+    "player": "katie-fites",
+    "type": "banished",
+    "note": "Banished first at the Fire of Truth - she was a Traitor"
+  },
+  {
+    "episode": 12,
+    "player": "victor-vollbrechthausen",
+    "type": "banished",
+    "note": "Banished second at the Fire of Truth - he was Faithful"
+  },
+  {
+    "episode": 12,
+    "player": "shane-beatty",
+    "type": "winner",
+    "note": "Won as the sole surviving Traitor; Abbey B. and Wyatt got nothing"
+  },
+  {
+    "episode": 12,
+    "player": "abbey-benjamin",
+    "type": "survive"
+  },
+  {
+    "episode": 12,
+    "player": "shane-beatty",
+    "type": "survive"
+  },
+  {
+    "episode": 12,
+    "player": "wyatt-gillespie",
+    "type": "survive"
   }
 ]

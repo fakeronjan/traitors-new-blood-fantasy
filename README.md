@@ -20,7 +20,3 @@ Add one object per event to `data/events.json`:
 ```
 
 Valid `type` values are the keys in `EVENT_TYPES` in `js/scoring.js`. Optional `"note"` field shows up in the episode log for context.
-
-## Pending
-
-- **Ep10 mission and shields:** Ep10 ended partway through the shield-building mission, so its result is shown in Ep11. Once Ep11 airs, log for Ep10: `mission_won` for everyone in the mission if the house banked at least 75% of the money on offer (Wikipedia lists $26,000 of $26,000), and `advantage_won` for each shield winner (Wikipedia lists Jay, Wyatt, and Abbey B.; confirm on screen). Joe's banishment, Shane's recruitment, Ben's murder, and Ep10 `survive` are already logged.
