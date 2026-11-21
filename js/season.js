@@ -31,10 +31,15 @@ export function applySeasonChrome(league, season) {
 
   const tabs = document.getElementById('league-season-tabs');
   if (tabs) {
-    const page = location.pathname.split('/').pop() || 'index.html';
+    // Past Seasons (the S1-4 backtests) isn't tied to a league season, so there the
+    // pills jump to that season's Leaderboard and none is highlighted.
+    let page = location.pathname.split('/').pop() || 'index.html';
+    const onBacktests = page === 'season.html';
+    if (onBacktests) page = 'index.html';
     tabs.innerHTML = league.seasons.map(s => {
       const href = s.id === league.current ? page : `${page}?season=${s.id}`;
-      return `<a href="${href}" class="${s.id === season.id ? 'active' : ''}">${s.label}</a>`;
+      const active = !onBacktests && s.id === season.id;
+      return `<a href="${href}" class="${active ? 'active' : ''}">${s.label}</a>`;
     }).join('');
   }
 }
