@@ -1,12 +1,13 @@
 // Which league season a page is showing, plus the shared page chrome that changes
 // by season (show title, footer, season switcher, champion badge).
 // data/league.json lists every real family-league season; "current" is the default.
-// ?season=N on any page shows that season instead.
+// ?season=<slug> on any page shows that season instead. Labels follow NBC's numbering
+// ("New Blood", then "Season 5"); ids are internal and match the data/seasons/<id> folders.
 
 export async function loadLeague() {
   const league = await fetch('data/league.json').then(r => r.json());
-  const requested = Number(new URLSearchParams(location.search).get('season'));
-  const season = league.seasons.find(s => s.id === requested)
+  const requested = new URLSearchParams(location.search).get('season');
+  const season = league.seasons.find(s => s.slug === requested)
     ?? league.seasons.find(s => s.id === league.current);
   return { league, season };
 }
@@ -16,7 +17,7 @@ export async function loadLeague() {
 export function applySeasonChrome(league, season) {
   const isCurrent = season.id === league.current;
   document.documentElement.dataset.season = season.id;
-  const suffix = isCurrent ? '' : `?season=${season.id}`;
+  const suffix = isCurrent ? '' : `?season=${season.slug}`;
 
   document.querySelectorAll('nav.main-nav a').forEach(a => {
     a.setAttribute('href', a.getAttribute('href').split('?')[0] + suffix);
@@ -33,25 +34,25 @@ export function applySeasonChrome(league, season) {
   if (tabs) {
     const page = location.pathname.split('/').pop() || 'index.html';
     tabs.innerHTML = league.seasons.map(s => {
-      const href = s.id === league.current ? page : `${page}?season=${s.id}`;
+      const href = s.id === league.current ? page : `${page}?season=${s.slug}`;
       return `<a href="${href}" class="${s.id === season.id ? 'active' : ''}">${s.label}</a>`;
     }).join('');
   }
 }
 
-// Small "👑 S5" badge next to the reigning champion's name in the following season.
+// Small "👑 New Blood" badge next to the reigning champion's name in the following season.
 export function champBadge(ownerId, season) {
   const c = season.prior_champion;
   if (!c || c.owner !== ownerId) return '';
-  return ` <span class="champ-badge" title="Season ${c.season} champion">👑 S${c.season}</span>`;
+  return ` <span class="champ-badge" title="${c.label} champion">👑 ${c.label}</span>`;
 }
 
 export function champBadgeText(ownerId, season) {
   const c = season.prior_champion;
-  return c && c.owner === ownerId ? ` 👑 S${c.season}` : '';
+  return c && c.owner === ownerId ? ` 👑 ${c.label}` : '';
 }
 
-// Reference lines under a player's name. Civilian casts (Season 5) have age,
+// Reference lines under a player's name. Civilian casts (New Blood) have age,
 // job, and hometown; celebrity casts have what they're known for.
 export function metaLines(p) {
   if (p.known_for) return [p.known_for];

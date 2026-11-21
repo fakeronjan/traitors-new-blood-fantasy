@@ -104,7 +104,7 @@ if (draftComplete) {
 } else {
   document.getElementById('draft-live-view').hidden = false;
 
-  // Season 5 kept its original key so an in-progress draft there was never lost.
+  // New Blood (id 5) kept its original key so an in-progress draft there was never lost.
   const STORAGE_KEY = season.id === 5
     ? 'traitors-new-blood-draft-history-v1'
     : `traitors-fantasy-draft-history-s${season.id}`;

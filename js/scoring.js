@@ -1,5 +1,5 @@
 // Shared scoring config + calculations for the Traitors family fantasy league.
-// One ruleset for every season so far (Season 6 kept Season 5's rules unchanged).
+// One ruleset for every season so far (Season 5 kept New Blood's rules unchanged).
 // Single source of truth: rules.html renders this table, index.html/log.html/history pages use it to score.
 
 // Damon = teal, Em = purple, RJ = pink (their picks). Stepped slightly off the

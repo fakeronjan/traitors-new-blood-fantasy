@@ -56,7 +56,7 @@ for (const key of ['group','prop']) {
   const corr=pairs.reduce((a,[x,y])=>a+(x-mx)*(y-my),0)/Math.sqrt(px.reduce((a,x)=>a+(x-mx)**2,0)*py.reduce((a,y)=>a+(y-my)**2,0));
   console.log(`\nLOSO ${key}: MAE baseline ${(errBase/rows.length).toFixed(2)} vs by-${key} ${(errGrp/rows.length).toFixed(2)}  corr ${corr.toFixed(2)}`);
 }
-// excluding civilians (S6 has none)
+// excluding civilians (Season 5 / id 6 has none)
 const celeb = rows.filter(r=>r.group!=='Civilians');
 console.log('\ncelebs only mean', mean(celeb.map(r=>r.total)).toFixed(1), 'n', celeb.length, '| civilians mean', mean(rows.filter(r=>r.group==='Civilians').map(r=>r.total)).toFixed(1));
 fs.writeFileSync('group_stats.json', JSON.stringify({overall, group:G, prop:P},null,1));

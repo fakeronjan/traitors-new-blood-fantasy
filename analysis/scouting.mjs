@@ -1,4 +1,4 @@
-// Builds data/seasons/6/scouting.json: a for-fun A/B/C tier per Season 6 player, from how
+// Builds data/seasons/6/scouting.json: a for-fun A/B/C tier per Season 5 player (internal id 6), from how
 // their category scored in the Season 1-4 backtests under the league's rules.
 // Tiers are cast thirds by category average; a category is never split across tiers,
 // so sizes land as close to equal as the ties allow. Run: node analysis/scouting.mjs

@@ -52,16 +52,20 @@ const params = new URLSearchParams(location.search);
 let view = params.get('s') === null ? 'all' : params.get('s');
 
 // Seasons 1-4 are backtests of the real US seasons; after that, every finished family
-// league season before the one being viewed (Season 6 shows Season 5, and so on).
-const backtests = await fetch('data/history/seasons.json').then(r => r.json());
+// league season before the one being viewed (Season 5 shows New Blood, and so on).
+// key = the ?s= value, label = tab/title, short = the Season column, order = sort.
+const backtests = (await fetch('data/history/seasons.json').then(r => r.json()))
+  .map(s => ({ ...s, key: String(s.season), label: `Season ${s.season}`, short: String(s.season),
+               order: s.season, dir: `data/history/season-${s.season}` }));
 const leaguePast = league.seasons
   .filter(s => s.id < viewing.id && s.champion)
   .sort((a, b) => a.id - b.id)
-  .map(s => ({ season: s.id, note: s.past_seasons_note, league: true }));
+  .map(s => ({ key: s.slug, label: s.label, short: s.label, order: s.id,
+               note: s.past_seasons_note, dir: `data/seasons/${s.id}`, league: true }));
 const seasons = [...backtests, ...leaguePast];
-if (view !== 'all' && !seasons.some(s => String(s.season) === view)) view = 'all';
+if (view !== 'all' && !seasons.some(s => s.key === view)) view = 'all';
 
-const seasonParam = viewing.id === league.current ? '' : `season=${viewing.id}`;
+const seasonParam = viewing.id === league.current ? '' : `season=${viewing.slug}`;
 const pageHref = s => {
   const q = [seasonParam, s === null ? '' : `s=${s}`].filter(Boolean).join('&');
   return q ? `season.html?${q}` : 'season.html';
@@ -69,19 +73,17 @@ const pageHref = s => {
 
 document.getElementById('season-tabs').innerHTML = [
   `<a href="${pageHref(null)}" class="${view === 'all' ? 'active' : ''}">All Seasons</a>`,
-  ...seasons.map(s => `<a href="${pageHref(s.season)}" class="${String(s.season) === view ? 'active' : ''}">Season ${s.season}</a>`),
+  ...seasons.map(s => `<a href="${pageHref(s.key)}" class="${s.key === view ? 'active' : ''}">${s.label}</a>`),
 ].join('');
 
-async function loadSeason(n) {
-  const meta = seasons.find(s => s.season === n);
-  const dir = meta?.league ? `data/seasons/${n}` : `data/history/season-${n}`;
+async function loadSeason(meta) {
   const [players, events] = await Promise.all([
-    fetch(`${dir}/players.json`).then(r => r.json()),
-    fetch(`${dir}/events.json`).then(r => r.json()),
+    fetch(`${meta.dir}/players.json`).then(r => r.json()),
+    fetch(`${meta.dir}/events.json`).then(r => r.json()),
   ]);
   // League seasons don't store fate_summary; derive it the same way the backtests word it.
   players.forEach(p => { p.fate_summary ??= fateSummary(p.id, events); });
-  if (meta && !meta.winners) {
+  if (!meta.winners) {
     meta.winners = players.filter(p => events.some(e => e.player === p.id && e.type === 'winner')).map(p => p.name);
   }
   return { players, events };
@@ -92,17 +94,22 @@ const tbody = document.querySelector('#season-table tbody');
 
 if (view === 'all') {
   document.getElementById('season-title').textContent = 'All Seasons';
-  document.getElementById('season-summary').textContent = `Every contestant from the first ${seasons.length} US seasons, scored with this exact ruleset and ranked together.`;
+  const NUM = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+  const scope = [`the first ${NUM[backtests.length] ?? backtests.length} US seasons`, ...leaguePast.map(s => s.label)];
+  const scopeText = scope.length > 2 ? `${scope.slice(0, -1).join(', ')}, and ${scope.at(-1)}` : scope.join(' and ');
+  document.getElementById('season-summary').textContent = `Every contestant from ${scopeText}, scored with this exact ruleset and ranked together.`;
   tableHead.innerHTML = '<th>#</th><th>Name</th><th class="col-season">Season</th><th class="col-wide">Role</th><th class="col-wide">Fate</th><th>Score</th>';
 
-  const seasonData = await Promise.all(seasons.map(s => loadSeason(s.season)));
+  const seasonData = await Promise.all(seasons.map(loadSeason));
   const combined = [];
   seasons.forEach((s, i) => {
     const { players, events } = seasonData[i];
     const totals = computePlayerTotals(players, events);
     players.forEach(p => {
       combined.push({
-        season: s.season,
+        order: s.order,
+        short: s.short,
+        label: s.label,
         name: p.name,
         fate: p.fate_summary,
         score: totals[p.id] ?? 0,
@@ -111,26 +118,25 @@ if (view === 'all') {
       });
     });
   });
-  combined.sort((a, b) => b.score - a.score || b.season - a.season);
+  combined.sort((a, b) => b.score - a.score || b.order - a.order);
 
   tbody.innerHTML = combined.map((r, i) => {
     const roleCls = r.role === 'Traitor' ? 'traitor' : (r.role === 'Recruited Traitor' ? 'recruited' : '');
     return `<tr class="${r.isWinner ? 'winner-row' : ''}">
       <td class="rank">${i + 1}</td>
-      <td class="pname">${r.name}<span class="row-sub"><span class="role-badge ${roleCls}">${r.role}</span><span>Season ${r.season} &middot; ${r.fate}</span></span></td>
-      <td class="col-season">${r.season}</td>
+      <td class="pname">${r.name}<span class="row-sub"><span class="role-badge ${roleCls}">${r.role}</span><span>${r.label} &middot; ${r.fate}</span></span></td>
+      <td class="col-season">${r.short}</td>
       <td class="col-wide"><span class="role-badge ${roleCls}">${r.role}</span></td>
       <td class="col-wide">${r.fate}</td>
       <td class="score">${round1(r.score)}</td>
     </tr>`;
   }).join('');
 } else {
-  const season = Number(view);
-  const meta = seasons.find(s => s.season === season);
-  const { players, events } = await loadSeason(season);  // also fills meta.winners for league seasons
+  const meta = seasons.find(s => s.key === view);
+  const { players, events } = await loadSeason(meta);  // also fills meta.winners for league seasons
 
-  document.getElementById('season-title').textContent = `Season ${season}`;
-  document.getElementById('season-summary').textContent = meta ? `Winner: ${meta.winners.join(' & ')} - ${meta.note}` : '';
+  document.getElementById('season-title').textContent = meta.label;
+  document.getElementById('season-summary').textContent = `Winner: ${meta.winners.join(' & ')} - ${meta.note}`;
   tableHead.innerHTML = '<th>#</th><th>Name</th><th class="col-wide">Role</th><th class="col-wide">Fate</th><th>Score</th>';
 
   const totals = computePlayerTotals(players, events);
