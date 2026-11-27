@@ -1,0 +1,31 @@
+{
+ "_about": "Draft-scouting variables (2026-11-27). gender: F/M (drag performers coded by their out-of-drag gender; Peppermint F). winner: won Survivor, Big Brother, The Challenge, or The Amazing Race before their Traitors season (Love Island, Drag Race, DWTS, Masked Singer, and Top Chef don't count: not social-strategy games). shows: franchises for the same-show ally check (Real Housewives cities count as one franchise; Bravo shows other than Housewives don't; DWTS left out, since its casts don't play together). ties: real-life ties in the same cast. New Blood and Season 1 civilians: no shows, no wins. Sources: Wikipedia/recaps checked 11/27 for Wes Bergmann (The Duel, Rivals II, All Stars 3), Rachel Robinson (3 wins), Jag Bains (BB25 + TAR38), Taylor Hale (BB24; TAR38 runner-up), Trishelle (no Challenge win), Logan Smith (he), Morgan Cook (she).",
+ "F": ["Geraldine Moreno","Brandi Glanville","Azra Valani","Amanda Clark-Stoner","Anjelica Conti","Shelbe Rodriguez","Rachel Reilly","Stephenie LaGrossa Kendrick","Kate Chastain","Andie Vanacore","Cirie Fields",
+       "Peppermint","Ekin-Su Cülcüloğlu","Larsa Pippen","Tamra Judge","Janelle Pierzina","Parvati Shallow","Phaedra Parks","Sherée Whitfield","Sandra Diaz-Twine","Trishelle Cannatella","Mercedes \"MJ\" Javid",
+       "Dorinda Medley","Chanel Ayan","Robyn Dixon","Nikki Garcia","Chrishell Stause","Ciara Miller","Carolyn Wiger","Danielle Reyes","Britney Haynes","Dolores Catania","Gabby Windey",
+       "Porsha Williams","Donna Kelce","Caroline Stanbury","Tiffany Mitchell","Lisa Rinna","Candiace Dillard Bassett","Kristen Kish","Natalie Anderson","Tara Lipinski","Maura Higgins",
+       "Abbey Benjamin","Abby Lee","Arisa Thomas","Katie Fites","Kim Daily","Kriste Lewis","Madeline Kostopulos","Morgan Cook","Niyyah Hayes","Sherry Kuehl","Tomica Adams",
+       "Bronwyn Newport","Casey Wilson","Chloe Kim","Cynthia Bailey","Emira D'Spain","Gizelle Bryant","JaNa Craig","Kristin Chenoweth","Michele Fitzgerald","Rachel Robinson","Taylor Hale","Whitney Leavitt"],
+ "winner": ["Cody Calafiore","Rachel Reilly","Johnny Devenanzio","Chris \"CT\" Tamburello","Dan Gheesling","Parvati Shallow","Sandra Diaz-Twine",
+            "Tony Vlachos","Jeremy Collins","Rob Mariano","Wes Bergmann","Derrick Levasseur","Ian Terry","Yam Yam Arocho","Natalie Anderson",
+            "Jag Bains","Taylor Hale","Michele Fitzgerald","Rachel Robinson"],
+ "shows": {
+  "Reza Farahan":["Shahs"],"Brandi Glanville":["RH"],"Kyle Cooke":["Summer House"],"Cody Calafiore":["BB","TAR"],"Rachel Reilly":["BB","TAR"],
+  "Stephenie LaGrossa Kendrick":["Survivor"],"Kate Chastain":["Below Deck"],"Arie Luyendyk Jr.":["Bachelor"],"Cirie Fields":["Survivor"],
+  "Johnny Devenanzio":["Challenge"],"Chris \"CT\" Tamburello":["Challenge"],"Trishelle Cannatella":["Challenge"],"Peppermint":["Drag Race"],
+  "Ekin-Su Cülcüloğlu":["Love Island"],"Carsten Bergersen":["Love Island"],"Larsa Pippen":["RH"],"Tamra Judge":["RH"],"Phaedra Parks":["RH"],"Sherée Whitfield":["RH"],
+  "Janelle Pierzina":["BB"],"Dan Gheesling":["BB"],"Parvati Shallow":["Survivor"],"Sandra Diaz-Twine":["Survivor"],"Kevin Kreider":["Bling Empire"],
+  "Peter Weber":["Bachelor"],"Mercedes \"MJ\" Javid":["Shahs"],
+  "Dorinda Medley":["RH"],"Chanel Ayan":["RH"],"Robyn Dixon":["RH"],"Dolores Catania":["RH"],"Wells Adams":["Bachelor"],"Gabby Windey":["Bachelor"],
+  "Tony Vlachos":["Survivor"],"Jeremy Collins":["Survivor"],"Rob Mariano":["Survivor"],"Carolyn Wiger":["Survivor"],
+  "Derrick Levasseur":["BB"],"Danielle Reyes":["BB"],"Britney Haynes":["BB"],"Bob the Drag Queen":["Drag Race"],"Bob Harper":["Biggest Loser"],
+  "Wes Bergmann":["Challenge"],"Chrishell Stause":["Selling Sunset"],"Ciara Miller":["Summer House"],"Tom Sandoval":["Vanderpump"],
+  "Ian Terry":["BB"],"Tiffany Mitchell":["BB"],"Rob Cesternino":["Survivor"],"Yam Yam Arocho":["Survivor"],"Natalie Anderson":["Survivor"],
+  "Porsha Williams":["RH"],"Caroline Stanbury":["RH"],"Lisa Rinna":["RH"],"Candiace Dillard Bassett":["RH"],"Monét X Change":["Drag Race"],
+  "Colton Underwood":["Bachelor"],"Maura Higgins":["Love Island"],"Rob Rausch":["Love Island"],"Stephen Colletti":["Laguna Beach"],"Kristen Kish":["Top Chef"],
+  "Bianca Del Rio":["Drag Race"],"Bronwyn Newport":["RH"],"Cynthia Bailey":["RH"],"Gizelle Bryant":["RH"],"Craig Conover":["Southern Charm"],"Emira D'Spain":["Next Gen NYC"],
+  "Iain Stirling":["Love Island"],"JaNa Craig":["Love Island"],"Jag Bains":["BB","TAR"],"Taylor Hale":["BB","TAR"],"Joey Graziadei":["Bachelor"],
+  "Michele Fitzgerald":["Survivor","Challenge"],"Q Burdette":["Survivor"],"Rachel Robinson":["Challenge"],"Whitney Leavitt":["Mormon Wives"]
+ },
+ "ties": [["Marcus Jordan","Larsa Pippen"],["Johnny Weir","Tara Lipinski"]]
+}
