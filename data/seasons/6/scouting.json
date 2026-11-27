@@ -6,7 +6,9 @@
     "best": {
       "name": "Monét X Change",
       "score": 12
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "boman-martinez-reid": {
     "tier": "B",
@@ -15,7 +17,9 @@
     "best": {
       "name": "Dylan Efron",
       "score": 51
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "bronwyn-newport": {
     "tier": "C",
@@ -24,7 +28,12 @@
     "best": {
       "name": "Dolores Catania",
       "score": 47
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "Cynthia",
+      "Gizelle"
+    ]
   },
   "casey-wilson": {
     "tier": "A",
@@ -33,7 +42,9 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "chloe-kim": {
     "tier": "C",
@@ -42,7 +53,9 @@
     "best": {
       "name": "Tara Lipinski",
       "score": 35
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "cody-simpson": {
     "tier": "A",
@@ -51,7 +64,9 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "craig-conover": {
     "tier": "B",
@@ -60,7 +75,9 @@
     "best": {
       "name": "Mercedes \"MJ\" Javid",
       "score": 36
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "cynthia-bailey": {
     "tier": "C",
@@ -69,7 +86,12 @@
     "best": {
       "name": "Dolores Catania",
       "score": 47
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "Bronwyn",
+      "Gizelle"
+    ]
   },
   "dominic-monaghan": {
     "tier": "A",
@@ -78,7 +100,9 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "emira-dspain": {
     "tier": "B",
@@ -87,7 +111,9 @@
     "best": {
       "name": "Mercedes \"MJ\" Javid",
       "score": 36
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "gizelle-bryant": {
     "tier": "C",
@@ -96,7 +122,12 @@
     "best": {
       "name": "Dolores Catania",
       "score": 47
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "Bronwyn",
+      "Cynthia"
+    ]
   },
   "iain-stirling": {
     "tier": "A",
@@ -105,7 +136,11 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "JaNa"
+    ]
   },
   "jag-bains": {
     "tier": "B",
@@ -114,7 +149,11 @@
     "best": {
       "name": "Chris \"CT\" Tamburello",
       "score": 48
-    }
+    },
+    "past_winner": true,
+    "castmates": [
+      "Taylor"
+    ]
   },
   "jana-craig": {
     "tier": "A",
@@ -123,7 +162,11 @@
     "best": {
       "name": "Rob Rausch",
       "score": 56
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "Iain"
+    ]
   },
   "joey-graziadei": {
     "tier": "A",
@@ -132,7 +175,9 @@
     "best": {
       "name": "Rob Rausch",
       "score": 56
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "johnny-sibilly": {
     "tier": "A",
@@ -141,7 +186,9 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "kristin-chenoweth": {
     "tier": "A",
@@ -150,7 +197,9 @@
     "best": {
       "name": "Eric Nam",
       "score": 45
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "michele-fitzgerald": {
     "tier": "B",
@@ -159,7 +208,12 @@
     "best": {
       "name": "Chris \"CT\" Tamburello",
       "score": 48
-    }
+    },
+    "past_winner": true,
+    "castmates": [
+      "Q",
+      "Rachel"
+    ]
   },
   "q-burdette": {
     "tier": "B",
@@ -168,7 +222,11 @@
     "best": {
       "name": "Chris \"CT\" Tamburello",
       "score": 48
-    }
+    },
+    "past_winner": false,
+    "castmates": [
+      "Michele"
+    ]
   },
   "rachel-robinson": {
     "tier": "B",
@@ -177,7 +235,11 @@
     "best": {
       "name": "Chris \"CT\" Tamburello",
       "score": 48
-    }
+    },
+    "past_winner": true,
+    "castmates": [
+      "Michele"
+    ]
   },
   "rashad-jennings": {
     "tier": "C",
@@ -186,7 +248,9 @@
     "best": {
       "name": "Tara Lipinski",
       "score": 35
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   },
   "taylor-hale": {
     "tier": "B",
@@ -195,7 +259,11 @@
     "best": {
       "name": "Chris \"CT\" Tamburello",
       "score": 48
-    }
+    },
+    "past_winner": true,
+    "castmates": [
+      "Jag"
+    ]
   },
   "whitney-leavitt": {
     "tier": "B",
@@ -204,6 +272,8 @@
     "best": {
       "name": "Dylan Efron",
       "score": 51
-    }
+    },
+    "past_winner": false,
+    "castmates": []
   }
 }

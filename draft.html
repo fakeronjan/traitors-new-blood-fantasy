@@ -69,6 +69,11 @@ applySeasonChrome(league, season);
 const DRAFT_ORDER = season.draft_order;
 const DRAFT_OWNERS = DRAFT_ORDER.map(id => OWNERS.find(o => o.id === id));
 const players = await fetch(`data/seasons/${season.id}/players.json`).then(r => r.json());
+// Plain facts under the tier line: a past strategy-game win, castmates from the same show
+const scoutFacts = sc => !sc ? [] : [
+  ...(sc.past_winner ? ['Past winner'] : []),
+  ...(sc.castmates?.length ? [`${sc.castmates.length > 1 ? 'Castmates' : 'Castmate'}: ${sc.castmates.join(', ')}`] : []),
+];
 // For-fun A/B/C scouting tiers (analysis/scouting.mjs); only seasons that have them.
 const scouting = season.scouting
   ? await fetch(`data/seasons/${season.id}/scouting.json`).then(r => r.json())
@@ -209,6 +214,7 @@ if (draftComplete) {
             <span class="pname">${p.name}</span>
             ${metaLines(p).map(m => `<span class="pmeta">${m}</span>`).join('')}
             ${scouting[p.id] ? `<span class="pscout"><span class="nowrap">${scouting[p.id].category}: avg ${scouting[p.id].avg},</span> <span class="nowrap">best ${scouting[p.id].best.name} ${scouting[p.id].best.score}</span></span>` : ''}
+            ${scoutFacts(scouting[p.id]).map(f => `<span class="pscout">${f}</span>`).join('')}
           </span>
         </button>
       `).join('');

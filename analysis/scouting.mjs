@@ -27,10 +27,24 @@ for (let i = 0; i < blocks.length; i++) for (let j = i + 1; j < blocks.length - 
 }
 const tierOf = cat => { const k = blocks.findIndex(b => b.cat === cat); return k <= best.i ? 'A' : k <= best.j ? 'B' : 'C'; };
 
+// Plain facts beside the tier (Ronjan 2026-11-27): a past Survivor/Big Brother/Challenge/Amazing Race
+// win, and castmates from the same show or a real-life tie (analysis/variables.json). Facts only:
+// neither predicted scores in the held-out test (analysis/variables.mjs)
+const V = JSON.parse(fs.readFileSync(new URL('variables.json', here)));
+const cast6 = JSON.parse(fs.readFileSync(new URL('../data/seasons/6/players.json', here)));
+const nameOf = id => cast6.find(p => p.id === id).name;
+const first = n => n.split(' ')[0];
+const castmatesOf = id => {
+  const n = nameOf(id), mine = V.shows[n] || [];
+  return cast6.map(p => p.name).filter(o => o !== n &&
+    ((V.shows[o] || []).some(s => mine.includes(s)) || V.ties.some(t => t.includes(n) && t.includes(o)))).map(first);
+};
+
 const out = {};
 for (const c of cast) {
   const top = stats[c.cat].slice().sort((a, b) => b.total - a.total)[0];
-  out[c.id] = { tier: tierOf(c.cat), category: SHORT[c.cat] ?? c.cat, avg: Math.round(c.avg), best: { name: top.name, score: Math.round(top.total) } };
+  out[c.id] = { tier: tierOf(c.cat), category: SHORT[c.cat] ?? c.cat, avg: Math.round(c.avg), best: { name: top.name, score: Math.round(top.total) },
+    past_winner: V.winner.includes(nameOf(c.id)), castmates: castmatesOf(c.id) };
 }
 fs.writeFileSync(new URL('../data/seasons/6/scouting.json', here), JSON.stringify(out, null, 2) + '\n');
 console.log('tier sizes', best.sizes.join('/'));
